@@ -1,0 +1,134 @@
+site_name: AnimeIngá 2023
+site_author: animeinga // endersonmenezes
+site_url: https://animeinga.com.br
+site_description: "O AnimeIngá é um evento de cultura pop e anime que acontece em Maringá, PR. Reúne fãs de anime, mangá, jogos eletrônicos e cosplay, com atrações como convidados especiais, palestras e concursos."
+copyright: AnimeIngá &copy; Copyright - 2023 - Todos os direitos reservados - CNPJ 19.076.380/0001-76
+repo_url: https://github.com/animeinga
+edit_uri: 'https://github.com/animeinga/animeinga.github.io/tree/main/docs'
+
+nav:
+    - Inicio: index.md
+    - Equipe: team.md
+    - Blog:
+      - blog/index.md
+    - Contato: contact.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: pt
+  logo: assets/logo.png
+  palette:
+    primary: white
+  favicon: assets/favicon.png
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+    - navigation.sections
+    - navigation.path
+    - content.code.annotate
+    - content.tabs.link
+    # - announce.dismiss
+  icon:
+    repo: fontawesome/brands/github
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+    
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true 
+
+
+plugins:
+  - search
+  - meta
+  - tags
+  - social
+  # - privacy
+  # - git-authors
+  - blog:
+      post_url_date_format: YYYY/MM/dd
+      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      archive_name: Arquivo
+      categories_name: Categorias
+  # - rss:
+  #     match_path: blog/posts/.* 
+  #     date_from_meta:
+  #       as_creation: date
+  #     categories:
+  #       - categories
+  #       - tags
+  - git-committers:
+      repository: animeinga/animeinga.github.io
+      token: !ENV GH_TOKEN
+      branch: main
+  # - git-revision-date-localized:
+  #     enabled: !ENV [GIT_REVISION_DATE_LOCALIZED, false]
+  #     enable_creation_date: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/animeinga
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/71895986/
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/animeinga
+    - icon: fontawesome/brands/youtube
+      link: http://youtube.com/@animeinga
+  consent:
+    title: LGPD Cookies
+    description: >- 
+      Usamos cookies para reconhecer suas visitas e preferências repetidas, bem como
+      para medir a eficácia de nossa documentação e se os usuários encontrarem o que eles estão procurando. Com o seu consentimento, você está nos ajudando a
+      tornar nossa documentação melhor.
+  analytics:
+    provider: google
+    property: G-CL043JTTND
+    feedback:
+      title: Esta página foi útil?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: Esta página foi útil
+          data: 1
+          note: >-
+            Obrigado pelo seu feedback!
+        - icon: material/thumb-down-outline
+          name: Esta página pode ser melhorada
+          data: 0
+          note: >- 
+            Obrigado pelo seu feedback! Nos ajude a melhorar essa página,
+            relate o que gostaria que fosse melhorado em <a href="mailto:contato@animeinga.com.br" target="_blank" rel="noopener">nosso e-mail!</a>

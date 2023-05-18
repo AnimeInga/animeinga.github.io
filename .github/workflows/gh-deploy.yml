@@ -1,0 +1,55 @@
+name: "Deploy Environment"
+
+on:
+  push:
+    branches: [ develop, main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ 3.11 ]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Checkout private tools
+        uses: actions/checkout@v3
+        with:
+          repository: squidfunk/mkdocs-material-insiders
+          token: ${{ secrets.GH_TOKEN_MKDOCS }}
+          path: mkdocs-material-insider
+
+      - name: Some check on branch
+        id: branch_check
+        run: |
+          echo "Running on branch ${{ github.ref }}"
+          if [ "${{ github.ref }}" = "refs/heads/main" ]; then
+            echo "env_name=gh-pages" >> $GITHUB_OUTPUT
+          elif [ "${{ github.ref }}" = "refs/heads/develop" ]; then
+            echo "env_name=gh-pages-develop" >> $GITHUB_OUTPUT
+          else
+            echo "env_name=gh-pages-feature" >> $GITHUB_OUTPUT
+          fi         
+        
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: x64 
+
+      - uses: actions/cache@v3
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+
+      - name: Install requirements
+        run: |
+          sudo apt-get install -y libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
+          python3 -m pip install -U pip
+          python3 -m pip install -r requirements.txt
+          python3 -m pip install -e mkdocs-material-insider
+
+      - name: Deploy 🚀
+        run: python3 -m mkdocs gh-deploy --force --remote-branch ${{ steps.branch_check.outputs.env_name }}

@@ -1,0 +1,12 @@
+# Builded Site
+site/*
+
+# Mkdocs Private
+mkdocs-material/*
+
+# Environtment
+.env
+venv/*
+
+# Cache
+.cache
