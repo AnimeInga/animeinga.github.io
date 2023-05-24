@@ -9,6 +9,10 @@ edit_uri: 'https://github.com/animeinga/animeinga.github.io/tree/main/docs'
 nav:
     - Inicio: index.md
     - Equipe: team.md
+    - Atividades: 
+      - Descrição: atividades.md
+      - Lojas: atividades/lojas.md
+      - eSports: atividades/esports.md
     - Blog:
       - blog/index.md
     - Contato: contact.md
