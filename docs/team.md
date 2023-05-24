@@ -40,5 +40,3 @@ A missão do AnimeIngá é proporcionar um espaço de encontro para fãs de cult
       <small>Líder de K-Pop / Marketing</small>
 
 </div>
-
-
