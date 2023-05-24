@@ -23,4 +23,20 @@ A missão do AnimeIngá é proporcionar um espaço de encontro para fãs de cult
 
       [:fontawesome-brands-linkedin-in:](https://www.linkedin.com/in/endersonmenezes/) [:simple-github:](https://github.com/endersonmenezes)
 
+- **Rodolfo Peres (Rods)**
+
+      ---
+
+      <img src="https://avatars.githubusercontent.com/u/11020807?v=4" alt="Foto de Enderson Menezes Cândido" width="150" height="150"/>
+
+      <small>Apresentador / Marketing</small>
+
+- **Nicole Martins Cabestré**
+
+      ---
+
+      <img src="https://avatars.githubusercontent.com/u/11020807?v=4" alt="Foto de Enderson Menezes Cândido" width="150" height="150"/>
+
+      <small>Líder de K-Pop / Marketing</small>
+
 </div>
