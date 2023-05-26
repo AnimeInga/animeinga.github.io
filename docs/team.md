@@ -18,7 +18,7 @@ A missão do AnimeIngá é proporcionar um espaço de encontro para fãs de cult
 
       ---
 
-      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/77eedaf0-95a1-4bbe-b540-15dd561e99cd" alt="Foto de Gustavo Neme" width="150" height="150"/>
+      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/0594ed85-38ac-470a-8c8b-ece75d8768b0" alt="Foto de Gustavo Neme" width="150" height="150"/>
 
       <small>Presidente</small>
 
@@ -60,7 +60,7 @@ A missão do AnimeIngá é proporcionar um espaço de encontro para fãs de cult
 
       ---
 
-      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/77eedaf0-95a1-4bbe-b540-15dd561e99cd" alt="Foto de Jonathan" width="150" height="150"/>
+      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/c696cdb8-1b28-477e-bca0-ff3611bc405f" alt="Foto de Jonathan" width="150" height="150"/>
 
       <small>Backstage</small>
 
@@ -68,8 +68,9 @@ A missão do AnimeIngá é proporcionar um espaço de encontro para fãs de cult
 
       ---
 
-      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/77eedaf0-95a1-4bbe-b540-15dd561e99cd" alt="Foto de Ariel" width="150" height="150"/>
+      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/9a59f1e3-8319-4061-bbf4-db5e1b9e57de" alt="Foto de Ariel" width="150" height="150"/>
 
       <small>Financeiro / Líder da Área Medieval</small>
 
 </div>
+
