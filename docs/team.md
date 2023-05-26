@@ -14,6 +14,22 @@ A missão do AnimeIngá é proporcionar um espaço de encontro para fãs de cult
 
 <div class="grid cards" style="text-align: center;" markdown>
 
+- **Gustavo Neme**
+
+      ---
+
+      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/77eedaf0-95a1-4bbe-b540-15dd561e99cd" alt="Foto de Gustavo Neme" width="150" height="150"/>
+
+      <small>Presidente</small>
+
+- **Jaqueline Ribeiro**
+
+      ---
+
+      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/77eedaf0-95a1-4bbe-b540-15dd561e99cd" alt="Foto de Jaqueline Ribeiro" width="150" height="150"/>
+
+      <small>Vice-Presidente</small>
+
 - **Enderson Menezes**
 
       ---
@@ -28,7 +44,7 @@ A missão do AnimeIngá é proporcionar um espaço de encontro para fãs de cult
 
       ---
 
-      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/94c272fa-9d6c-43d0-a088-b42c5846db7b" alt="Foto de Enderson Menezes Cândido" width="150" height="150"/>
+      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/94c272fa-9d6c-43d0-a088-b42c5846db7b" alt="Foto de Rodolfo Peres" width="150" height="150"/>
 
       <small>Apresentador / Marketing</small>
 
@@ -36,8 +52,24 @@ A missão do AnimeIngá é proporcionar um espaço de encontro para fãs de cult
 
       ---
 
-      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/77eedaf0-95a1-4bbe-b540-15dd561e99cd" alt="Foto de Enderson Menezes Cândido" width="150" height="150"/>
+      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/77eedaf0-95a1-4bbe-b540-15dd561e99cd" alt="Foto de Nicole" width="150" height="150"/>
 
       <small>Líder de K-Pop / Marketing</small>
+
+- **Jonathan (Ceará)**
+
+      ---
+
+      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/77eedaf0-95a1-4bbe-b540-15dd561e99cd" alt="Foto de Jonathan" width="150" height="150"/>
+
+      <small>Backstage</small>
+
+- **Ariel Toniatto**
+
+      ---
+
+      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/77eedaf0-95a1-4bbe-b540-15dd561e99cd" alt="Foto de Ariel" width="150" height="150"/>
+
+      <small>Financeiro / Líder da Área Medieval</small>
 
 </div>
