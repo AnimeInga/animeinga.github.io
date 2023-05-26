@@ -26,7 +26,7 @@ A missão do AnimeIngá é proporcionar um espaço de encontro para fãs de cult
 
       ---
 
-      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/77eedaf0-95a1-4bbe-b540-15dd561e99cd" alt="Foto de Jaqueline Ribeiro" width="150" height="150"/>
+      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/30013f36-b740-4d77-a0ef-560f1e6101a7" alt="Foto de Jaqueline Ribeiro" width="150" height="150"/>
 
       <small>Vice-Presidente</small>
 
