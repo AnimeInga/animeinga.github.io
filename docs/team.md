@@ -18,7 +18,7 @@ A missão do AnimeIngá é proporcionar um espaço de encontro para fãs de cult
 
       ---
 
-      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/0594ed85-38ac-470a-8c8b-ece75d8768b0" alt="Foto de Gustavo Neme" width="150" height="150"/>
+      <img src="https://github.com/AnimeInga/animeinga.github.io/assets/11020807/19da7033-ece3-40ce-9bcc-5b7b97da26a1" alt="Foto de Gustavo Neme" width="150" height="150"/>
 
       <small>Presidente</small>
 
