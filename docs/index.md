@@ -6,6 +6,8 @@ hide:
 
 # Página Inicial
 
+![_8d15abfd-d69f-4751-a864-0694c9f4be7e](https://github.com/AnimeInga/animeinga.github.io/assets/11020807/c87ee9fe-457e-407f-9c93-5a8361391c2e)
+
 ???+ question "Aviso"
 
     👋 Olá! Para ficar por dentro de tudo o que vai acontecer no evento AnimeIngá, é importante acessar o menu de ATIVIDADES 📋. Lá você encontrará informações sobre jogos 🎮, lojas 🛍️ e muito mais! Não perca tempo e confira agora mesmo para não perder nada desse evento incrível! 🤩
