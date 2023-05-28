@@ -6,7 +6,7 @@ hide:
 
 # Venda de Ingressos
 
-![_bf6dc1e2-2d80-458f-a19c-48ff722175fa](https://github.com/AnimeInga/animeinga.github.io/assets/11020807/0d4b0a40-ac2a-49c6-b666-c2516b41970b)
+![_b760153f-a411-4e82-b6bf-81278bba9e45](https://github.com/AnimeInga/animeinga.github.io/assets/11020807/7913f033-b9fc-4c18-bdb8-069bed3ef18d)
 
 AnimeInga 2023 está chegando e você não pode perder essa oportunidade incrível de celebrar a cultura japonesa e os animes com a gente! Garanta já o seu ingresso para participar desse evento épico.
 
