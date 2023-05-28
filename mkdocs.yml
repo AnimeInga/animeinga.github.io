@@ -13,6 +13,7 @@ nav:
       - Descrição: atividades.md
       - Lojas: atividades/lojas.md
       - eSports: atividades/esports.md
+    - Ingressos: ingressos.md
     - Blog:
       - blog/index.md
     - Contato: contact.md
