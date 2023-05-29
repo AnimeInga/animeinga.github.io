@@ -14,6 +14,8 @@ hide:
 
     Por enquanto, as vendas de ingressos estão disponíveis apenas nos pontos físicos de venda ou por meio da RPC. Fique atento às nossas redes sociais para mais informações sobre a venda online por aqui.
 
+    [Baixe o aplicativo da RPC!](https://redeglobo.globo.com/rpc/noticia/voce-na-rpc-baixe-o-novo-aplicativo-da-rpc.ghtml)
+
 AnimeInga 2023 está chegando e você não pode perder essa oportunidade incrível de celebrar a cultura japonesa e os animes com a gente! Garanta já o seu ingresso para participar desse evento épico. 🎎🎊
 
 Estão disponíveis, a partir de hoje, o primeiro lote dos ingressos para o Animeingá 2023 nos nossos pontos de venda. A partir da semana que vem, eles também estarão disponíveis de forma online.
