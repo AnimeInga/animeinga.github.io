@@ -14,7 +14,11 @@ comments: true
 
 # AnimeIngá 2023: Você sabia?! 🎌🎮🎭🤖👥🎉
 
+![_d1d38f34-07c9-4fa9-b3f3-c5de71a257f6](https://github.com/AnimeInga/animeinga.github.io/assets/11020807/a770e120-4a65-40f1-b683-c76a0ff934cd)
+
 O AnimeIngá é uma associação sem fins lucrativos, o que significa que todo o lucro do evento é destinado a ações filantrópicas e para cobrir os custos do evento. Isso quer dizer que todas as pessoas que você vê trabalhando em nome do evento estão lá por muito amor e carinho! ❤️
+
+<!-- more -->
 
 Apesar de ser uma associação sem fins lucrativos, para realizar o evento é necessário contratar fornecedores e arcar com diversos custos, por isso o evento não é gratuito. Mas quanto mais cedo as pessoas comprarem seus ingressos, mais coisas a organização pode divulgar e preparar para oferecer uma experiência incrível para os participantes.
 
