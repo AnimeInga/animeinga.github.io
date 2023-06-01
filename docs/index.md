@@ -6,6 +6,10 @@ hide:
 
 # Página Inicial
 
+!!! animeinga-icon "Aviso Importante"
+
+    🎟️ Para compra dos ingressos, confira o menu "Ingressos", ou [clique aqui.](ingressos.md)
+
 !!! note "Aviso Importante"
 
     📢 Não perca nenhuma atividade da edição 2023! 🎉
@@ -19,8 +23,6 @@ hide:
     🏫 Todas as salas disponíveis com atividades serão divulgadas no menu de atividades. Não deixe de conferir!
 
     👉 Não perca nenhum detalhe, acompanhe de perto as atualizações e se prepare para a melhor edição de todas! 🚀
-
-    🎟️ Para compra dos ingressos, confira o menu "Ingressos", ou [clique aqui.](ingressos.md)
 
 <div class="container">
   <div class="banner">
