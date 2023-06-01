@@ -12,15 +12,9 @@ hide:
 
 ???+ note "Observações Meia Entrada"
 
-    Para usufruir do benefício disposto nesta Lei, o estudante deverá comprovar a condição de discente mediante a apresentação da Carteira de Identificação Estudantil – CIE, emitida pela Associação Nacional de Pós-Graduandos – ANPG, pela União Nacional dos Estudantes – UNE, pela União dos Estudantes Secundaristas – Ubes, pelas entidades estaduais e municipais filiadas àquelas, pelos Diretórios Centrais dos Estudantes – DCE’s e pelos Centros e Diretórios Acadêmicos.
+    Para usufruir do benefício disposto nesta Lei, o estudante deverá comprovar a condição de discente mediante a apresentação da Carteira de Identificação Estudantil – CIE, emitida por entidades estudantis reconhecidas. Na ausência de uma entidade competente para emissão da carteira de estudante, os estudantes poderão comprovar a condição de discente mediante a apresentação de documento com foto juntamente com o boleto pago no mês corrente ou atestado de escolaridade e frequência em papel timbrado do semestre corrente. **Para o evento AnimeIngá, exclusivamente, é possível doar um livro, um kg de alimento ou um brinquedo para ter direito à meia-entrada.**
 
-    Na ausência de entidade representativa competente para emissão da carteira de estudante descrita no caput deste artigo, os estudantes poderão comprovar a condição de discente mediante apresentação de documento com foto juntamente com o boleto pago no mês corrente ou atestado de escolaridade e frequência em papel timbrado do semestre corrente e, no caso de escola pública, apresentar atestado de escolaridade em papel timbrado do semestre corrente e documento com foto.
-
-    Doadores regulares de Sangue - Lei Estadual nº 13.964/2002; Registrados em hemocentro e nos bancos de sangue dos hospitais do Estado, que apresentem a carteirinha de registro onde conste a regularidade das doações.
-
-    Professores da rede pública e particular de ensino - Lei Estadual nº 15.876/2008; Apresentar carteira funcional emitida pela Secretaria Estadual da Educação, ou holerite, e RG;
-
-    Portadores de Câncer - Lei Estadual nº 18445/2015;
+    Além disso, a lei também prevê benefícios para doadores regulares de sangue, que devem apresentar a carteirinha de registro onde conste a regularidade das doações, para professores da rede pública e particular de ensino, que devem apresentar carteira funcional emitida pela Secretaria Estadual da Educação ou holerite e RG, e para portadores de câncer, conforme previsto na Lei Estadual nº 18445/2015.
 
     [Saiba mais...](https://www.assembleia.pr.leg.br/index.php/agoraelei?showPopup=meia-entrada-para-todo-estudante#:~:text=Súmula%3A%20Altera%20a%20Lei%20nº,similares%2C%20aos%20estudantes%20que%20especifica.)
 
