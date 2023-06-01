@@ -6,7 +6,11 @@ hide:
 
 # Página Inicial
 
-!!! animeinga-icon "Aviso Importante"
+??? animeinga-icon "Aviso Importante"
+
+    <video src="assets/videos/muca.mp4" controls>
+      Seu navegador não suporta a tag de vídeo.
+    </video>
 
     🎟️ Para compra dos ingressos, confira o menu "Ingressos", ou [clique aqui.](ingressos.md)
 

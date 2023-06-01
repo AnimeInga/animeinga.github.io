@@ -10,6 +10,20 @@ hide:
 
 # Venda de Ingressos 🎫🎉
 
+???+ note "Observações Meia Entrada"
+
+    Para usufruir do benefício disposto nesta Lei, o estudante deverá comprovar a condição de discente mediante a apresentação da Carteira de Identificação Estudantil – CIE, emitida pela Associação Nacional de Pós-Graduandos – ANPG, pela União Nacional dos Estudantes – UNE, pela União dos Estudantes Secundaristas – Ubes, pelas entidades estaduais e municipais filiadas àquelas, pelos Diretórios Centrais dos Estudantes – DCE’s e pelos Centros e Diretórios Acadêmicos.
+
+    Na ausência de entidade representativa competente para emissão da carteira de estudante descrita no caput deste artigo, os estudantes poderão comprovar a condição de discente mediante apresentação de documento com foto juntamente com o boleto pago no mês corrente ou atestado de escolaridade e frequência em papel timbrado do semestre corrente e, no caso de escola pública, apresentar atestado de escolaridade em papel timbrado do semestre corrente e documento com foto.
+
+    Doadores regulares de Sangue - Lei Estadual nº 13.964/2002; Registrados em hemocentro e nos bancos de sangue dos hospitais do Estado, que apresentem a carteirinha de registro onde conste a regularidade das doações.
+
+    Professores da rede pública e particular de ensino - Lei Estadual nº 15.876/2008; Apresentar carteira funcional emitida pela Secretaria Estadual da Educação, ou holerite, e RG;
+
+    Portadores de Câncer - Lei Estadual nº 18445/2015;
+
+    [Saiba mais...](https://www.assembleia.pr.leg.br/index.php/agoraelei?showPopup=meia-entrada-para-todo-estudante#:~:text=Súmula%3A%20Altera%20a%20Lei%20nº,similares%2C%20aos%20estudantes%20que%20especifica.)
+
 ???+ note "Apoio RPC"
 
     O aplicativo 'Você na RPC' é a TV ainda mais próxima da sua rotina. Notícias em tempo real, novidades da programação, conteúdos exclusivos e muito mais.
