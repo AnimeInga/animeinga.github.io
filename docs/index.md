@@ -20,7 +20,7 @@ hide:
 
     👉 Não perca nenhum detalhe, acompanhe de perto as atualizações e se prepare para a melhor edição de todas! 🚀
 
-    🎟️ Para mais informações sobre os ingressos, confira o menu "Ingressos".
+    🎟️ Para compra dos ingressos, confira o menu "Ingressos", ou [clique aqui.](ingressos.md)
 
 <div class="container">
   <div class="banner">
