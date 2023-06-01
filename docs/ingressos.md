@@ -12,7 +12,9 @@ hide:
 
 ???+ note "Observações Meia Entrada"
 
-    Para usufruir do benefício disposto nesta Lei, o estudante deverá comprovar a condição de discente mediante a apresentação da Carteira de Identificação Estudantil – CIE, emitida por entidades estudantis reconhecidas. Na ausência de uma entidade competente para emissão da carteira de estudante, os estudantes poderão comprovar a condição de discente mediante a apresentação de documento com foto juntamente com o boleto pago no mês corrente ou atestado de escolaridade e frequência em papel timbrado do semestre corrente. **Para o evento AnimeIngá, exclusivamente, é possível doar um livro, um kg de alimento ou um brinquedo para ter direito à meia-entrada.**
+    Para usufruir do benefício disposto nesta Lei, o estudante deverá comprovar a condição de discente mediante a apresentação da Carteira de Identificação Estudantil – CIE, emitida por entidades estudantis reconhecidas. Na ausência de uma entidade competente para emissão da carteira de estudante, os estudantes poderão comprovar a condição de discente mediante a apresentação de documento com foto juntamente com o boleto pago no mês corrente ou atestado de escolaridade e frequência em papel timbrado do semestre corrente.
+
+    *Para o evento AnimeIngá, exclusivamente, é possível doar um livro, gibi ou um kg de alimento para ter direito a entrada social, que é o mesmo valor meia-entrada.*
 
     Além disso, a lei também prevê benefícios para doadores regulares de sangue, que devem apresentar a carteirinha de registro onde conste a regularidade das doações, para professores da rede pública e particular de ensino, que devem apresentar carteira funcional emitida pela Secretaria Estadual da Educação ou holerite e RG, e para portadores de câncer, conforme previsto na Lei Estadual nº 18445/2015.
 
