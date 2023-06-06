@@ -2,7 +2,9 @@
 
 Não perca a oportunidade de conhecer as lojas que estarão presentes no nosso evento! Aqui você encontrará uma lista das lojas participantes e suas respectivas especialidades. Aproveite para conferir seus produtos e promoções exclusivas durante o evento.
 
-Você é dono de uma loja e quer expor seus produtos em nosso evento? [Preencha nosso formulário de inscrição para expositores e faça parte da nossa lista de lojas participantes!](https://forms.gle/a2a8mazU2EJSGFdQ8) É uma ótima oportunidade para promover seus produtos e serviços para um público engajado e interessado em jogos, animes, mangás e cultura pop em geral. Não perca essa chance de expandir seus negócios e fazer parte de um evento incrível!
+Você é dono de uma loja e quer expor seus produtos em nosso evento? É uma ótima oportunidade para promover seus produtos e serviços para um público engajado e interessado em jogos, animes, mangás e cultura pop em geral. Não perca essa chance de expandir seus negócios e fazer parte de um evento incrível!
+
+[Clique aqui](https://eventos365.com.br/Event/Detail/29790){.md-button .md-button--primary}
 
 ???+ info
 
