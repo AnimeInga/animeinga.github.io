@@ -6,6 +6,32 @@ Você é dono de uma loja e quer expor seus produtos em nosso evento? É uma ót
 
 [Clique aqui](https://eventos365.com.br/Event/Detail/29790){.md-button .md-button--primary}
 
+_Tabela de conversão de localização das lojas para o mapa do evento:_
+
+| Posição de Compra | Posição no Mapa |
+| ----------------- | --------------- |
+| 1                 | 1A              |
+| 2                 | 1B              |
+| 3                 | 1C              |
+| 4                 | 1D              |
+| --                | --              |
+| 5                 | 2A              |
+| 6                 | 2B              |
+| 7                 | 2C              |
+| 8                 | 2D              |
+| --                | --              |
+| 9                 | 3A              |
+| 10                | 3B              |
+| 11                | 3C              |
+| 12                | 3D              |
+| --                | --              |
+| 13                | 4A              |
+| 14                | 4B              |
+| 15                | 4C              |
+| 16                | 4D              |
+
+[Clique aqui e veja o mapa do evento](/assets/pdf/mapa.pdf){.md-button .md-button--primary}
+
 ???+ info
 
     Continue acessando esta página para ficar por dentro das últimas novidades sobre o nosso evento! Em breve, estaremos divulgando mais informações sobre as lojas.
