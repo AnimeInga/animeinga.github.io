@@ -39,3 +39,7 @@ _Tabela de conversão de localização das lojas para o mapa do evento:_
 ???+ warning "Aviso"
 
     Não possuímos propriedade intelectual sobre as imagens das logos das lojas mencionadas e não estamos afiliados às empresas proprietárias dessas logos. Estamos divulgando as lojas participantes apenas para promover o evento e a comunidade de jogos no norte do Paraná. Todos os direitos autorais e marcas registradas pertencem aos seus respectivos proprietários.
+
+???+ warning "Exclusividade"
+
+    Gostaríamos de informar que temos uma exclusividade de produtos gamers com a Syma Informática! Isso significa que não será permitido a venda de produtos gamers por outras lojas. Caso alguma loja queira vender produtos gamers, ela deverá entrar em contato com a Syma Informática para negociar a venda de produtos gamers em seu estande.
