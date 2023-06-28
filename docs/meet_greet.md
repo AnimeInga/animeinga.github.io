@@ -36,11 +36,11 @@ Estão todos prontos? 🥳
 
 ## Valores
 
-| Tipo de Ingresso    | Preço |
-| ------------------- | ----: |
-| Somente Meet        |  R$30 |
-| Somente Workshop    |  R$30 |
-| Combo Meet+Workshop |  R$50 |
+| Tipo de Ingresso    | Preço | Horário     |
+| ------------------- | ----: | ----------- |
+| Somente Meet        |  R$30 | 15 horas    |
+| Somente Workshop    |  R$30 | 16:30 horas |
+| Combo Meet+Workshop |  R$50 | #           |
 
 ## Como adquirir?
 
