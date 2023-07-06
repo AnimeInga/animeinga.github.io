@@ -1,0 +1,20 @@
+:root {
+    --md-admonition-icon--animeinga-icon: url('/assets/favicon.png')
+    }
+
+    .md-typeset .admonition.animeinga-icon,
+    .md-typeset details.animeinga-icon {
+        border-color: rgb(255, 0, 0);
+    }
+
+    .md-typeset .animeinga-icon > .admonition-title,
+    .md-typeset .animeinga-icon > summary {
+        background-color: rgba(255, 145, 145, 0.1);
+    }
+
+    .md-typeset .animeinga-icon > .admonition-title::before,
+    .md-typeset .animeinga-icon > summary::before {
+        background-color: rgb(72, 72, 72);
+        -webkit-mask-image: var(--md-admonition-icon--animeinga-icon);
+        mask-image: var(--md-admonition-icon--animeinga-icon);
+    }
