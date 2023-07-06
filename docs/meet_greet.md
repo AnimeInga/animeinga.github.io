@@ -44,4 +44,4 @@ Estão todos prontos? 🥳
 
 ## Como adquirir?
 
-**Acesse essa página em breve para mais informações sobre pagamento e reserva.**
+[Pagamento e Reserva](https://eventos365.com.br/Event/Detail/29828)
