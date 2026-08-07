@@ -39,6 +39,15 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-google-tag-manager',
+      {
+        containerId: 'GTM-T66DNTG6',
+      },
+    ],
+  ],
+
   themeConfig: {
     image: 'img/logo.png',
     colorMode: {
