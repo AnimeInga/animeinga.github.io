@@ -46,6 +46,13 @@ const config: Config = {
         containerId: 'GTM-T66DNTG6',
       },
     ],
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-J7LZWT8S0M',
+        anonymizeIP: true,
+      },
+    ],
   ],
 
   themeConfig: {
