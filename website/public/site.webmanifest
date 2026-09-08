@@ -1,0 +1,22 @@
+{
+  "name": "AnimeIngá — 12 e 13 de Dezembro de 2026",
+  "short_name": "AnimeIngá",
+  "description": "O maior evento de cultura pop e japonesa de Maringá. Edição 2026: 12 e 13 de dezembro, no Parque de Exposições Francisco Feio Ribeiro.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#e50914",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

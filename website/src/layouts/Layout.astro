@@ -1,0 +1,240 @@
+---
+import site from '../data/site.json';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {title, description = site.tagline} = Astro.props;
+const currentPath = Astro.url.pathname;
+
+/** URLs absolutas para SEO/OG (crawlers exigem endereço completo). */
+const baseUrl = 'https://animeinga.com.br';
+const canonicalUrl = new URL(currentPath, baseUrl).href;
+const ogImage = `${baseUrl}/img/og-image.png`;
+const fullTitle = title === 'Início' ? `${site.name} — ${site.tagline}` : `${title} — ${site.name}`;
+
+/** Dados estruturados (Schema.org) — aparecem no Google como "Evento". */
+const eventJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Event',
+  name: `${site.name} 2026`,
+  description,
+  startDate: site.dates.start,
+  endDate: site.dates.end,
+  eventStatus: 'https://schema.org/EventScheduled',
+  eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+  location: {
+    '@type': 'Place',
+    name: site.location.venue,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Maringá',
+      addressRegion: 'PR',
+      addressCountry: 'BR',
+    },
+  },
+  image: [ogImage],
+  organizer: {
+    '@type': 'Organization',
+    name: site.name,
+    url: baseUrl,
+    sameAs: [site.social.instagram, site.social.youtube, site.social.linkedin],
+  },
+  url: baseUrl,
+};
+
+const navItems = [
+  {href: 'sobre.html', label: 'Sobre'},
+  {href: 'equipe.html', label: 'Equipe'},
+  {href: 'regulamentos.html', label: 'Regulamentos & Competições'},
+  {href: 'comercial.html', label: 'Comercial'},
+];
+
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#e50914" />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn...) -->
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${site.name} — ${site.dates.label} — ${site.location.venue}`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter/X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image:alt" content={`${site.name} — ${site.dates.label}`} />
+
+    <!-- Dados estruturados para o Google (Evento) -->
+    <script type="application/ld+json" set:html={JSON.stringify(eventJsonLd)} />
+
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>{fullTitle}</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <nav class="navbar__inner" aria-label="Navegação principal">
+        <a class="navbar__brand" href="index.html" aria-label="AnimeIngá — Página inicial">
+          <img src="/img/logo-dark.png" alt="AnimeIngá" />
+        </a>
+        <button
+          class="navbar__toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          data-nav-toggle>
+          ☰
+        </button>
+        <ul class="navbar__links" data-nav-menu>
+          {navItems.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                aria-current={currentPath.endsWith(item.href) ? 'page' : undefined}>
+                {item.label}
+              </a>
+            </li>
+          ))}
+          <li>
+            <a
+              class="navbar__cta"
+              href={site.exhibitorFormUrl}
+              target="_blank"
+              rel="noopener noreferrer">
+              Seja Expositor
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <img src="/img/logo-dark.png" alt="AnimeIngá" style="height: 44px; margin-bottom: 1rem;" />
+            <p style="color: var(--color-text-muted); max-width: 32rem; margin: 0;">
+              {site.tagline}. {site.edition}: {site.dates.label}, em {site.location.city}.
+            </p>
+          </div>
+          <div>
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              {navItems.map((item) => (
+                <li><a href={item.href}>{item.label}</a></li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3>Redes & Contato</h3>
+            <ul>
+              <li><a href={site.social.instagram} target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href={site.social.youtube} target="_blank" rel="noopener noreferrer">YouTube</a></li>
+              <li><a href={site.social.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href={`mailto:${site.contact.email}`}>{site.contact.email}</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">
+          AnimeIngá © Copyright — {year} — Todos os direitos reservados — CNPJ {site.cnpj}
+        </p>
+      </div>
+    </footer>
+
+    <!-- Menu mobile -->
+    <script>
+      const toggle = document.querySelector('[data-nav-toggle]');
+      const menu = document.querySelector('[data-nav-menu]');
+      toggle?.addEventListener('click', () => {
+        const open = menu?.classList.toggle('is-open') ?? false;
+        toggle.setAttribute('aria-expanded', String(open));
+      });
+    </script>
+
+    <!-- Reveal on scroll -->
+    <script>
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const revealEls = document.querySelectorAll('.reveal');
+      if (reduceMotion) {
+        revealEls.forEach((el) => el.classList.add('is-visible'));
+      } else {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {threshold: 0.15},
+        );
+        revealEls.forEach((el) => observer.observe(el));
+      }
+    </script>
+
+    <!-- Tilt cards -->
+    <script>
+      const finePointer = window.matchMedia('(pointer: fine)').matches;
+      const noMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (finePointer && !noMotion) {
+        document.querySelectorAll('.tilt').forEach((el) => {
+          const maxTilt = Number((el as HTMLElement).dataset.maxTilt ?? 8);
+          el.addEventListener('mousemove', (ev) => {
+            const e = ev as MouseEvent;
+            const rect = (el as HTMLElement).getBoundingClientRect();
+            const px = (e.clientX - rect.left) / rect.width;
+            const py = (e.clientY - rect.top) / rect.height;
+            const rx = (0.5 - py) * maxTilt;
+            const ry = (px - 0.5) * maxTilt;
+            const htmlEl = el as HTMLElement;
+            htmlEl.classList.add('is-tilting');
+            htmlEl.style.transform = `perspective(900px) rotateX(${rx.toFixed(2)}deg) rotateY(${ry.toFixed(2)}deg) translateY(-4px)`;
+            htmlEl.style.setProperty('--glare-x', `${px * 100}%`);
+            htmlEl.style.setProperty('--glare-y', `${py * 100}%`);
+            htmlEl.style.setProperty('--glare-opacity', '0.18');
+          });
+          el.addEventListener('mouseleave', () => {
+            const htmlEl = el as HTMLElement;
+            htmlEl.classList.remove('is-tilting');
+            htmlEl.style.transform = '';
+            htmlEl.style.setProperty('--glare-opacity', '0');
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -4,9 +4,9 @@ Este documento orienta agentes, colaboradores e futuros mantenedores que trabalh
 
 ## Sobre o projeto
 
-O site do AnimeIngá é a página oficial do maior evento de Cultura Japonesa de Maringá.
+O site do AnimeIngá é a página oficial do maior evento de cultura pop e japonesa de Maringá.
 
-- **Stack atual**: [Docusaurus 3.10.2](https://docusaurus.io/), React 19, TypeScript, [MUI 9.3](https://mui.com/material-ui/getting-started/usage/) e GitHub Pages.
+- **Stack atual**: [Astro 5](https://astro.build/) (site estático, zero JavaScript por padrão, ilhas de interatividade via scripts inline) e GitHub Pages.
 - **Idioma padrão**: português do Brasil (`pt-BR`).
 - **Domínio**: https://animeinga.com.br
 
@@ -15,13 +15,16 @@ O site do AnimeIngá é a página oficial do maior evento de Cultura Japonesa de
 ```
 .
 ├── archive/2023/          # Conteúdo da edição 2023 (arquivado para consulta)
-├── website/               # Código-fonte do site atual
+├── website/               # Código-fonte do site atual (Astro)
 │   ├── src/
-│   │   ├── css/           # Estilos globais e variáveis Infima
-│   │   ├── pages/         # Páginas React da landing e futuras páginas
-│   │   └── theme/         # Sobrescritas de tema (ex: Root.tsx para o ThemeProvider do MUI)
-│   ├── static/            # Assets estáticos (logo, favicon, CNAME)
-│   ├── docusaurus.config.ts
+│   │   ├── data/          # TODO o conteúdo editável (JSONs com campo _leia-me)
+│   │   ├── pages/         # Páginas (.astro) — index, sobre, equipe, regulamentos, comercial
+│   │   ├── components/    # Countdown, Marquee, SakuraFall
+│   │   ├── layouts/       # Layout.astro (head com SEO completo)
+│   │   └── styles/        # global.css (design system: variáveis CSS)
+│   ├── public/            # Assets estáticos (logo, ícones, og-image, CNAME, robots.txt)
+│   ├── scripts/           # relative-paths.mjs (pós-build: caminhos relativos + sitemap)
+│   ├── astro.config.mjs
 │   └── package.json
 ├── .github/workflows/     # Workflows de CI/CD
 ├── README.md
@@ -36,16 +39,15 @@ O site do AnimeIngá é a página oficial do maior evento de Cultura Japonesa de
 
 ### Assets de logo
 
-- `static/img/logo.png` — Logo original, otimizada para fundos claros.
-- `static/img/logo-dark.png` — Versão com o texto "ANIME" em branco, otimizada para fundos escuros.
-- Configure `src` e `srcDark` no `navbar.logo` de `docusaurus.config.ts` para alternar automaticamente entre os modos claro/escuro.
+- `public/img/logo.png` — Logo original, otimizada para fundos claros.
+- `public/img/logo-dark.png` — Versão com o texto "ANIME" em branco, usada no tema escuro do site.
+- `public/img/og-image.png` — Imagem de compartilhamento (Open Graph, 1200×630).
 
-### `website/`
+### `website/src/data/`
 
-- Todo o desenvolvimento atual acontece aqui.
-- A landing page provisória está em `src/pages/index.tsx`.
-- Componentes React customizados devem ser criados em `src/components/` quando necessário.
-- O `src/theme/Root.tsx` envolve a aplicação com o `ThemeProvider` do MUI.
+- **Toda edição de conteúdo rotineira acontece aqui**, sem tocar em código.
+- Cada JSON possui um campo `_leia-me` com instruções específicas.
+- URLs vazias em `competitions.json` mantêm os botões desabilitados com a faixa "EM BREVE"; ao preencher a URL, o botão é ativado automaticamente.
 
 ## Como rodar localmente
 
@@ -53,7 +55,7 @@ Usando o Makefile (recomendado):
 
 ```bash
 make install   # instala dependências
-make start     # inicia o servidor de desenvolvimento
+make dev       # inicia o servidor de desenvolvimento
 ```
 
 Ou diretamente via npm:
@@ -61,10 +63,10 @@ Ou diretamente via npm:
 ```bash
 cd website
 npm install
-npm start
+npm run dev
 ```
 
-O servidor de desenvolvimento iniciará em http://localhost:3000.
+O servidor de desenvolvimento iniciará em http://localhost:4321.
 
 ## Build e testes
 
@@ -73,39 +75,24 @@ Antes de finalizar qualquer alteração, execute:
 ```bash
 cd website
 npm run build
-npm run typecheck
 ```
 
-Ambos os comandos devem passar sem erros.
+O build deve passar sem erros e gera `website/dist/` (incluindo `sitemap.xml`).
 
 ## Padrões de código
 
-- Usar **TypeScript** para novos componentes.
-- Preferir componentes funcionais com hooks.
-- Usar MUI para componentes visuais customizados.
-- Manter o tema escuro como padrão (`colorMode: dark`).
+- Componentes e páginas em **Astro**; interatividade via `<script>` inline no próprio componente (sem framework JS no cliente).
+- Respeitar `prefers-reduced-motion` em qualquer animação.
+- Manter o tema escuro como padrão (variáveis em `src/styles/global.css`).
 - Textos do site devem estar em português do Brasil.
 - Imagens devem ser otimizadas antes de commitar.
+- Links internos usam formato de arquivo (`sobre.html`, `equipe.html`...), pois o build usa `format: 'file'`.
 
 ## Adicionando novas páginas
 
-1. Criar o arquivo `.tsx` em `website/src/pages/`.
-2. Usar `Layout` do Docusaurus para manter navbar e footer.
-3. Importar componentes do MUI quando necessário.
-4. Adicionar link no `navbar.items` de `docusaurus.config.ts`, se a página for de navegação principal.
-
-## Adicionando conteúdo ao blog ou docs
-
-Atualmente o blog e a documentação estão desabilitados no preset. Para reabilitar, edite `website/docusaurus.config.ts`:
-
-```ts
-docs: {
-  sidebarPath: './sidebars.ts',
-},
-blog: {
-  showReadingTime: true,
-},
-```
+1. Criar o arquivo `.astro` em `website/src/pages/`.
+2. Usar o `Layout` (`src/layouts/Layout.astro`) para manter navbar, footer e SEO.
+3. Adicionar o link no array `navItems` do `Layout.astro`, se a página for de navegação principal.
 
 ## Deploy
 
@@ -114,7 +101,7 @@ O deploy é automático via GitHub Actions:
 - Push na branch `main` → publica em `gh-pages` (produção).
 - Push na branch `develop` → publica em `gh-pages-develop` (homologação).
 
-O arquivo `website/static/CNAME` garante o domínio customizado `animeinga.com.br`.
+O arquivo `website/public/CNAME` garante o domínio customizado `animeinga.com.br`.
 
 ## Cuidados importantes
 

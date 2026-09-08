@@ -1,0 +1,190 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SakuraFall from '../components/SakuraFall.astro';
+import data from '../data/competitions.json';
+import site from '../data/site.json';
+
+const STATUS_LABEL: Record<string, string> = {
+  'em-breve': 'EM BREVE',
+  inscricoes: 'INSCRIÇÕES ABERTAS',
+  encerrado: 'ENCERRADO',
+};
+---
+
+<Layout title="Regulamentos & Competições" description={data.page.subtitle}>
+  <section class="page-hero">
+    <SakuraFall density={18} />
+    <div class="container--narrow reveal" style="position: relative; z-index: 1;">
+      <span class="chip">{site.dates.shortLabel}</span>
+      <h1 class="page-hero__title" style="margin-top: 1rem;">{data.page.title}</h1>
+      <p class="page-hero__subtitle">{data.page.subtitle}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="notice reveal" role="note">
+        <span aria-hidden="true">📢</span>
+        <p>{data.page.notice}</p>
+      </div>
+
+      <div class="competitions-grid">
+        {data.competitions.map((comp, i) => (
+          <div class:list={['reveal', i === 0 ? 'reveal--left' : 'reveal--right']} style={`--reveal-delay: ${i * 150}ms`}>
+            <article class="competition-card">
+              <span class:list={['competition-card__ribbon', {'competition-card__ribbon--active': comp.status === 'inscricoes'}]}>
+                {STATUS_LABEL[comp.status] ?? comp.status}
+              </span>
+
+              <span class="competition-card__icon">{comp.icon}</span>
+              <h2 class="competition-card__title">{comp.title}</h2>
+              <p class="competition-card__tagline">{comp.tagline}</p>
+              <p class="competition-card__description">{comp.description}</p>
+
+              <ul class="competition-card__highlights">
+                {comp.highlights.map((h) => (
+                  <li><span aria-hidden="true">✦</span> {h}</li>
+                ))}
+              </ul>
+
+              <div class="competition-card__actions">
+                {comp.regulationUrl ? (
+                  <a class="btn btn--primary" href={comp.regulationUrl} target="_blank" rel="noopener noreferrer">
+                    Ver regulamento
+                  </a>
+                ) : (
+                  <span class="btn btn--disabled" title="O regulamento será publicado em breve">
+                    Regulamento em breve
+                  </span>
+                )}
+                {comp.registrationUrl ? (
+                  <a class="btn btn--ghost" href={comp.registrationUrl} target="_blank" rel="noopener noreferrer">
+                    Inscrever-se
+                  </a>
+                ) : (
+                  <span class="btn btn--disabled" title="As inscrições abrirão em breve">
+                    Inscrições em breve
+                  </span>
+                )}
+              </div>
+            </article>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .section {
+    padding: clamp(4rem, 9vw, 6.5rem) 0;
+  }
+
+  .notice {
+    display: flex;
+    gap: 0.9rem;
+    align-items: flex-start;
+    padding: 1.1rem 1.4rem;
+    margin-bottom: 3rem;
+    border-radius: var(--radius);
+    background: rgba(229, 9, 20, 0.08);
+    border: 1px solid rgba(229, 9, 20, 0.35);
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .notice p {
+    margin: 0;
+    line-height: 1.7;
+  }
+
+  .competitions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+    gap: 2rem;
+  }
+
+  .competition-card {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    border-radius: var(--radius);
+    background: linear-gradient(165deg, rgba(229, 9, 20, 0.12) 0%, rgba(10, 10, 10, 0.95) 50%);
+    border: 1px solid rgba(229, 9, 20, 0.35);
+    padding: clamp(1.8rem, 4vw, 2.6rem);
+  }
+
+  /* Fita diagonal "EM BREVE" no canto do card */
+  .competition-card__ribbon {
+    position: absolute;
+    top: 22px;
+    right: -44px;
+    transform: rotate(38deg);
+    width: 190px;
+    text-align: center;
+    padding: 0.45rem 0;
+    font-weight: 900;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    color: #fff;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark));
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+    z-index: 2;
+  }
+  .competition-card__ribbon--active {
+    color: #050505;
+    background: linear-gradient(90deg, var(--color-sakura), var(--color-primary-light));
+  }
+
+  .competition-card__icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 0.8rem;
+  }
+
+  .competition-card__title {
+    font-weight: 900;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 0.3rem;
+  }
+
+  .competition-card__tagline {
+    color: var(--color-sakura);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin: 0 0 1.4rem;
+  }
+
+  .competition-card__description {
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.8;
+    margin: 0 0 1.6rem;
+  }
+
+  .competition-card__highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.2rem;
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .competition-card__highlights li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+  }
+
+  .competition-card__highlights span {
+    color: var(--color-primary-light);
+    font-weight: 900;
+  }
+
+  .competition-card__actions {
+    display: flex;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+  }
+</style>

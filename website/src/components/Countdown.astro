@@ -1,0 +1,81 @@
+---
+/** Countdown ao vivo até a data de abertura do evento. */
+interface Props {
+  target: string;
+}
+const {target} = Astro.props;
+---
+
+<div class="countdown" data-target={target} role="timer" aria-label="Contagem regressiva para o evento">
+  {['dias', 'horas', 'min', 'seg'].map((label) => (
+    <div class="countdown__unit">
+      <span class="countdown__value" data-unit={label}>--</span>
+      <span class="countdown__label">{label}</span>
+    </div>
+  ))}
+</div>
+
+<style>
+  .countdown {
+    display: flex;
+    gap: clamp(0.5rem, 2vw, 1rem);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .countdown__unit {
+    min-width: clamp(66px, 10vw, 104px);
+    padding: clamp(0.8rem, 2vw, 1.2rem) clamp(0.5rem, 1.5vw, 1.2rem);
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(229, 9, 20, 0.35);
+    backdrop-filter: blur(6px);
+    box-shadow: inset 0 0 24px rgba(229, 9, 20, 0.12);
+  }
+  .countdown__value {
+    display: block;
+    font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+    font-weight: 700;
+    font-size: clamp(1.6rem, 4vw, 2.8rem);
+    line-height: 1;
+    text-shadow: 0 0 18px rgba(229, 9, 20, 0.6);
+    font-variant-numeric: tabular-nums;
+  }
+  .countdown__label {
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.55);
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.countdown').forEach((root) => {
+    const target = new Date(root.dataset.target ?? '').getTime();
+    const fields = {
+      dias: root.querySelector('[data-unit="dias"]'),
+      horas: root.querySelector('[data-unit="horas"]'),
+      min: root.querySelector('[data-unit="min"]'),
+      seg: root.querySelector('[data-unit="seg"]'),
+    };
+    const pad = (n: number) => String(n).padStart(2, '0');
+
+    const update = () => {
+      const diff = Math.max(0, target - Date.now());
+      const values = {
+        dias: pad(Math.floor(diff / 86400000)),
+        horas: pad(Math.floor(diff / 3600000) % 24),
+        min: pad(Math.floor(diff / 60000) % 60),
+        seg: pad(Math.floor(diff / 1000) % 60),
+      } as const;
+      (Object.keys(values) as (keyof typeof values)[]).forEach((key) => {
+        const el = fields[key];
+        if (el && el.textContent !== values[key]) el.textContent = values[key];
+      });
+    };
+    update();
+    setInterval(update, 1000);
+  });
+</script>

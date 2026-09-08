@@ -1,0 +1,58 @@
+{
+  "_leia-me": "Espaço Comercial. 'standCtaUrl' vazio usa o e-mail comercial; preencha com link de formulário quando houver. Edite textos livremente.",
+  "title": "Espaço Comercial",
+  "subtitle": "Leve sua marca para o maior evento de cultura pop e japonesa de Maringá. Parcerias comerciais, stands de exposição e Artist Alley para a edição 2026 — 12 e 13 de dezembro.",
+  "audience": [
+    {"value": "10 mil+", "label": "visitantes por edição"},
+    {"value": "20 anos", "label": "de história"},
+    {"value": "2 dias", "label": "de evento"},
+    {"value": "100%", "label": "cultura pop & japonesa"}
+  ],
+  "tiers": [
+    {
+      "icon": "🤝",
+      "title": "Parceria Comercial",
+      "description": "Associe sua marca ao AnimeIngá: presença em materiais oficiais, redes sociais, palco e espaços físicos do evento. Cotas flexíveis para diferentes tamanhos de empresa.",
+      "items": [
+        "Logo em materiais oficiais e redes sociais",
+        "Menções no palco e ações promocionais",
+        "Espaço para ativação de marca no evento",
+        "Relatório de entrega pós-evento"
+      ]
+    },
+    {
+      "icon": "🎪",
+      "title": "Intenção de Stand",
+      "description": "Garanta seu espaço como expositor: lojas, editoras, food trucks e marcas são bem-vindas. Manifeste interesse e receba as condições em primeira mão.",
+      "items": [
+        "Espaços para lojas e expositores",
+        "Área para food trucks e praça de alimentação",
+        "Estrutura com energia elétrica",
+        "Divulgação dos expositores no site e redes"
+      ]
+    },
+    {
+      "icon": "🎨",
+      "title": "Artist Alley",
+      "description": "Espaço oficial e exclusivo para artistas independentes: ilustradores, quadrinistas e criadores autorais terão uma área dedicada para expor e vender seu trabalho.",
+      "items": [
+        "Área oficial dedicada a artistas independentes",
+        "Participação e regulamento divulgados em breve",
+        "Processo de seleção próprio, separado dos stands",
+        "Divulgação dos artistas no site e redes"
+      ]
+    }
+  ],
+  "stand": {
+    "title": "Quer expor no AnimeIngá 2026?",
+    "text": "Preencha o formulário de intenção e nossa equipe comercial entrará em contato com todos os detalhes: medidas, valores, prazos e benefícios.",
+    "ctaLabel": "Manifestar interesse em stand",
+    "ctaUrl": "https://forms.gle/p3M4Fd5TgF3vyFxU7"
+  },
+  "partnership": {
+    "title": "Quer ser parceiro do evento?",
+    "text": "Envie sua proposta ou peça nosso mídia kit. Montamos cotas personalizadas de acordo com os objetivos da sua marca.",
+    "ctaLabel": "Falar com a equipe comercial",
+    "ctaUrl": ""
+  }
+}

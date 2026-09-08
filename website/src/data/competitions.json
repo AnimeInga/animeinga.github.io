@@ -1,0 +1,58 @@
+{
+  "_leia-me": "Competições e regulamentos. 'status' controla o banner: 'em-breve' | 'inscricoes' | 'encerrado'. Preencha 'regulationUrl' e 'registrationUrl' quando os links oficiais existirem (deixe \"\" enquanto não houver). Para nova competição, copie um bloco inteiro.",
+  "page": {
+    "title": "Regulamentos & Competições",
+    "subtitle": "Os palcos e as arenas do AnimeIngá 2026 estão se preparando. Confira as competições confirmadas e fique de olho: regulamentos e inscrições serão publicados aqui.",
+    "notice": "Os regulamentos oficiais e os formulários de inscrição serão divulgados em breve nesta página e nas nossas redes sociais. Todo o conteúdo é gratuito para consulta."
+  },
+  "competitions": [
+    {
+      "id": "esports",
+      "title": "Campeonatos de eSports",
+      "icon": "🎮",
+      "tagline": "A arena vai pegar fogo",
+      "description": "Torneios de games com premiação e transmissão ao vivo no palco principal. Os jogos, formatos, regras de elegibilidade e premiações serão definidos no regulamento oficial.",
+      "status": "em-breve",
+      "highlights": [
+        "Modalidades a anunciar",
+        "Premiação para os finalistas",
+        "Transmissão ao vivo no evento",
+        "Inscrições online e gratuitas"
+      ],
+      "regulationUrl": "",
+      "registrationUrl": ""
+    },
+    {
+      "id": "cosplay",
+      "title": "Concurso Cosplay",
+      "icon": "🎭",
+      "tagline": "Dê vida ao seu personagem",
+      "description": "A passarela mais esperada do evento! Categorias para todos os níveis, jurados convidados e premiação especial. Apresentações individuais e em grupo serão detalhadas no regulamento.",
+      "status": "em-breve",
+      "highlights": [
+        "Categorias a anunciar",
+        "Jurados convidados",
+        "Apresentações individuais e em grupo",
+        "Premiação especial do público"
+      ],
+      "regulationUrl": "",
+      "registrationUrl": ""
+    },
+    {
+      "id": "artist-alley",
+      "title": "Artist Alley",
+      "icon": "🎨",
+      "tagline": "O espaço oficial dos artistas",
+      "description": "O Artist Alley do AnimeIngá 2026 terá uma área oficial dedicada a artistas independentes. A participação e o regulamento serão divulgados em breve — fique de olho nas nossas redes.",
+      "status": "em-breve",
+      "highlights": [
+        "Área oficial dedicada a artistas independentes",
+        "Processo de participação próprio",
+        "Regulamento divulgado em breve",
+        "Divulgação dos artistas selecionados"
+      ],
+      "regulationUrl": "",
+      "registrationUrl": ""
+    }
+  ]
+}

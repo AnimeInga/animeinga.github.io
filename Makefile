@@ -1,4 +1,4 @@
-.PHONY: help install start build typecheck serve clean deploy check
+.PHONY: help install dev build preview clean ci
 
 WEBSITE_DIR := website
 NODE_MIN_MAJOR := 20
@@ -18,23 +18,17 @@ check: ## Verifica se o Node.js está instalado na versão mínima recomendada
 install: check ## Instala as dependências do projeto
 	cd $(WEBSITE_DIR) && npm install
 
-start: check ## Inicia o servidor de desenvolvimento
-	cd $(WEBSITE_DIR) && npm start
+dev: check ## Inicia o servidor de desenvolvimento
+	cd $(WEBSITE_DIR) && npm run dev
 
 build: check ## Gera o build de produção
 	cd $(WEBSITE_DIR) && npm run build
 
-typecheck: check ## Executa a verificação de tipos TypeScript
-	cd $(WEBSITE_DIR) && npm run typecheck
-
-serve: check ## Serve o build localmente (requer build prévio)
-	cd $(WEBSITE_DIR) && npm run serve
+preview: check ## Serve o build localmente (requer build prévio)
+	cd $(WEBSITE_DIR) && npm run preview
 
 clean: ## Remove build e dependências instaladas
-	cd $(WEBSITE_DIR) && rm -rf build .docusaurus node_modules
+	cd $(WEBSITE_DIR) && rm -rf dist .astro node_modules
 
-deploy: check ## Executa o deploy manual via Docusaurus (gh-pages)
-	cd $(WEBSITE_DIR) && npm run deploy
-
-ci: check install build typecheck ## Roda a pipeline completa localmente
+ci: check install build ## Roda a pipeline completa localmente
 	@echo "✅ CI local concluída com sucesso"

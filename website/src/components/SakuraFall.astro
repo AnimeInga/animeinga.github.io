@@ -1,0 +1,99 @@
+---
+/** Pétalas de sakura caindo em <canvas> (zero dependências). */
+interface Props {
+  density?: number;
+}
+const {density = 36} = Astro.props;
+---
+
+<canvas class="sakura-fall" data-density={density} aria-hidden="true"></canvas>
+
+<style>
+  .sakura-fall {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  interface Petal {
+    x: number; y: number; size: number;
+    speedY: number; speedX: number;
+    rotation: number; rotationSpeed: number;
+    swayPhase: number; swaySpeed: number; opacity: number;
+  }
+
+  document.querySelectorAll<HTMLCanvasElement>('.sakura-fall').forEach((canvas) => {
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    const density = Number(canvas.dataset.density ?? 36);
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const dpr = window.devicePixelRatio || 1;
+
+    const fit = () => {
+      canvas.width = canvas.offsetWidth * dpr;
+      canvas.height = canvas.offsetHeight * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    };
+    fit();
+
+    const w = () => canvas.offsetWidth;
+    const h = () => canvas.offsetHeight;
+
+    const makePetal = (randomY = false): Petal => ({
+      x: Math.random() * w(),
+      y: randomY ? Math.random() * h() : -20,
+      size: 6 + Math.random() * 10,
+      speedY: 0.4 + Math.random() * 0.9,
+      speedX: 0.2 + Math.random() * 0.5,
+      rotation: Math.random() * Math.PI * 2,
+      rotationSpeed: (Math.random() - 0.5) * 0.02,
+      swayPhase: Math.random() * Math.PI * 2,
+      swaySpeed: 0.008 + Math.random() * 0.012,
+      opacity: 0.35 + Math.random() * 0.45,
+    });
+
+    const petals: Petal[] = Array.from({length: density}, () => makePetal(true));
+
+    const drawPetal = (p: Petal) => {
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rotation);
+      ctx.globalAlpha = p.opacity;
+      ctx.fillStyle = '#ffb7c5';
+      ctx.beginPath();
+      ctx.moveTo(0, -p.size / 2);
+      ctx.bezierCurveTo(p.size / 1.6, -p.size / 3, p.size / 2, p.size / 2.5, 0, p.size / 2);
+      ctx.bezierCurveTo(-p.size / 2, p.size / 2.5, -p.size / 1.6, -p.size / 3, 0, -p.size / 2);
+      ctx.fill();
+      ctx.restore();
+    };
+
+    let raf = 0;
+    const tick = () => {
+      ctx.clearRect(0, 0, w(), h());
+      for (const p of petals) {
+        p.swayPhase += p.swaySpeed;
+        p.x += p.speedX * Math.sin(p.swayPhase) + 0.15;
+        p.y += p.speedY;
+        p.rotation += p.rotationSpeed;
+        if (p.y > h() + 20 || p.x > w() + 30) Object.assign(p, makePetal());
+        drawPetal(p);
+      }
+      raf = requestAnimationFrame(tick);
+    };
+
+    if (reduceMotion) {
+      petals.forEach(drawPetal);
+    } else {
+      tick();
+    }
+
+    window.addEventListener('resize', fit);
+    document.addEventListener('astro:before-swap', () => cancelAnimationFrame(raf), {once: true});
+  });
+</script>

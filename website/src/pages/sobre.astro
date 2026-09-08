@@ -1,0 +1,283 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SakuraFall from '../components/SakuraFall.astro';
+import about from '../data/about.json';
+import site from '../data/site.json';
+---
+
+<Layout title="Sobre" description={about.heroSubtitle}>
+  <section class="page-hero">
+    <SakuraFall density={18} />
+    <div class="container--narrow reveal" style="position: relative; z-index: 1;">
+      <h1 class="page-hero__title">{about.heroTitle}</h1>
+      <p class="page-hero__subtitle">{about.heroSubtitle}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container--narrow">
+      {about.paragraphs.map((p, i) => (
+        <p class="story-paragraph reveal" style={`--reveal-delay: ${i * 100}ms`}>{p}</p>
+      ))}
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="section__title reveal">O que nos move</h2>
+      <div class="pillars-grid">
+        {about.pillars.map((pillar, i) => (
+          <div class="reveal" style={`--reveal-delay: ${i * 100}ms`}>
+            <div class="tilt" data-max-tilt="8">
+              <article class="card pillar-card">
+                <span class="pillar-card__icon">{pillar.icon}</span>
+                <h3 class="pillar-card__title">{pillar.title}</h3>
+                <p class="pillar-card__text">{pillar.description}</p>
+              </article>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container--narrow reveal">
+      <h2 class="section__title">{about.video.title}</h2>
+      <p class="video__subtitle">{about.video.subtitle}</p>
+      <div class="video__frame">
+        <iframe
+          src={`https://www.youtube-nocookie.com/embed/${about.video.youtubeId}`}
+          title={about.video.title}
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section__title">{about.attractions.title}</h2>
+        <p class="section__subtitle">{about.attractions.subtitle}</p>
+      </div>
+      <div class="attractions-grid">
+        {about.attractions.items.map((item, i) => (
+          <div class="reveal" style={`--reveal-delay: ${(i % 4) * 80}ms`}>
+            <div class="tilt" data-max-tilt="8">
+              <article class="card attraction-card">
+                <span class="attraction-card__icon">{item.icon}</span>
+                <h3 class="attraction-card__title">{item.title}</h3>
+                <p class="attraction-card__text">{item.description}</p>
+              </article>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container--narrow">
+      <h2 class="section__title reveal">Nossa história</h2>
+      <div class="timeline">
+        {about.history.map((item, i) => (
+          <div class="timeline__item reveal" style={`--reveal-delay: ${i * 120}ms`}>
+            <span class="timeline__year">{item.year}</span>
+            <article class="timeline__card">
+              <h3 class="timeline__title">{item.title}</h3>
+              <p class="timeline__text">{item.description}</p>
+            </article>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="mission">
+    <div class="container--narrow reveal">
+      <h2 class="section__title">{about.mission.title}</h2>
+      <div class="mission__divider"></div>
+      <p class="mission__text">{about.mission.text}</p>
+      <p class="mission__dates">{site.dates.label} · {site.location.city}</p>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .section {
+    padding: clamp(4rem, 9vw, 6.5rem) 0;
+  }
+  .section--alt {
+    background: var(--color-bg-alt);
+  }
+  .section__title {
+    font-weight: 900;
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .story-paragraph {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: clamp(1rem, 1.8vw, 1.12rem);
+    line-height: 1.85;
+    margin: 0 0 1.75rem;
+  }
+
+  .pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+    gap: 1.25rem;
+  }
+
+  .pillar-card {
+    height: 100%;
+    min-height: 200px;
+  }
+  .pillar-card__icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.9rem;
+  }
+  .pillar-card__title {
+    font-weight: 800;
+    margin-bottom: 0.6rem;
+  }
+  .pillar-card__text {
+    color: var(--color-text-muted);
+    font-size: 0.92rem;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .section__subtitle {
+    text-align: center;
+    color: var(--color-text-muted);
+    margin: -2rem auto 3rem;
+    max-width: 44rem;
+  }
+
+  .video__subtitle {
+    text-align: center;
+    color: var(--color-text-muted);
+    margin: -2rem auto 2.5rem;
+  }
+
+  .video__frame {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid rgba(229, 9, 20, 0.35);
+    box-shadow: 0 12px 40px rgba(229, 9, 20, 0.2);
+  }
+
+  .video__frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .attractions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 1.25rem;
+  }
+
+  .attraction-card {
+    height: 100%;
+    text-align: center;
+  }
+  .attraction-card__icon {
+    font-size: 2.2rem;
+    display: block;
+    margin-bottom: 0.8rem;
+  }
+  .attraction-card__title {
+    font-weight: 800;
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+  }
+  .attraction-card__text {
+    color: var(--color-text-muted);
+    font-size: 0.88rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .timeline {
+    display: grid;
+    gap: 2.5rem;
+  }
+  .timeline__item {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  @media (max-width: 640px) {
+    .timeline__item {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+  }
+  .timeline__year {
+    font-weight: 900;
+    font-size: clamp(1.5rem, 3vw, 1.9rem);
+    color: var(--color-primary-light);
+    text-shadow: var(--glow-red);
+    text-align: right;
+  }
+  @media (max-width: 640px) {
+    .timeline__year { text-align: left; }
+  }
+  .timeline__card {
+    padding: 1.4rem 1.6rem;
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-primary);
+  }
+  .timeline__title {
+    font-weight: 800;
+    margin-bottom: 0.4rem;
+  }
+  .timeline__text {
+    color: var(--color-text-muted);
+    margin: 0;
+    line-height: 1.7;
+  }
+
+  .mission {
+    padding: clamp(4.5rem, 10vw, 7rem) 0;
+    text-align: center;
+    background: radial-gradient(ellipse at 50% -20%, rgba(229, 9, 20, 0.22) 0%, var(--color-bg-alt) 60%);
+  }
+  .mission .section__title {
+    margin-bottom: 1.2rem;
+  }
+  .mission__divider {
+    width: 60px;
+    height: 3px;
+    margin: 0 auto 1.5rem;
+    background: var(--color-primary);
+    border-radius: 2px;
+  }
+  .mission__text {
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.9;
+    font-size: 1.05rem;
+    margin: 0 auto;
+    max-width: 40rem;
+  }
+  .mission__dates {
+    margin-top: 2rem;
+    color: var(--color-sakura);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+</style>

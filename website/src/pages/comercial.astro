@@ -1,0 +1,210 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SakuraFall from '../components/SakuraFall.astro';
+import commercial from '../data/commercial.json';
+import site from '../data/site.json';
+
+const partnershipCta =
+  commercial.partnership.ctaUrl ||
+  `mailto:${site.contact.commercialEmail}?subject=${encodeURIComponent('Parceria Comercial — AnimeIngá 2026')}`;
+---
+
+<Layout title="Espaço Comercial" description={commercial.subtitle}>
+  <section class="page-hero">
+    <SakuraFall density={18} />
+    <div class="container--narrow reveal" style="position: relative; z-index: 1;">
+      <span class="chip">{site.dates.shortLabel}</span>
+      <h1 class="page-hero__title" style="margin-top: 1rem;">{commercial.title}</h1>
+      <p class="page-hero__subtitle">{commercial.subtitle}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!-- Destaques de audiência -->
+      <div class="audience-grid">
+        {commercial.audience.map((stat, i) => (
+          <div class="reveal" style={`--reveal-delay: ${i * 100}ms`}>
+            <div class="stat-card">
+              <span class="stat-card__value">{stat.value}</span>
+              <span class="stat-card__label">{stat.label}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Formatos de parceria -->
+      <div class="tiers-grid">
+        {commercial.tiers.map((tier, i) => (
+          <div class:list={['reveal', i === 0 ? 'reveal--left' : 'reveal--right']} style={`--reveal-delay: ${i * 150}ms`}>
+            <article class="card tier-card">
+              <span class="tier-card__icon">{tier.icon}</span>
+              <h2 class="tier-card__title">{tier.title}</h2>
+              <p class="tier-card__description">{tier.description}</p>
+              <ul class="tier-card__items">
+                {tier.items.map((item) => (
+                  <li><span aria-hidden="true">✦</span> {item}</li>
+                ))}
+              </ul>
+            </article>
+          </div>
+        ))}
+      </div>
+
+      <!-- CTAs -->
+      <div class="ctas-grid">
+        <div class="reveal reveal--left">
+          <div class="tilt" data-max-tilt="6">
+            <article class="cta-panel cta-panel--stand">
+              <h2 class="cta-panel__title">{commercial.stand.title}</h2>
+              <p class="cta-panel__text">{commercial.stand.text}</p>
+              <a class="btn btn--primary" href={commercial.stand.ctaUrl} target="_blank" rel="noopener noreferrer">
+                {commercial.stand.ctaLabel}
+              </a>
+            </article>
+          </div>
+        </div>
+        <div class="reveal reveal--right">
+          <div class="tilt" data-max-tilt="6">
+            <article class="cta-panel cta-panel--partnership">
+              <h2 class="cta-panel__title">{commercial.partnership.title}</h2>
+              <p class="cta-panel__text">{commercial.partnership.text}</p>
+              <a
+                class="btn btn--primary"
+                href={partnershipCta}
+                target={partnershipCta.startsWith('mailto:') ? undefined : '_blank'}
+                rel="noopener noreferrer">
+                {commercial.partnership.ctaLabel}
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .section {
+    padding: clamp(4rem, 9vw, 6.5rem) 0;
+  }
+
+  .audience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+    gap: 1.25rem;
+    margin-bottom: 4rem;
+  }
+
+  .stat-card {
+    text-align: center;
+    padding: 1.6rem 1rem;
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+  }
+
+  .stat-card__value {
+    display: block;
+    font-weight: 900;
+    font-size: clamp(1.5rem, 3vw, 1.9rem);
+    color: var(--color-primary-light);
+    text-shadow: var(--glow-red);
+  }
+
+  .stat-card__label {
+    display: block;
+    color: var(--color-text-muted);
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 0.3rem;
+  }
+
+  .tiers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .tier-card {
+    height: 100%;
+    padding: clamp(1.8rem, 4vw, 2.4rem);
+  }
+
+  .tier-card__icon {
+    font-size: 2.4rem;
+    display: block;
+    margin-bottom: 0.8rem;
+  }
+
+  .tier-card__title {
+    font-weight: 800;
+    font-size: 1.35rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .tier-card__description {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+    margin: 0 0 1.5rem;
+  }
+
+  .tier-card__items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .tier-card__items li {
+    display: flex;
+    gap: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+  }
+
+  .tier-card__items span {
+    color: var(--color-primary-light);
+    font-weight: 900;
+  }
+
+  .ctas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+    gap: 2rem;
+  }
+
+  .cta-panel {
+    height: 100%;
+    padding: clamp(1.8rem, 4vw, 2.6rem);
+    border-radius: var(--radius);
+    border: 1px solid rgba(229, 9, 20, 0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cta-panel--stand {
+    background: linear-gradient(160deg, rgba(229, 9, 20, 0.18) 0%, rgba(10, 10, 10, 0.95) 60%);
+  }
+
+  .cta-panel--partnership {
+    background: linear-gradient(160deg, rgba(255, 183, 197, 0.1) 0%, rgba(10, 10, 10, 0.95) 60%);
+  }
+
+  .cta-panel__title {
+    font-weight: 900;
+    font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+    margin-bottom: 0.9rem;
+  }
+
+  .cta-panel__text {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+    margin: 0 0 2rem;
+    flex-grow: 1;
+  }
+</style>

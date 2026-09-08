@@ -1,0 +1,371 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Countdown from '../components/Countdown.astro';
+import SakuraFall from '../components/SakuraFall.astro';
+import Marquee from '../components/Marquee.astro';
+
+import site from '../data/site.json';
+import competitionsData from '../data/competitions.json';
+
+const marqueeItems = [
+  site.dates.label,
+  'Concurso Cosplay',
+  'Campeonatos de eSports',
+  'K-Pop',
+  'Área Medieval',
+  'Artist Alley',
+  'Food Trucks',
+  'Maringá — PR',
+];
+
+const days = [
+  {
+    day: 'Dia 1',
+    date: site.dates.day1,
+    description:
+      'Um dia inteiro de evento para você viver a cultura pop e japonesa. A programação detalhada será divulgada em breve.',
+  },
+  {
+    day: 'Dia 2',
+    date: site.dates.day2,
+    description:
+      'Mais um dia completo de experiências para o público. A programação detalhada será divulgada em breve.',
+  },
+];
+
+const exploreCards = [
+  ...competitionsData.competitions.map((c) => ({
+    icon: c.icon,
+    title: c.title,
+    text: c.tagline,
+    href: 'regulamentos.html',
+    badge: 'EM BREVE',
+  })),
+  {
+    icon: '🤝',
+    title: 'Espaço Comercial',
+    text: 'Parcerias e stands para a edição 2026',
+    href: 'comercial.html',
+    badge: 'COTAS ABERTAS',
+  },
+  {
+    icon: '🌸',
+    title: 'Conheça a Equipe',
+    text: 'Quem faz o AnimeIngá acontecer',
+    href: 'equipe.html',
+    badge: '',
+  },
+];
+---
+
+<Layout
+  title="Início"
+  description={`${site.tagline}. ${site.edition}: ${site.dates.label}, na ${site.location.venue}. Competições de eSports, concurso cosplay, espaço comercial e muito mais.`}>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <SakuraFall density={36} />
+    <div class="container hero__content">
+      <div class="reveal">
+        <div class="hero__logo-wrap">
+          <img src="/img/logo.png" alt="AnimeIngá" class="hero__logo" />
+        </div>
+      </div>
+
+      <div class="reveal" style="--reveal-delay: 150ms">
+        <span class="chip">{site.edition.toUpperCase()}</span>
+        <h1 class="hero__date">{site.dates.label}</h1>
+        <p class="hero__tagline">
+          {site.tagline} ·
+          <a href={site.location.mapsUrl} target="_blank" rel="noopener noreferrer" class="hero__venue">
+            {site.location.venue}
+          </a>
+        </p>
+      </div>
+
+      <div class="reveal" style="--reveal-delay: 300ms">
+        <Countdown target={site.dates.start} />
+      </div>
+
+      <div class="reveal hero__ctas" style="--reveal-delay: 450ms">
+        <a class="btn btn--primary" href="regulamentos.html">Competições 2026</a>
+        <a class="btn btn--ghost" href="comercial.html">Espaço Comercial</a>
+      </div>
+    </div>
+    <span class="hero__scroll" aria-hidden="true">▼</span>
+  </section>
+
+  <Marquee items={marqueeItems} />
+
+  <!-- ============ DOIS DIAS ============ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section__title">Dois dias de imersão total</h2>
+        <p class="section__subtitle">
+          Marque no calendário: {site.dates.label} ·
+          <a href={site.location.mapsUrl} target="_blank" rel="noopener noreferrer">
+            {site.location.venue}, {site.location.city}
+          </a>
+        </p>
+      </div>
+      <div class="grid-2">
+        {days.map((d, i) => (
+          <div class:list={['reveal', i === 0 ? 'reveal--left' : 'reveal--right']} style={`--reveal-delay: ${i * 150}ms`}>
+            <div class="tilt" data-max-tilt="10">
+              <article class="day-card">
+                <p class="day-card__label">{d.day}</p>
+                <h3 class="day-card__date">{d.date}</h3>
+                <p class="day-card__text">{d.description}</p>
+              </article>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPLORE ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section__title">O que vem por aí</h2>
+      </div>
+      <div class="grid-4">
+        {exploreCards.map((card, i) => (
+          <div class="reveal" style={`--reveal-delay: ${i * 100}ms`}>
+            <div class="tilt" data-max-tilt="8">
+              <a class="explore-card" href={card.href}>
+                <span class="explore-card__icon">{card.icon}</span>
+                <h3 class="explore-card__title">{card.title}</h3>
+                <p class="explore-card__text">{card.text}</p>
+                {card.badge && <span class="badge-soon">{card.badge}</span>}
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="final-cta">
+    <div class="container--narrow reveal">
+      <h2 class="section__title">Nos vemos em Dezembro? 🌸</h2>
+      <p class="section__subtitle" style="margin-bottom: 2rem">
+        Siga o AnimeIngá nas redes sociais e seja o primeiro a saber de
+        ingressos, atrações, regulamentos e inscrições.
+      </p>
+      <a class="btn btn--primary" href={site.social.instagram} target="_blank" rel="noopener noreferrer">
+        Seguir @animeinga
+      </a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero {
+    min-height: calc(100vh - var(--navbar-height));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 0 5rem;
+    background-image:
+      radial-gradient(circle at 20% 25%, rgba(229, 9, 20, 0.25) 0%, transparent 38%),
+      radial-gradient(circle at 80% 75%, rgba(255, 77, 87, 0.15) 0%, transparent 38%),
+      radial-gradient(circle at 50% 100%, rgba(255, 183, 197, 0.07) 0%, transparent 45%);
+  }
+
+  .hero__content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    gap: 2.5rem;
+    justify-items: center;
+  }
+
+  .hero__logo-wrap {
+    display: inline-flex;
+    background: linear-gradient(145deg, #ffffff 0%, #f0f0f0 100%);
+    border-radius: 24px;
+    padding: clamp(1rem, 3vw, 2rem);
+    box-shadow: 0 0 60px rgba(229, 9, 20, 0.35), 0 20px 50px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(229, 9, 20, 0.4);
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .hero__logo {
+    width: clamp(240px, 45vw, 440px);
+    height: auto;
+    display: block;
+  }
+
+  .hero__date {
+    margin-top: 1rem;
+    font-weight: 900;
+    font-size: clamp(2.1rem, 6vw, 4rem);
+    line-height: 1.05;
+    background: linear-gradient(90deg, #ffffff 0%, #ffb7c5 45%, #ff4d57 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero__tagline {
+    color: var(--color-text-muted);
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    margin: 0.5rem 0 0;
+  }
+
+  .hero__venue {
+    color: var(--color-sakura);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .hero__venue:hover {
+    text-decoration: underline;
+  }
+
+  .hero__ctas {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero__scroll {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-text-faint);
+    font-size: 1.3rem;
+    animation: bounce 2s infinite;
+    z-index: 1;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, 8px); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero__logo-wrap, .hero__scroll { animation: none; }
+  }
+
+  .section {
+    padding: clamp(4rem, 9vw, 7rem) 0;
+  }
+
+  .section--alt {
+    background: var(--color-bg-alt);
+  }
+
+  .section__title {
+    font-weight: 900;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .section__subtitle {
+    text-align: center;
+    color: var(--color-text-muted);
+    margin: 0 auto 3.5rem;
+    max-width: 40rem;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+    gap: 1.75rem;
+  }
+
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 1.25rem;
+    margin-top: 3rem;
+  }
+
+  .day-card {
+    height: 100%;
+    padding: clamp(1.5rem, 3vw, 2.25rem);
+    border-radius: var(--radius);
+    background: linear-gradient(160deg, rgba(229, 9, 20, 0.14) 0%, rgba(10, 10, 10, 0.9) 55%);
+    border: 1px solid rgba(229, 9, 20, 0.3);
+  }
+
+  .day-card__label {
+    color: var(--color-primary-light);
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin: 0 0 0.5rem;
+  }
+
+  .day-card__date {
+    font-weight: 800;
+    font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+    margin-bottom: 0.9rem;
+  }
+
+  .day-card__text {
+    color: var(--color-text-muted);
+    margin: 0;
+    line-height: 1.75;
+  }
+
+  .explore-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100%;
+    min-height: 220px;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: inherit;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    transition: border-color 0.3s ease;
+  }
+
+  .explore-card:hover {
+    border-color: rgba(229, 9, 20, 0.6);
+  }
+
+  .explore-card__icon {
+    font-size: 2.2rem;
+  }
+
+  .explore-card__title {
+    font-weight: 800;
+    font-size: 1.1rem;
+    line-height: 1.25;
+  }
+
+  .explore-card__text {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .final-cta {
+    padding: clamp(5rem, 11vw, 8rem) 0;
+    text-align: center;
+    background: radial-gradient(ellipse at 50% 120%, rgba(229, 9, 20, 0.25) 0%, var(--color-bg) 65%);
+  }
+</style>

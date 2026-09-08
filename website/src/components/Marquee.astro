@@ -1,0 +1,52 @@
+---
+/** Faixa de texto em movimento contínuo (marquee). */
+interface Props {
+  items: string[];
+}
+const {items} = Astro.props;
+const row = [...items, ...items];
+---
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    {row.map((item, i) => (
+      <span class:list={['marquee__item', {'marquee__item--accent': i % 2 === 0}]}>
+        ✦ {item}
+      </span>
+    ))}
+  </div>
+</div>
+
+<style>
+  .marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    border-top: 1px solid rgba(229, 9, 20, 0.3);
+    border-bottom: 1px solid rgba(229, 9, 20, 0.3);
+    background: rgba(229, 9, 20, 0.06);
+    padding: 0.9rem 0;
+  }
+  .marquee__track {
+    display: inline-flex;
+    gap: 3.5rem;
+    padding-right: 3.5rem;
+    animation: marquee 28s linear infinite;
+  }
+  .marquee__item {
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .marquee__item--accent {
+    color: var(--color-primary-light);
+  }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .marquee__track { animation: none; }
+  }
+</style>

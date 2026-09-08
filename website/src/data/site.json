@@ -1,0 +1,32 @@
+{
+  "_leia-me": "Configurações gerais do evento. Edite os valores e salve — o site inteiro é atualizado automaticamente.",
+  "name": "AnimeIngá",
+  "edition": "Edição 2026",
+  "tagline": "O maior evento de cultura pop e japonesa de Maringá",
+  "dates": {
+    "start": "2026-12-12T10:00:00-03:00",
+    "end": "2026-12-13T20:00:00-03:00",
+    "label": "12 e 13 de Dezembro de 2026",
+    "shortLabel": "12—13 DEZ 2026",
+    "day1": "Sábado — 12 de Dezembro",
+    "day2": "Domingo — 13 de Dezembro"
+  },
+  "location": {
+    "venue": "Parque de Exposições Francisco Feio Ribeiro",
+    "city": "Maringá — Paraná",
+    "mapsUrl": "https://maps.app.goo.gl/G4pLTNNobmEmBoEN9",
+    "venueUrl": "https://srm.org.br/site/"
+  },
+  "contact": {
+    "email": "contato@animeinga.com.br",
+    "commercialEmail": "contato@animeinga.com.br"
+  },
+  "social": {
+    "instagram": "https://instagram.com/animeinga",
+    "youtube": "https://youtube.com/@animeinga",
+    "linkedin": "https://www.linkedin.com/company/71895986/",
+    "github": "https://github.com/animeinga"
+  },
+  "exhibitorFormUrl": "https://forms.gle/p3M4Fd5TgF3vyFxU7",
+  "cnpj": "19.076.380/0001-76"
+}

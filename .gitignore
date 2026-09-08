@@ -1,12 +1,11 @@
 # Dependencies
-website/node_modules
+node_modules/
 
 # Production build
-website/build
+website/dist
 
-# Generated files
-website/.docusaurus
-website/.cache-loader
+# Astro generated
+website/.astro
 
 # Environment
 .env

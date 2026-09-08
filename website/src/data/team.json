@@ -1,0 +1,78 @@
+{
+  "_leia-me": "Equipe do AnimeIngá. Para adicionar um membro, copie um bloco { ... } e ajuste. 'department' agrupa os membros em seções (use exatamente o mesmo texto para membros do mesmo grupo). 'photo' aceita URL externa ou caminho em public/ (ex.: /img/equipe/nome.png); se vazio, gera avatar com iniciais. 'role' e 'bio' são opcionais (se vazios, não aparecem no card).",
+  "departments": [
+    {
+      "name": "Equipe 2026",
+      "description": "Os voluntários que estão construindo a edição mais ambiciosa da história do AnimeIngá."
+    }
+  ],
+  "members": [
+    {
+      "name": "Gustavo Neme",
+      "role": "",
+      "department": "Equipe 2026",
+      "photo": "https://github.com/AnimeInga/animeinga.github.io/assets/11020807/19da7033-ece3-40ce-9bcc-5b7b97da26a1",
+      "bio": "",
+      "links": []
+    },
+    {
+      "name": "Ariel Toniatto",
+      "role": "",
+      "department": "Equipe 2026",
+      "photo": "",
+      "bio": "",
+      "links": []
+    },
+    {
+      "name": "Evaldo",
+      "role": "",
+      "department": "Equipe 2026",
+      "photo": "",
+      "bio": "",
+      "links": []
+    },
+    {
+      "name": "Enderson Menezes",
+      "role": "",
+      "department": "Equipe 2026",
+      "photo": "https://avatars.githubusercontent.com/u/11020807?v=4",
+      "bio": "",
+      "links": [
+        {"label": "LinkedIn", "url": "https://www.linkedin.com/in/endersonmenezes/"},
+        {"label": "GitHub", "url": "https://github.com/endersonmenezes"}
+      ]
+    },
+    {
+      "name": "Gabriel",
+      "role": "",
+      "department": "Equipe 2026",
+      "photo": "",
+      "bio": "",
+      "links": []
+    },
+    {
+      "name": "Jaqueline Ribeiro",
+      "role": "",
+      "department": "Equipe 2026",
+      "photo": "https://github.com/AnimeInga/animeinga.github.io/assets/11020807/30013f36-b740-4d77-a0ef-560f1e6101a7",
+      "bio": "",
+      "links": []
+    },
+    {
+      "name": "Tamires Guerra",
+      "role": "",
+      "department": "Equipe 2026",
+      "photo": "",
+      "bio": "",
+      "links": []
+    },
+    {
+      "name": "Tiago Trento",
+      "role": "",
+      "department": "Equipe 2026",
+      "photo": "",
+      "bio": "",
+      "links": []
+    }
+  ]
+}

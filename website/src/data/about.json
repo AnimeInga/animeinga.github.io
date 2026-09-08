@@ -1,0 +1,93 @@
+{
+  "_leia-me": "Conteúdo da página Sobre. Cada item de 'paragraphs' vira um parágrafo; cada item de 'pillars' vira um cartão; cada item de 'history' vira um marco na linha do tempo.",
+  "heroTitle": "Sobre o AnimeIngá",
+  "heroSubtitle": "Muito mais que um evento: quase duas décadas celebrando a cultura japonesa e pop no coração do Paraná.",
+  "paragraphs": [
+    "O AnimeIngá é a maior feira de animes e cultura pop de Maringá e região. Tudo começou em 2005, quando um grupo de amigos adolescentes, fãs de anime, sonhava em ir ao Anime Friends em São Paulo. Como a viagem não era possível, decidiram criar o próprio evento em Maringá — sem saber organizar nada, apenas com vontade de fazer acontecer.",
+    "A primeira edição, no Colégio Marista, tinha um concurso de cosplay com três participantes, um único estande e uma TV de tubo exibindo animes gravados em fita VHS. Cerca de 300 pessoas apareceram — e o evento nunca mais parou de crescer. Em 2008, os Irmãos Piologo marcaram a virada com a primeira atração nacional; em 2012, o AnimeIngá promoveu o primeiro campeonato de e-sports de Maringá.",
+    "Hoje, o AnimeIngá é um verdadeiro festival: dezenas de salas e áreas temáticas, convidados nacionais, e mais de 10 mil visitantes por edição. Em 2026, uma nova parceria com a Sociedade Rural de Maringá leva o evento à sua nova casa — o Parque de Exposições Francisco Feio Ribeiro — nos dias 12 e 13 de dezembro, para a edição mais ambiciosa da história."
+  ],
+  "video": {
+    "title": "Assista: a história do AnimeIngá",
+    "subtitle": "Nosso parceiro conta como nasceu a maior feira de animes de Maringá.",
+    "youtubeId": "8dHlp8ofpV8"
+  },
+  "pillars": [
+    {
+      "icon": "🎌",
+      "title": "Cultura",
+      "description": "Promovemos a cultura japonesa em todas as suas formas: do anime ao taiko, do mangá à culinária."
+    },
+    {
+      "icon": "🤝",
+      "title": "Comunidade",
+      "description": "Um espaço seguro, inclusivo e acolhedor para fãs de todas as idades e estilos se encontrarem."
+    },
+    {
+      "icon": "🎮",
+      "title": "Entretenimento",
+      "description": "Campeonatos de eSports, concurso cosplay, shows, K-Pop, área medieval e muito mais em dois dias de evento."
+    },
+    {
+      "icon": "🌱",
+      "title": "Oportunidade",
+      "description": "Palco para artistas, lojistas, criadores de conteúdo e empreendedores locais mostrarem seu trabalho."
+    }
+  ],
+  "attractions": {
+    "title": "O que você encontra no evento",
+    "subtitle": "Uma amostra do que rolou nas edições anteriores — e do que estamos preparando para 2026.",
+    "items": [
+      {"icon": "🎤", "title": "Palco Principal", "description": "Shows, apresentações culturais, entrevistas com convidados e premiações."},
+      {"icon": "🎮", "title": "Arena de eSports", "description": "Campeonatos com transmissão ao vivo e espaço freeplay para o público."},
+      {"icon": "🎭", "title": "Concurso Cosplay", "description": "A passarela mais aguardada, com jurados convidados e premiação."},
+      {"icon": "💃", "title": "K-Pop", "description": "Dance covers, random play dance e encontros de fãs."},
+      {"icon": "⚔️", "title": "Área Medieval", "description": "Esgrima, RPG de mesa e cultura nerd clássica."},
+      {"icon": "🎨", "title": "Artist Alley", "description": "Artistas independentes com prints, commissions e produtos autorais."},
+      {"icon": "🛍️", "title": "Lojas & Expositores", "description": "Action figures, mangás, acessórios e itens colecionáveis."},
+      {"icon": "🍜", "title": "Praça de Alimentação", "description": "Food trucks e comidas temáticas, do lamen ao yakisoba."},
+      {"icon": "✨", "title": "E muito mais", "description": "E mais novidades, que serão divulgadas em breve."}
+    ]
+  },
+  "history": [
+    {
+      "year": "2005",
+      "title": "O começo, no Colégio Marista",
+      "description": "Um grupo de amigos de 17 e 18 anos, sem dinheiro para ir ao Anime Friends em SP, cria o próprio evento em Maringá. A 1ª edição tem 3 cosplayers, um estande e uma TV de tubo com fitas VHS de anime — e surpreendentes 300 visitantes."
+    },
+    {
+      "year": "2006",
+      "title": "A era Colégio Nobel",
+      "description": "O evento ganha nova casa e espaço para crescer: mais estandes, mais cosplayers e as primeiras salas temáticas de videogames e card games."
+    },
+    {
+      "year": "2008",
+      "title": "A virada: Irmãos Piologo",
+      "description": "A primeira atração nacional da história do evento lota a sala de 300 lugares e deixa multidão do lado de fora. O AnimeIngá descobre seu potencial para trazer grandes convidados."
+    },
+    {
+      "year": "2012",
+      "title": "Pioneiro nos e-sports",
+      "description": "O AnimeIngá promove o primeiro campeonato de e-sports de Maringá, com disputas acirradas — anos antes dos e-sports virarem fenômeno no Brasil."
+    },
+    {
+      "year": "2015+",
+      "title": "De evento a festival",
+      "description": "De volta ao Colégio Marista, agora ocupando dezenas de salas e áreas temáticas, o AnimeIngá vira ponto de encontro de YouTubers, gamers, músicos e atores — e ultrapassa 10 mil visitantes por edição."
+    },
+    {
+      "year": "2023",
+      "title": "A retomada",
+      "description": "Após a pausa da pandemia, o AnimeIngá volta com força total: dois dias de evento, concursos, lojas, food trucks e convidados especiais."
+    },
+    {
+      "year": "2026",
+      "title": "Uma nova casa",
+      "description": "Em parceria com a Sociedade Rural de Maringá, o evento ganha um novo lar: o Parque de Exposições Francisco Feio Ribeiro. Dias 12 e 13 de dezembro: a edição mais ambiciosa da história."
+    }
+  ],
+  "mission": {
+    "title": "Nossa missão",
+    "text": "Proporcionar um espaço de encontro para fãs de cultura pop e anime, promovendo interação, entretenimento e conhecimento — com respeito, inclusão e diversidade — e contribuir para o fortalecimento da cultura pop japonesa no Brasil."
+  }
+}

@@ -1,4 +1,4 @@
-name: Deploy Docusaurus Site
+name: Deploy Astro Site
 
 on:
   push:
@@ -52,5 +52,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./website/build
+          publish_dir: ./website/dist
           publish_branch: ${{ steps.branch_check.outputs.target_branch }}
