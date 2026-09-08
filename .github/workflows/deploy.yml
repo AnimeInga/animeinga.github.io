@@ -4,40 +4,31 @@ on:
   push:
     branches: [main, develop]
 
+  pull_request:
+    branches: [main, develop]
+
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: pages
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set target branch
-        id: branch_check
-        run: |
-          if [ "${{ github.ref }}" = "refs/heads/main" ]; then
-            echo "target_branch=gh-pages" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.ref }}" = "refs/heads/develop" ]; then
-            echo "target_branch=gh-pages-develop" >> "$GITHUB_OUTPUT"
-          else
-            echo "target_branch=gh-pages-feature" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-
-      - name: Update npm
-        run: npm install -g npm@latest
+          cache: npm
+          cache-dependency-path: website/package-lock.json
 
       - name: Install dependencies
         run: |
@@ -49,7 +40,17 @@ jobs:
           cd website
           npm run build
 
+      - name: Set target branch
+        id: branch_check
+        run: |
+          if [ "${{ github.ref }}" = "refs/heads/main" ]; then
+            echo "target_branch=gh-pages" >> "$GITHUB_OUTPUT"
+          else
+            echo "target_branch=gh-pages-develop" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Deploy to GitHub Pages
+        if: github.event_name != 'pull_request'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

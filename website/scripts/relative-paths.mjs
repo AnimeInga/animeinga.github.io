@@ -48,7 +48,8 @@ const pages = [...walk(dist)].map((file) => {
   return rel === 'index.html' ? '/' : '/' + rel.replace(/index\.html$/, '');
 });
 
-const today = new Date().toISOString().slice(0, 10);
+// Data no fuso do evento (evita lastmod no futuro em builds locais noturnas).
+const today = new Date().toLocaleDateString('en-CA', {timeZone: 'America/Sao_Paulo'});
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages
