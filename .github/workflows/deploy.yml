@@ -35,13 +35,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
-          cache-dependency-path: website/package-lock.json
+
+      - name: Update npm
+        run: npm install -g npm@latest
 
       - name: Install dependencies
         run: |
           cd website
-          npm ci
+          npm ci --no-audit --no-fund
 
       - name: Build website
         run: |
