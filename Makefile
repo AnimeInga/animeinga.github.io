@@ -1,7 +1,7 @@
 .PHONY: help install dev build preview clean ci
 
 WEBSITE_DIR := website
-NODE_MIN_MAJOR := 20
+NODE_MIN_MAJOR := 22
 
 help: ## Exibe esta mensagem de ajuda
 	@echo "Comandos disponíveis:"
