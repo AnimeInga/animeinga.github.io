@@ -2,7 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import SakuraFall from '../components/SakuraFall.astro';
 import commercial from '../data/commercial.json';
+import competitionsData from '../data/competitions.json';
 import site from '../data/site.json';
+import {competitionHref} from '../lib/competitions';
+
+type Tier = (typeof commercial.tiers)[number] & {competitionId?: string};
+const tiers = commercial.tiers as Tier[];
 
 const partnershipCta =
   commercial.partnership.ctaUrl ||
@@ -35,20 +40,35 @@ const partnershipCta =
 
       <!-- Formatos de parceria -->
       <div class="tiers-grid">
-        {commercial.tiers.map((tier, i) => (
-          <div class:list={['reveal', i === 0 ? 'reveal--left' : 'reveal--right']} style={`--reveal-delay: ${i * 150}ms`}>
-            <article class="card tier-card">
-              <span class="tier-card__icon">{tier.icon}</span>
-              <h2 class="tier-card__title">{tier.title}</h2>
-              <p class="tier-card__description">{tier.description}</p>
-              <ul class="tier-card__items">
-                {tier.items.map((item) => (
-                  <li><span aria-hidden="true">✦</span> {item}</li>
-                ))}
-              </ul>
-            </article>
-          </div>
-        ))}
+        {tiers.map((tier, i) => {
+          const comp = competitionsData.competitions.find((c) => c.id === tier.competitionId);
+          return (
+            <div class:list={['reveal', i === 0 ? 'reveal--left' : 'reveal--right']} style={`--reveal-delay: ${i * 150}ms`}>
+              <article class="card tier-card">
+                <span class="tier-card__icon">{tier.icon}</span>
+                <h2 class="tier-card__title">{tier.title}</h2>
+                <p class="tier-card__description">{tier.description}</p>
+                <ul class="tier-card__items">
+                  {tier.items.map((item) => (
+                    <li><span aria-hidden="true">✦</span> {item}</li>
+                  ))}
+                </ul>
+                {comp && (comp.regulationUrl || comp.registrationUrl) && (
+                  <div class="tier-card__actions">
+                    {comp.registrationUrl && (
+                      <a class="btn btn--primary" href={comp.registrationUrl} target="_blank" rel="noopener noreferrer">
+                        Inscrever-se
+                      </a>
+                    )}
+                    {comp.regulationUrl && (
+                      <a class="btn btn--ghost" href={competitionHref(comp)}>Ver regulamento</a>
+                    )}
+                  </div>
+                )}
+              </article>
+            </div>
+          );
+        })}
       </div>
 
       <!-- CTAs -->
@@ -169,6 +189,13 @@ const partnershipCta =
   .tier-card__items span {
     color: var(--color-primary-light);
     font-weight: 900;
+  }
+
+  .tier-card__actions {
+    display: flex;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+    margin-top: 1.8rem;
   }
 
   .ctas-grid {
