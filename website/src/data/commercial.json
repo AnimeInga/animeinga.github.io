@@ -1,7 +1,7 @@
 {
-  "_leia-me": "Espaço Comercial. 'standCtaUrl' vazio usa o e-mail comercial; preencha com link de formulário quando houver. Edite textos livremente.",
+  "_leia-me": "Espaço Comercial. 'standCtaUrl' vazio usa o e-mail comercial; preencha com link de formulário quando houver. Um tier pode ter 'competitionId' com o id de uma competição do competitions.json — o card passa a exibir automaticamente os botões de regulamento e inscrição dessa competição (só aparecem se as URLs existirem). Edite textos livremente.",
   "title": "Espaço Comercial",
-  "subtitle": "Leve sua marca para o maior evento de cultura pop e japonesa de Maringá. Parcerias comerciais, stands de exposição e Artist Alley para a edição 2026 — 12 e 13 de dezembro.",
+  "subtitle": "Leve sua marca para o maior evento de cultura pop e japonesa de Maringá. Parcerias comerciais, stands de exposição e Artists' Alley para a edição 2026 — 12 e 13 de dezembro.",
   "audience": [
     {"value": "10 mil+", "label": "visitantes por edição"},
     {"value": "20 anos", "label": "de história"},
@@ -32,12 +32,13 @@
       ]
     },
     {
+      "competitionId": "artist-alley",
       "icon": "🎨",
-      "title": "Artist Alley",
+      "title": "Artists' Alley",
       "description": "Espaço oficial e exclusivo para artistas independentes: ilustradores, quadrinistas e criadores autorais terão uma área dedicada para expor e vender seu trabalho.",
       "items": [
         "Área oficial dedicada a artistas independentes",
-        "Participação e regulamento divulgados em breve",
+        "Regulamento publicado · inscrições de 15/09 a 31/10/2026",
         "Processo de seleção próprio, separado dos stands",
         "Divulgação dos artistas no site e redes"
       ]

@@ -3,12 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import SakuraFall from '../components/SakuraFall.astro';
 import data from '../data/competitions.json';
 import site from '../data/site.json';
-
-const STATUS_LABEL: Record<string, string> = {
-  'em-breve': 'EM BREVE',
-  inscricoes: 'INSCRIÇÕES ABERTAS',
-  encerrado: 'ENCERRADO',
-};
+import {STATUS_LABEL} from '../lib/competitions';
 ---
 
 <Layout title="Regulamentos & Competições" description={data.page.subtitle}>

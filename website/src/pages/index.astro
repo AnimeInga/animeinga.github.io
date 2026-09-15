@@ -6,14 +6,12 @@ import Marquee from '../components/Marquee.astro';
 
 import site from '../data/site.json';
 import competitionsData from '../data/competitions.json';
+import {STATUS_LABEL, competitionHref} from '../lib/competitions';
 
 const marqueeItems = [
   site.dates.label,
-  'Concurso Cosplay',
-  'Campeonatos de eSports',
-  'K-Pop',
+  ...competitionsData.competitions.map((c) => c.title),
   'Área Medieval',
-  'Artist Alley',
   'Food Trucks',
   'Maringá — PR',
 ];
@@ -38,8 +36,8 @@ const exploreCards = [
     icon: c.icon,
     title: c.title,
     text: c.tagline,
-    href: 'regulamentos.html',
-    badge: 'EM BREVE',
+    href: competitionHref(c),
+    badge: STATUS_LABEL[c.status] ?? '',
   })),
   {
     icon: '🤝',
