@@ -18,7 +18,7 @@ O site do AnimeIngá é a página oficial do maior evento de cultura pop e japon
 ├── website/               # Código-fonte do site atual (Astro)
 │   ├── src/
 │   │   ├── data/          # TODO o conteúdo editável (JSONs com campo _leia-me)
-│   │   ├── pages/         # Páginas (.astro) — index, sobre, equipe, regulamentos, comercial
+│   │   ├── pages/         # Páginas (.astro) — index, sobre, equipe, regulamentos, regulamento-artists-alley, comercial
 │   │   ├── components/    # Countdown, Marquee, SakuraFall
 │   │   ├── layouts/       # Layout.astro (head com SEO completo)
 │   │   └── styles/        # global.css (design system: variáveis CSS)
@@ -48,6 +48,7 @@ O site do AnimeIngá é a página oficial do maior evento de cultura pop e japon
 - **Toda edição de conteúdo rotineira acontece aqui**, sem tocar em código.
 - Cada JSON possui um campo `_leia-me` com instruções específicas.
 - URLs vazias em `competitions.json` mantêm os botões desabilitados com a faixa "EM BREVE"; ao preencher a URL, o botão é ativado automaticamente.
+- `regulamento-artists-alley.json` é a fonte da página `regulamento-artists-alley.html`; os itens de cada seção são uma lista ordenada e se renumeram sozinhos.
 
 ## Como rodar localmente
 

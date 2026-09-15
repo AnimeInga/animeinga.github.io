@@ -49,7 +49,11 @@ const STATUS_LABEL: Record<string, string> = {
 
               <div class="competition-card__actions">
                 {comp.regulationUrl ? (
-                  <a class="btn btn--primary" href={comp.regulationUrl} target="_blank" rel="noopener noreferrer">
+                  <a
+                    class="btn btn--primary"
+                    href={comp.regulationUrl}
+                    target={comp.regulationUrl.startsWith('http') ? '_blank' : undefined}
+                    rel={comp.regulationUrl.startsWith('http') ? 'noopener noreferrer' : undefined}>
                     Ver regulamento
                   </a>
                 ) : (

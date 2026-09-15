@@ -1,0 +1,237 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SakuraFall from '../components/SakuraFall.astro';
+import data from '../data/regulamento-artists-alley.json';
+import site from '../data/site.json';
+---
+
+<Layout title={data.page.title} description={data.page.subtitle}>
+  <section class="page-hero">
+    <SakuraFall density={18} />
+    <div class="container--narrow reveal" style="position: relative; z-index: 1;">
+      <span class="chip">{site.dates.shortLabel}</span>
+      <h1 class="page-hero__title" style="margin-top: 1rem;">{data.page.title}</h1>
+      <p class="page-hero__subtitle">{data.page.subtitle}</p>
+      <div class="hero-actions">
+        <a class="btn btn--primary" href={data.formUrl} target="_blank" rel="noopener noreferrer">
+          Inscrever-se
+        </a>
+        <span class="price-tag">Mesa: {data.price}</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="section container--narrow">
+    <nav class="toc reveal" aria-label="Sumário do regulamento">
+      <p class="toc__title">Neste regulamento</p>
+      <ol>
+        {data.sections.map((section) => (
+          <li><a href={`#${section.id}`}>{section.title}</a></li>
+        ))}
+      </ol>
+    </nav>
+
+    {data.sections.map((section) => (
+      <section id={section.id} class="reg-section reveal">
+        <h2 class="reg-section__title">{section.title}</h2>
+
+        {section.paragraphs?.map((paragraph) => (
+          <p class="reg-text">{paragraph}</p>
+        ))}
+
+        {section.entries && (
+          <ol class="timeline">
+            {section.entries.map((entry) => (
+              <li class="timeline__item">
+                <span class="timeline__date">{entry.data}</span>
+                <span class="timeline__evento">{entry.evento}</span>
+              </li>
+            ))}
+          </ol>
+        )}
+
+        {section.items && (
+          <ol class="reg-list">
+            {section.items.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ol>
+        )}
+
+        {section.subsections?.map((sub) => (
+          <div class="reg-sub">
+            <h3 class="reg-sub__title">{sub.title}</h3>
+            {sub.paragraphs?.map((paragraph) => (
+              <p class="reg-text">{paragraph}</p>
+            ))}
+            {sub.bullets && (
+              <ul class="reg-list reg-list--unordered">
+                {sub.bullets.map((bullet) => (
+                  <li>{bullet}</li>
+                ))}
+              </ul>
+            )}
+            {sub.formButton && (
+              <a class="btn btn--primary" href={data.formUrl} target="_blank" rel="noopener noreferrer">
+                Preencher a ficha de inscrição
+              </a>
+            )}
+          </div>
+        ))}
+      </section>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  .section {
+    padding: clamp(3rem, 7vw, 5rem) 0 clamp(4rem, 9vw, 6.5rem);
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.1rem;
+    margin-top: 2.2rem;
+  }
+
+  .price-tag {
+    padding: 0.55rem 1.2rem;
+    border: 1px dashed rgba(255, 183, 197, 0.45);
+    border-radius: 10px;
+    color: var(--color-sakura);
+    font-weight: 800;
+  }
+
+  .toc {
+    margin-bottom: 3rem;
+    padding: 1.5rem 1.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+  }
+
+  .toc__title {
+    margin: 0 0 0.9rem;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-text-faint);
+  }
+
+  .toc ol {
+    margin: 0;
+    padding-left: 1.3rem;
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  .toc li::marker {
+    color: var(--color-primary-light);
+    font-weight: 700;
+  }
+
+  .toc a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+  }
+
+  .toc a:hover {
+    color: var(--color-primary-light);
+  }
+
+  .reg-section {
+    padding: 2.4rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    scroll-margin-top: calc(var(--navbar-height) + 1.25rem);
+  }
+
+  .reg-section__title {
+    margin-bottom: 1.4rem;
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    font-weight: 900;
+  }
+
+  .reg-text {
+    margin: 0 0 1rem;
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.8;
+  }
+
+  .reg-sub {
+    margin-top: 1.8rem;
+  }
+
+  .reg-sub__title {
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-sakura);
+  }
+
+  .reg-list {
+    margin: 0;
+    padding-left: 1.4rem;
+    display: grid;
+    gap: 0.8rem;
+  }
+
+  .reg-list li {
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.75;
+  }
+
+  .reg-list li::marker {
+    color: var(--color-primary-light);
+    font-weight: 700;
+  }
+
+  .reg-list--unordered {
+    list-style: disc;
+  }
+
+  .reg-sub .btn {
+    margin-top: 1.2rem;
+  }
+
+  .timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .timeline__item {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 1.2rem;
+    align-items: baseline;
+    padding: 1rem 1.3rem;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-primary);
+    border-radius: 12px;
+    background: var(--color-surface);
+  }
+
+  .timeline__date {
+    color: var(--color-sakura);
+    font-weight: 900;
+    white-space: nowrap;
+  }
+
+  .timeline__evento {
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 560px) {
+    .timeline__item {
+      grid-template-columns: 1fr;
+      gap: 0.15rem;
+    }
+  }
+</style>

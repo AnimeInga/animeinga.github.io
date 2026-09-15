@@ -7,6 +7,22 @@
   },
   "competitions": [
     {
+      "id": "artist-alley",
+      "title": "Artists' Alley",
+      "icon": "🎨",
+      "tagline": "O espaço oficial dos artistas",
+      "description": "O espaço dedicado à produção artística autoral: quadrinhos, ilustrações, prints, sketchbooks e muito mais. As inscrições vão de 15/09 a 31/10/2026 e a participação passa por processo de seleção por portfólio. Leia o regulamento e inscreva-se!",
+      "status": "inscricoes",
+      "highlights": [
+        "Inscrições de 15/09 a 31/10/2026",
+        "Mesa de 1,80 m com 2 cadeiras e tomada",
+        "R$ 500,00 por mesa · 2 credenciais",
+        "Seleção por portfólio dos(as) artistas"
+      ],
+      "regulationUrl": "regulamento-artists-alley.html",
+      "registrationUrl": "https://forms.gle/MiN81Li7BXsferfN7"
+    },
+    {
       "id": "esports",
       "title": "Campeonatos de eSports",
       "icon": "🎮",
@@ -39,17 +55,17 @@
       "registrationUrl": ""
     },
     {
-      "id": "artist-alley",
-      "title": "Artist Alley",
-      "icon": "🎨",
-      "tagline": "O espaço oficial dos artistas",
-      "description": "O Artist Alley do AnimeIngá 2026 terá uma área oficial dedicada a artistas independentes. A participação e o regulamento serão divulgados em breve — fique de olho nas nossas redes.",
+      "id": "kpop",
+      "title": "Competições K-Pop",
+      "icon": "🎤",
+      "tagline": "O palco é seu",
+      "description": "As competições de K-Pop do AnimeIngá 2026 vão aquecer o palco com performances de dança e canto. Categorias, jurados, premiação e regulamento oficial serão divulgados em breve — fique de olho nas nossas redes!",
       "status": "em-breve",
       "highlights": [
-        "Área oficial dedicada a artistas independentes",
-        "Processo de participação próprio",
-        "Regulamento divulgado em breve",
-        "Divulgação dos artistas selecionados"
+        "Categorias a anunciar",
+        "Apresentações individuais e em grupo",
+        "Jurados convidados",
+        "Premiação para os finalistas"
       ],
       "regulationUrl": "",
       "registrationUrl": ""

@@ -1,0 +1,149 @@
+{
+  "_leia-me": "Regulamento do Artists' Alley 2026. A página regulamento-artists-alley.html é gerada automaticamente a partir deste arquivo — edite os textos aqui e rode o build. Estrutura: 'sections' define as seções na ordem em que aparecem na página; cada seção pode ter 'paragraphs' (textos corridos), 'items' (itens numerados — viram lista ordenada e se renumeram sozinhos), 'entries' (datas do cronograma) ou 'subsections' (subseções com título próprio). 'formUrl' e 'price' alimentam o botão e o destaque de valor no topo da página.",
+  "page": {
+    "title": "Regulamento Artists' Alley 2026",
+    "subtitle": "Manual de inscrição, cronograma, critérios de seleção e regras de participação para artistas no espaço oficial de arte autoral do AnimeIngá."
+  },
+  "formUrl": "https://forms.gle/MiN81Li7BXsferfN7",
+  "price": "R$ 500,00",
+  "sections": [
+    {
+      "id": "manual",
+      "title": "Manual de Inscrição",
+      "paragraphs": [
+        "Chegou a hora de se inscrever para o Artists' Alley do ANIMEINGÁ 2026!",
+        "O Artists' Alley é um espaço dedicado à produção artística autoral, criado para aproximar artistas e público e proporcionar aos participantes a oportunidade de apresentar, divulgar e comercializar seus trabalhos. O espaço recebe tanto artistas independentes quanto profissionais que atuam no mercado editorial e artístico, possibilitando a exposição e comercialização de quadrinhos, prints, sketchbooks, artes originais, livros e outros produtos diretamente relacionados à produção de cada artista.",
+        "Para garantir o melhor aproveitamento do espaço e proporcionar uma experiência adequada tanto aos artistas quanto ao público, o ANIMEINGÁ estabelece um processo de seleção para a participação no Artists' Alley. As regras e critérios desse processo estão descritos neste regulamento.",
+        "O preenchimento correto da ficha de inscrição e o cumprimento dos requisitos estabelecidos não garantem a aprovação da inscrição ou a disponibilização de uma mesa. O número de mesas do Artists' Alley é limitado e poderá ser inferior à quantidade de interessados. Nesses casos, a organização realizará a seleção dos participantes com base nos critérios estabelecidos neste regulamento e nas informações fornecidas pelos (as) artistas no formulário de inscrição.",
+        "A participação no Artists' Alley do ANIMEINGÁ 2026 não garante participação ou disponibilidade de mesa em futuras edições do evento. Cada edição contará com seu próprio processo de inscrição e seleção, de acordo com as condições e critérios estabelecidos pela organização para aquele ano.",
+        "Agradecemos o interesse em fazer parte do ANIMEINGÁ e desejamos a todos(as) uma excelente participação!"
+      ]
+    },
+    {
+      "id": "cronograma",
+      "title": "Cronograma",
+      "entries": [
+        {"data": "15/09/2026", "evento": "Início das inscrições para o Artists' Alley"},
+        {"data": "31/10/2026", "evento": "Término das inscrições para o Artists' Alley"},
+        {"data": "10/11/2026", "evento": "Divulgação dos aprovados e início da contratação do espaço (por e-mail)"},
+        {"data": "20/11/2026", "evento": "Término da contratação do espaço pelos aprovados e data limite para o envio de informações para a staff"},
+        {"data": "30/11/2026", "evento": "Data limite para pagamento do aluguel da mesa"}
+      ]
+    },
+    {
+      "id": "inscricao",
+      "title": "Inscrição",
+      "subsections": [
+        {
+          "title": "A Ficha de Inscrição",
+          "paragraphs": [
+            "Preencha sua ficha com zelo e atenção, incluindo todas as informações pedidas."
+          ],
+          "formButton": true
+        },
+        {
+          "title": "Link para o Portfólio",
+          "bullets": [
+            "Na ficha de inscrição será solicitado também um link para que possamos avaliar corretamente seu portfólio, informe somente um link. Caso seja informado mais de um link, somente o primeiro será consultado;",
+            "Não informe o link de uma página desatualizada ou de um perfil nas redes sociais em que seu portfólio esteja mesclado com fotos e informações que não sejam relevantes para a análise de sua inscrição;",
+            "Idealmente, crie uma galeria, álbum ou página exclusiva para seu portfólio e informe o link direto para ele na ficha de inscrição."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "criterios",
+      "title": "Critérios para Seleção",
+      "items": [
+        "O preenchimento correto e completo da ficha de inscrição é requisito indispensável para a participação no processo de seleção. Todas as informações solicitadas deverão ser fornecidas de forma clara e verdadeira, especialmente aquelas relacionadas à produção artística e aos produtos que serão apresentados no Artists' Alley.",
+        "O envio de um link válido para o portfólio do (a) artista é obrigatório. O portfólio será utilizado pela organização como um dos instrumentos de avaliação da proposta de participação. Inscrições sem link para portfólio, com links inativos, quebrados ou que não permitam o acesso ao conteúdo necessário para a avaliação poderão ser desconsideradas.",
+        "Será dada prioridade a artistas cuja produção esteja diretamente relacionada ao universo dos quadrinhos e da cultura geek, incluindo, entre outros, quadrinhos, mangás, novels, ilustrações, concept art, fanarts autorais e demais produções artísticas relacionadas a esse universo, especialmente artistas com trabalhos autorais e/ou novas obras previstas para lançamento, divulgação ou comercialização durante o ANIMEINGÁ 2026.",
+        "A prioridade prevista no item anterior não garante a aprovação da inscrição, sendo a seleção realizada considerando o conjunto dos critérios estabelecidos neste regulamento, a disponibilidade de mesas e a composição geral do Artists' Alley.",
+        "A organização buscará promover a diversidade de estilos, técnicas, gêneros, formatos e temáticas dentro do Artists' Alley, de modo a apresentar ao público a variedade existente na produção artística e no mercado de quadrinhos e ilustração, em razão disto, poderá haver maior concorrência entre inscrições que apresentem perfis, estilos, técnicas ou propostas semelhantes. Dessa forma, o número de inscritos com determinado perfil poderá influenciar a seleção, sem que isso represente qualquer avaliação negativa sobre a qualidade do trabalho apresentado.",
+        "É expressamente proibida a comercialização de produtos que violem direitos autorais, marcas ou quaisquer outros direitos de propriedade intelectual de terceiros. Propostas que incluam produtos baseados em personagens, marcas ou obras de terceiros deverão informar, no formulário de inscrição, a existência da respectiva autorização ou licença para produção e/ou comercialização dos produtos.",
+        "A ausência de informações sobre autorização ou licença, quando necessária, poderá resultar na desconsideração da proposta ou na solicitação de esclarecimentos e comprovação por parte da organização. Produtos não licenciados ou reproduções não autorizadas (“piratas”) não serão permitidos no ANIMEINGÁ.",
+        "A seleção será realizada pela organização do ANIMEINGÁ com base nas informações fornecidas no formulário de inscrição, no portfólio apresentado, na adequação da proposta à finalidade do Artists' Alley e na composição geral do espaço.",
+        "O resultado do processo de seleção será comunicado aos candidatos pelos canais de contato informados no formulário de inscrição, observados os prazos estabelecidos pela organização.",
+        "A decisão da organização quanto à seleção dos participantes será baseada nos critérios estabelecidos neste regulamento e na disponibilidade de mesas, não havendo garantia de aprovação em razão de participação em edições anteriores do ANIMEINGÁ ou em outros eventos."
+      ]
+    },
+    {
+      "id": "mesa",
+      "title": "Mesa",
+      "items": [
+        "O valor de participação no Artists' Alley será de R$ 500,00 (quinhentos reais) por mesa, referente à utilização do espaço durante o período do evento e aos itens e credenciais descritos neste regulamento.",
+        "O valor informado no item anterior não inclui materiais adicionais, equipamentos, mobiliário ou estruturas que não estejam expressamente previstos neste regulamento.",
+        "Cada mesa do Artists' Alley terá aproximadamente 1,80 m de comprimento por 0,50 m de largura, sendo disponibilizadas 2 (duas) cadeiras, 1 (uma) tomada elétrica de 110 V e 1 (uma) toalha para cobertura da mesa.",
+        "Cada mesa dará direito a 2 (duas) credenciais de expositor, permitindo o acesso ao ANIMEINGÁ durante todos os dias do evento, conforme os horários e regras de acesso estabelecidos pela organização.",
+        "Será permitida a participação de até 2 (dois) artistas por mesa, desde que essa condição seja informada no momento da inscrição ou previamente comunicada e autorizada pela organização. A divisão da mesa é de responsabilidade dos artistas envolvidos, inclusive quanto à organização, exposição e comercialização de seus respectivos trabalhos.",
+        "No caso de compartilhamento da mesa por dois artistas, as 2 (duas) credenciais de expositor deverão ser distribuídas entre os participantes, não havendo credencial adicional em razão do compartilhamento.",
+        "Os equipamentos, materiais de exposição, displays, suportes, banners e demais elementos utilizados pelo (a) artista deverão respeitar as dimensões da mesa e os limites do espaço disponibilizado, não podendo comprometer a circulação do público ou interferir nas mesas e atividades dos demais participantes.",
+        "A utilização da tomada disponibilizada na mesa deverá observar a capacidade e as orientações de segurança fornecidas pela organização. Equipamentos que possam causar sobrecarga, risco elétrico ou qualquer outro risco à estrutura do evento poderão ter seu uso restringido ou proibido.",
+        "As características, dimensões e itens disponibilizados para cada mesa poderão sofrer alterações por razões técnicas, estruturais ou de logística do evento, sendo mantida, sempre que possível, a estrutura descrita neste regulamento.",
+        "Durante o período em que o evento estiver fechado ao público e os (as) artistas não estiverem presentes, o espaço do Artists' Alley permanecerá sob vigilância, contando com equipe de segurança contratada pelo ANIMEINGÁ para monitoramento e proteção das instalações durante o período noturno.",
+        "A disponibilização de equipe de segurança tem como finalidade a vigilância geral e a proteção do espaço do evento, não caracterizando a organização como depositária ou responsável pela guarda individual dos produtos, materiais, equipamentos ou objetos deixados nas mesas pelos (as) artistas.",
+        "A organização recomenda que os (as) artistas adotem as medidas necessárias para a proteção de seus materiais e que, sempre que possível, evitem deixar no local equipamentos eletrônicos, objetos pessoais ou materiais de elevado valor durante o período em que o evento estiver fechado.",
+        "A organização do ANIMEINGÁ não se responsabiliza por eventual furto, roubo, extravio, dano ou perda de produtos, materiais, equipamentos ou objetos deixados nas mesas ou nas dependências do evento durante o período noturno, ainda que o espaço esteja sob vigilância."
+      ]
+    },
+    {
+      "id": "localizacao",
+      "title": "Localização da Mesa",
+      "items": [
+        "A definição da localização das mesas dos (as) artistas no Artists' Alley será realizada exclusivamente pela organização do ANIMEINGÁ, considerando critérios de organização, circulação do público, acessibilidade, segurança, visibilidade, posicionamento de convidados, estrutura do evento e demais necessidades relacionadas à logística e ao funcionamento do festival.",
+        "As mesas serão dispostas no espaço coberto destinado ao Artists' Alley e às demais áreas previstas na estrutura do evento, de modo a proporcionar condições adequadas de circulação, conforto e visibilidade aos artistas e ao público.",
+        "A localização das mesas será definida pela organização após a conclusão do processo de seleção e contratação dos (as) artistas. A organização poderá considerar, sempre que possível, solicitações de proximidade entre artistas que tenham interesse em compartilhar ou desenvolver projetos conjuntos, coletivos ou outras atividades relacionadas à sua participação no evento. O atendimento dessas solicitações estará condicionado à disponibilidade e à configuração geral do espaço, não havendo garantia de que todos os pedidos poderão ser atendidos.",
+        "A localização da mesa será definida pela organização e não poderá ser alterada pelo (a) artista sem autorização prévia. Solicitações de mudança de mesa durante o evento somente serão analisadas pela organização e estarão sujeitas à disponibilidade e às condições de segurança e logística do espaço.",
+        "A planta e a disposição das mesas poderão sofrer alterações antes ou durante o evento, sempre que necessário por motivos de organização, segurança, acessibilidade, circulação, estrutura, programação ou outras necessidades relacionadas à realização do ANIMEINGÁ.",
+        "A organização poderá realocar mesas e artistas, caso necessário, sem que isso gere direito a compensação, abatimento ou restituição do valor pago pela mesa.",
+        "O (a) artista deverá respeitar a localização e os limites do espaço que lhe forem atribuídos, não podendo ocupar áreas destinadas à circulação do público, outros artistas, convidados ou demais estruturas do evento."
+      ]
+    },
+    {
+      "id": "venda",
+      "title": "Venda de Produtos no Artists' Alley",
+      "items": [
+        "As mesas do Artists' Alley são destinadas exclusivamente à exposição e comercialização de trabalhos de produção artística autoral, especialmente quadrinhos e suas diversas formas de apresentação, bem como produtos diretamente derivados dessa produção. Poderão ser comercializados, entre outros, desenhos, ilustrações, prints, sketchbooks, livros, artes originais, zines, pôsteres e demais materiais provenientes da produção artística do (a) expositor (a).",
+        "A mesa deverá ser ocupada pelo (a) próprio (a) artista ou autor (a) responsável pela produção dos trabalhos expostos e comercializados. A presença de acompanhante para auxiliar o (a) artista na organização e atendimento da mesa será permitida, observadas as regras e limitações estabelecidas pela organização do evento.",
+        "O (a) expositor (a) deverá manter sua mesa organizada e em funcionamento durante os horários determinados pela organização do ANIMEINGÁ, salvo em situações previamente comunicadas e autorizadas pela organização.",
+        "É de responsabilidade do (a) expositor (a) informar corretamente, no formulário de inscrição, todas as atividades que pretende realizar na mesa, bem como os tipos de produtos que pretende expor ou comercializar. A realização de atividades ou a comercialização de produtos não informados previamente poderá depender de autorização da organização.",
+        "A organização do ANIMEINGÁ poderá avaliar previamente os produtos e atividades informados no formulário de inscrição e poderá não autorizar aqueles que estejam em desacordo com a proposta, as normas do Artists' Alley ou as demais regras do evento.",
+        "O Artists' Alley possui caráter artístico e autoral e NÃO SE DESTINA À SUBSTITUIÇÃO DE ESTANDES COMERCIAIS. Não será permitida a utilização da mesa para revenda de produtos industrializados, produtos adquiridos de terceiros ou comercialização em escala incompatível com a finalidade do espaço.",
+        "Produtos e materiais comercializados no Artists' Alley deverão possuir relação direta com a produção artística do (a) expositor (a). A organização poderá solicitar informações ou esclarecimentos sobre a origem e a autoria dos produtos apresentados e, caso identifique o desvirtuamento da finalidade do espaço, poderá determinar a retirada de determinados produtos ou, em casos de descumprimento, retirar o (a) expositor (a) do Artists' Alley.",
+        "Não será permitida a utilização da mesa para comercialização ou exposição de materiais de autoria de terceiros, produtos de editoras, lojas, empresas ou outras marcas, salvo quando houver autorização ou licença formal que permita sua comercialização pelo (a) expositor (a). Empresas, editoras, lojas ou artistas que pretendam realizar atividade de caráter predominantemente comercial deverão entrar em contato com a área comercial do ANIMEINGÁ, pelo e-mail contato@animeinga.com.br, para consultar as opções de estandes disponíveis.",
+        "Não será permitida a comercialização ou exposição de produtos que violem direitos autorais, marcas ou outros direitos de propriedade intelectual de terceiros. Materiais não licenciados ou reproduções não autorizadas (“piratas”) são proibidos em qualquer espaço do ANIMEINGÁ.",
+        "O (a) expositor (a) é integralmente responsável pela autoria, procedência e regularidade dos materiais comercializados, bem como pela obtenção das autorizações, licenças ou demais permissões necessárias para utilização de personagens, marcas, imagens, textos, obras ou quaisquer outros elementos protegidos por direitos autorais ou de propriedade intelectual.",
+        "Não será permitida a comercialização ou distribuição de material de caráter político-partidário, de propaganda eleitoral ou de conteúdo destinado à promoção de partidos ou candidatos. Também não será permitida a utilização do Artists' Alley para proselitismo ou propaganda de caráter religioso/confessional.",
+        "Itens de conteúdo destinado ao público adulto ou com classificação etária não poderão ser expostos de maneira aberta ou ostensiva ao público. Esses materiais deverão permanecer acondicionados em embalagens, pastas ou outros meios adequados, com indicação clara da restrição etária, de forma a impedir sua exposição direta a menores de idade.",
+        "Atividades como commissions, desenhos e ilustrações realizados durante o evento, autógrafos, dedicatórias e demais atividades relacionadas à produção artística poderão ser realizadas nas mesas, desde que informadas no formulário de inscrição e não prejudiquem a circulação, a segurança ou o funcionamento do evento.",
+        "A utilização de banners, painéis, expositores, suportes, equipamentos ou quaisquer outros elementos adicionais deverá respeitar os limites físicos da mesa e do espaço destinado ao Artists' Alley, não podendo bloquear corredores, acessos ou prejudicar as mesas de outros expositores. Estruturas que excedam os limites estabelecidos deverão ser previamente autorizadas pela organização.",
+        "A organização do ANIMEINGÁ não se responsabiliza pelas vendas, encomendas, pagamentos, trocas, devoluções ou quaisquer outras negociações realizadas diretamente entre o (a) expositor (a) e o público. Todas as transações comerciais e eventuais questões delas decorrentes serão de responsabilidade exclusiva do (a) expositor (a).",
+        "O descumprimento das disposições deste regulamento poderá resultar, conforme a gravidade da ocorrência, em advertência, determinação de retirada de produto ou material, suspensão de determinada atividade ou retirada do(a) expositor(a) do Artists' Alley, sem prejuízo das demais medidas cabíveis previstas nas normas gerais do evento.",
+        "A organização do ANIMEINGÁ reserva-se o direito de interpretar e aplicar as disposições deste regulamento, bem como de adotar medidas necessárias para garantir que o Artists' Alley mantenha sua finalidade de promover a produção artística autoral e proporcionar um espaço adequado para interação entre artistas e público."
+      ]
+    },
+    {
+      "id": "responsabilidades",
+      "title": "Responsabilidades do(a) Artista",
+      "items": [
+        "Preencher corretamente a ficha de inscrição, fornecendo todas as informações solicitadas pela organização, responsabilizando-se pela veracidade e atualização dos dados apresentados.",
+        "Em caso de aprovação da inscrição, efetuar o pagamento integral do valor referente ao aluguel da mesa, em pagamento único, até a data de 30/11/2026, conforme as condições estabelecidas pela organização, bem como assinar o contrato de aluguel da mesa, que será encaminhado por e-mail.",
+        "A contratação definitiva da mesa estará condicionada à confirmação do pagamento dentro do prazo estabelecido, à assinatura do contrato de aluguel e à aceitação integral das condições, instruções e normas do evento estabelecidas neste regulamento e no respectivo contrato.",
+        "Enviar, dentro do prazo estabelecido pela organização, as informações e materiais necessários para divulgação de sua participação no Artists' Alley nas redes sociais e demais canais oficiais do ANIMEINGÁ, incluindo nome completo, nome artístico, caso possua, e uma imagem para divulgação, que poderá ser fotografia do (a) próprio (a) artista, logomarca, símbolo identificador ou outra imagem relacionada à sua produção artística.",
+        "Responsabilizar-se pela veracidade das informações e materiais fornecidos para divulgação, bem como autorizar sua utilização pelo ANIMEINGÁ exclusivamente para fins de divulgação de sua participação no evento e de sua produção artística, nos canais oficiais e materiais de comunicação do festival.",
+        "Comparecer ao evento e respeitar os horários estabelecidos pela organização para montagem, funcionamento e desmontagem da mesa, salvo em situações excepcionais previamente comunicadas e autorizadas pela organização.",
+        "Manter a mesa organizada durante o período de funcionamento do Artists' Alley, respeitando os limites físicos do espaço disponibilizado e não ocupando corredores, áreas de circulação ou espaços destinados a outros artistas ou ao público.",
+        "Zelar pela conservação da mesa, mobiliário e demais estruturas disponibilizadas pela organização, responsabilizando-se por eventuais danos causados por si ou por seus acompanhantes.",
+        "Responsabilizar-se integralmente pelos produtos, obras e materiais expostos ou comercializados em sua mesa, incluindo sua autoria, procedência e eventuais autorizações ou licenças necessárias para sua comercialização ou exposição.",
+        "Cumprir integralmente as disposições deste regulamento, do contrato de aluguel da mesa e das demais normas estabelecidas pela organização do ANIMEINGÁ, inclusive aqueles referentes aos produtos permitidos e proibidos, às atividades realizadas e à utilização do espaço.",
+        "Responsabilizar-se integralmente pelas vendas, encomendas, pagamentos, trocas, devoluções e demais negociações realizadas diretamente com o público, não cabendo ao ANIMEINGÁ responsabilidade sobre as transações comerciais realizadas pelo (a) artista.",
+        "Caso seja autorizada a presença de acompanhante na mesa, o(a) artista será responsável por orientá-lo(a) quanto ao cumprimento das regras do evento, respondendo por eventuais condutas praticadas em desacordo com este regulamento.",
+        "Manter seus dados de contato atualizados e acompanhar as comunicações encaminhadas pela organização, especialmente aquelas relacionadas ao credenciamento, montagem, funcionamento do Artists' Alley, horários e demais procedimentos necessários à participação no evento.",
+        "Comunicar à organização, com a maior antecedência possível, qualquer impossibilidade de comparecimento ao evento ou qualquer situação que possa comprometer o cumprimento das obrigações assumidas.",
+        "Em caso de desistência após a confirmação da participação, deverão ser observadas as condições de cancelamento, transferência ou eventual restituição de valores estabelecidas no contrato de aluguel da mesa.",
+        "O descumprimento das disposições deste regulamento, do contrato ou das orientações da organização poderá resultar em advertência, determinação de retirada de produtos ou materiais, suspensão de atividades ou retirada do (a) artista do Artists' Alley, conforme a gravidade da ocorrência.",
+        "A participação no Artists' Alley implica ciência e concordância do (a) artista com todas as condições estabelecidas neste regulamento, no contrato de aluguel da mesa e nas demais normas aplicáveis ao ANIMEINGÁ."
+      ]
+    }
+  ]
+}
