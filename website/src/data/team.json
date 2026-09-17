@@ -13,7 +13,9 @@
       "department": "Equipe 2026",
       "photo": "https://github.com/AnimeInga/animeinga.github.io/assets/11020807/19da7033-ece3-40ce-9bcc-5b7b97da26a1",
       "bio": "",
-      "links": []
+      "links": [
+        {"label": "LinkedIn", "url": "https://www.linkedin.com/in/gustavo-neme-846148125/"}
+      ]
     },
     {
       "name": "Ariel Toniatto",
@@ -21,7 +23,9 @@
       "department": "Equipe 2026",
       "photo": "",
       "bio": "",
-      "links": []
+      "links": [
+        {"label": "LinkedIn", "url": "https://www.linkedin.com/in/ariel-toniatto/"}
+      ]
     },
     {
       "name": "Evaldo",
