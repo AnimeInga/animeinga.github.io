@@ -1,16 +1,15 @@
 {
-  "_leia-me": "Regulamento do Concurso Cosplay Animeingá 2026 (fonte: REGULAMENTO CONCURSO COSPLAY 2026_REV_00.docx). A página regulamento-concurso-cosplay.html é gerada automaticamente a partir deste arquivo — edite os textos aqui e rode o build. Estrutura: 'sections' define as seções na ordem em que aparecem na página; cada seção pode ter 'paragraphs' (textos corridos), 'items' (itens numerados — viram lista ordenada e se renumeram sozinhos), 'entries' (datas do cronograma) ou 'subsections' (subseções com título próprio, que aceitam 'bullets', 'formButton' e 'driveButton'). 'formUrl' e 'driveUrl' alimentam os botões de inscrição e de envio de imagens de referência; 'heroBadge' é o destaque exibido ao lado do botão no topo da página.",
+  "_leia-me": "Regulamento do Concurso Cosplay Animeingá 2026 (fonte: REGULAMENTO CONCURSO COSPLAY 2026_REV_00.docx). A página regulamento-concurso-cosplay.html é gerada automaticamente a partir deste arquivo — edite os textos aqui e rode o build. A estrutura espelha a numeração oficial do documento: 'num' é a numeração exibida no título da seção (ex.: '1', '1.1'); 'items' são itens numerados que se renumeram sozinhos e aceitam objeto {text, subItems} para subitens aninhados (ex.: 5.3.3); 'leads' são pares {term, text} renderizados como 'TERM: texto' para os critérios de avaliação; 'entries' são as datas do cronograma; 'formButton' e 'driveButton' renderizam os botões do formulário de inscrição e da pasta de imagens ('formUrl' e 'driveUrl').",
   "page": {
     "title": "Regulamento Concurso Cosplay 2026",
     "subtitle": "Regras oficiais do Concurso Cosplay Animeingá 2026: modalidades, cronograma, inscrição, critérios de avaliação, premiação e segurança."
   },
   "formUrl": "https://forms.gle/8cGecuwsJMrJwsPj9",
   "driveUrl": "https://drive.google.com/drive/folders/1LAkvpOCftB9O8j8obwgFys0mTQFtVRAP",
-  "heroBadge": "R$ 4.000 em premiação",
   "sections": [
     {
       "id": "apresentacao",
-      "title": "Apresentação",
+      "title": "APRESENTAÇÃO",
       "paragraphs": [
         "Estas são as regras oficiais do Concurso Cosplay Animeingá 2026, aplicáveis a todos os participantes inscritos, bem como às demais pessoas envolvidas diretamente na realização do concurso. As disposições aqui apresentadas são específicas do Concurso Cosplay Animeingá e têm como objetivo garantir uma experiência organizada, segura, justa e divertida para todos.",
         "Desde as primeiras edições do Animeingá, os cosplayers fazem parte da história do evento, trazendo criatividade, dedicação, talento e muita personalidade para os nossos palcos. Ao longo dos anos, o concurso se tornou uma das atrações mais aguardadas pelo público e uma oportunidade para que os participantes compartilhem seu trabalho e sua paixão pelo universo geek.",
@@ -20,55 +19,50 @@
       ]
     },
     {
-      "id": "o-concurso",
-      "title": "O Concurso",
-      "paragraphs": [
-        "O Concurso Cosplay Animeingá 2026 tem como objetivo valorizar a criatividade, a caracterização, a confecção e a interpretação de personagens, incentivando a expressão artística e a participação da comunidade cosplay no evento.",
-        "O concurso será realizado durante o ANIMEINGÁ 2026 e seguirá as regras, critérios, horários e procedimentos estabelecidos neste regulamento e pela organização do evento."
-      ],
-      "items": [
-        "Poderão participar do concurso os interessados que cumprirem as regras estabelecidas neste regulamento.",
-        "A participação será individual no Desfile e na Apresentação Individual, e em dupla na modalidade Apresentação em Dupla.",
-        "A organização poderá estabelecer limite de participantes em cada modalidade, caso necessário.",
-        "O mesmo participante poderá participar de mais de uma modalidade, desde que cumpra os requisitos específicos de cada uma."
-      ]
-    },
-    {
-      "id": "modalidades",
-      "title": "Modalidades",
-      "paragraphs": [
-        "O Concurso Cosplay Animeingá 2026 será dividido nas seguintes modalidades, cada uma com regras, critérios de avaliação e procedimentos específicos, conforme estabelecido neste regulamento."
-      ],
+      "id": "disposicoes-gerais",
+      "num": "1",
+      "title": "DISPOSIÇÕES GERAIS",
       "subsections": [
         {
-          "title": "Desfile – Competição",
-          "paragraphs": [
-            "Apresentação individual realizada no palco, diante do público e dos jurados, com até 30 segundos para mostrar o cosplay. Exige inscrição prévia, envio de imagens de referência e participação na avaliação preliminar. É avaliado nos quesitos Qualidade, Fidelidade e Palco."
+          "num": "1.1",
+          "title": "OBJETIVO DO CONCURSO",
+          "items": [
+            "O Concurso Cosplay Animeingá 2026 tem como objetivo valorizar a criatividade, a caracterização, a confecção e a interpretação de personagens, incentivando a expressão artística e a participação da comunidade cosplay no evento.",
+            "O concurso será realizado durante o ANIMEINGÁ 2026 e seguirá as regras, critérios, horários e procedimentos estabelecidos neste regulamento e pela organização do evento."
           ]
         },
         {
-          "title": "Desfile – For Fun",
-          "paragraphs": [
-            "Desfile com caráter recreativo, aberto a todos, sem inscrição prévia e sem avaliação competitiva — uma chance de circular pelo palco sem a pressão da competição. Não dá direito às premiações do Desfile – Competição."
+          "num": "1.2",
+          "title": "MODALIDADES",
+          "items": [
+            {
+              "text": "O Concurso Cosplay Animeingá 2026 será dividido nas seguintes modalidades:",
+              "subItems": [
+                "Desfile – Competição",
+                "Desfile – For Fun",
+                "Apresentação Individual",
+                "Apresentação em Dupla"
+              ]
+            },
+            "Cada modalidade possui regras, critérios de avaliação e procedimentos específicos, conforme estabelecido neste regulamento."
           ]
         },
         {
-          "title": "Apresentação Individual",
-          "paragraphs": [
-            "Performance preparada com duração entre 2:00 e 2:30 minutos, com áudio obrigatório e vídeo opcional exibido no telão. Exige inscrição prévia, envio de imagens de referência e participação na avaliação preliminar. É avaliada nos quesitos Qualidade, Fidelidade e Performance."
-          ]
-        },
-        {
-          "title": "Apresentação em Dupla",
-          "paragraphs": [
-            "Performance preparada para duplas, com as mesmas regras da Apresentação Individual. A nota é atribuída à apresentação como um todo, sendo considerada uma única nota para todos os integrantes."
+          "num": "1.3",
+          "title": "PARTICIPAÇÃO",
+          "items": [
+            "Poderão participar do concurso os interessados que cumprirem as regras estabelecidas neste regulamento.",
+            "A participação será individual no Desfile e na Apresentação Individual, e em dupla na modalidade Apresentação em Dupla.",
+            "A organização poderá estabelecer limite de participantes em cada modalidade, caso necessário.",
+            "O mesmo participante poderá participar de mais de uma modalidade, desde que cumpra os requisitos específicos de cada uma."
           ]
         }
       ]
     },
     {
       "id": "cronograma",
-      "title": "Cronograma",
+      "num": "2",
+      "title": "CRONOGRAMA",
       "entries": [
         {"data": "25/09/2026", "evento": "Início das inscrições para o Concurso Cosplay"},
         {"data": "31/10/2026", "evento": "Término das inscrições para o Concurso Cosplay"},
@@ -85,39 +79,59 @@
     },
     {
       "id": "inscricao",
-      "title": "Inscrição",
+      "num": "3",
+      "title": "INSCRIÇÃO",
       "subsections": [
         {
-          "title": "Como se Inscrever",
-          "paragraphs": [
+          "num": "3.1",
+          "title": "COMO SE INSCREVER",
+          "items": [
             "As inscrições deverão ser realizadas exclusivamente de forma online, por meio do formulário oficial de inscrição, no período de 25 de setembro a 31 de outubro de 2026.",
-            "Preencha sua ficha com zelo e atenção, incluindo todas as informações pedidas. Para cada categoria de competição é necessário fazer uma inscrição separada, através do mesmo formulário. O participante será responsável pelo correto preenchimento das informações solicitadas.",
-            "A inscrição somente será considerada válida após o preenchimento de todos os campos obrigatórios e o envio dos materiais solicitados, e implica a ciência e a concordância do participante com todas as disposições deste regulamento."
+            "Preencha sua ficha com zelo e atenção, incluindo todas as informações pedidas.",
+            "Para cada categoria de competição é necessário fazer uma inscrição separadamente através do mesmo formulário.",
+            "O participante será responsável pelo correto preenchimento das informações solicitadas no formulário.",
+            "A inscrição somente será considerada válida após o preenchimento de todos os campos obrigatórios e o envio dos materiais solicitados.",
+            "A realização da inscrição implica a ciência e a concordância do participante com todas as disposições deste regulamento."
           ],
-          "formButton": true
-        },
-        {
-          "title": "Imagens de Referência",
-          "paragraphs": [
-            "Para o Desfile – Competição e para as modalidades de Apresentação, é obrigatório enviar 5 (cinco) imagens de referência do cosplay para a pasta do Google Drive indicada pela organização."
-          ],
-          "bullets": [
-            "O Drive estará organizado por dia e modalidade do concurso. Dentro da pasta correspondente, o participante deverá criar uma nova pasta identificada com o nome do cosplay e o nome da obra à qual o personagem pertence, e inserir nela as 5 (cinco) imagens de referência.",
-            "As imagens de referência deverão permitir a identificação das características do personagem e auxiliar os jurados na avaliação de fidelidade e qualidade do cosplay."
-          ],
+          "formButton": true,
           "driveButton": true
         },
         {
-          "title": "Desfile – For Fun",
-          "paragraphs": [
-            "A participação no Desfile – For Fun não exige inscrição prévia. Os interessados deverão permanecer próximos ao palco quando for iniciado o Desfile – Competição, aguardando as orientações da organização para a formação e organização da fila do Desfile “For Fun”.",
-            "O Desfile “For Fun” possui caráter recreativo e não será submetido à avaliação competitiva. Sua participação não dará direito às premiações previstas para o Desfile – Competição."
+          "num": "3.2",
+          "title": "DESFILE – COMPETIÇÃO",
+          "items": [
+            {
+              "text": "Para participar do Desfile – Competição, o participante deverá:",
+              "subItems": [
+                "Preencher o formulário de inscrição com seus dados pessoais e as informações referentes ao cosplay;",
+                "Enviar para a pasta do Google Drive indicada pela organização 5 (cinco) imagens de referência do cosplay. O Drive estará organizado por dia e modalidade do concurso. Dentro da pasta correspondente, o participante deverá criar uma nova pasta identificada com o nome do cosplay e o nome da obra à qual o personagem pertence, e inserir nela as 5 (cinco) imagens de referência."
+              ]
+            },
+            "As imagens de referência deverão permitir a identificação das características do personagem e auxiliar os jurados na avaliação de fidelidade e qualidade do cosplay."
           ]
         },
         {
-          "title": "Áudio e Vídeo (Apresentações)",
-          "bullets": [
-            "O participante deverá entregar o áudio e/ou vídeo que for utilizado na apresentação, nos formatos .mp3 e/ou .mp4, durante a avaliação preliminar realizada no dia do evento.",
+          "num": "3.3",
+          "title": "DESFILE – FOR FUN",
+          "items": [
+            "A participação no Desfile – For Fun não exige inscrição prévia.",
+            "Os interessados deverão permanecer próximos ao palco quando for iniciado o Desfile – Competição, aguardando as orientações da organização para a formação e organização da fila do Desfile “For Fun”.",
+            "O Desfile “For Fun” possui caráter recreativo e não será submetido à avaliação competitiva.",
+            "A participação no Desfile “For Fun” não dará direito às premiações previstas para o Desfile – Competição."
+          ]
+        },
+        {
+          "num": "3.4",
+          "title": "APRESENTAÇÃO INDIVIDUAL E EM DUPLA",
+          "items": [
+            {
+              "text": "Para participar da modalidade Apresentação, o participante ou a dupla deverá:",
+              "subItems": [
+                "Preencher o formulário de inscrição com seus dados e as informações referentes ao cosplay;",
+                "Enviar para a pasta do Google Drive indicada pela organização 5 (cinco) imagens de referência do cosplay. O Drive estará organizado por dia e modalidade do concurso. Dentro da pasta correspondente, o participante deverá criar uma nova pasta identificada com o nome do cosplay e o nome da obra à qual o personagem pertence, e inserir nela as 5 (cinco) imagens de referência.",
+                "Entregar o áudio e/ou vídeo que for ser utilizado na apresentação, nos formatos .mp3 e/ou .mp4, durante a avaliação preliminar realizada no dia do evento."
+              ]
+            },
             "Recomenda-se que o participante leve o áudio e/ou vídeo em 2 (dois) pendrives diferentes, como medida de segurança para eventual falha de um dos dispositivos.",
             "O participante que realizar sua apresentação sem o áudio e/ou vídeo previamente planejado estará sujeito à perda de desempenho na avaliação, podendo ter sua nota final afetada.",
             "A organização não se responsabiliza por falhas decorrentes de problemas no arquivo, pendrive, dispositivo ou formato do áudio/vídeo fornecido pelo participante."
@@ -127,27 +141,31 @@
     },
     {
       "id": "premiacao",
-      "title": "Premiação",
+      "num": "4",
+      "title": "PREMIAÇÃO",
       "subsections": [
         {
-          "title": "Desfile – Competição",
-          "bullets": [
+          "num": "4.1",
+          "title": "DESFILE",
+          "items": [
             "1º lugar: R$ 500 + troféu",
             "2º lugar: R$ 300 + medalha",
             "3º lugar: R$ 200 + medalha"
           ]
         },
         {
-          "title": "Apresentação Individual",
-          "bullets": [
+          "num": "4.2",
+          "title": "APRESENTAÇÃO INDIVIDUAL",
+          "items": [
             "1º lugar: R$ 700 + troféu",
             "2º lugar: R$ 500 + medalha",
             "3º lugar: R$ 300 + medalha"
           ]
         },
         {
-          "title": "Apresentação em Dupla",
-          "bullets": [
+          "num": "4.3",
+          "title": "APRESENTAÇÃO EM DUPLA",
+          "items": [
             "1º lugar: R$ 700 + troféu",
             "2º lugar: R$ 500 + medalha",
             "3º lugar: R$ 300 + medalha"
@@ -157,10 +175,12 @@
     },
     {
       "id": "regras-gerais",
-      "title": "Regras Gerais",
+      "num": "5",
+      "title": "REGRAS GERAIS",
       "subsections": [
         {
-          "title": "Inscrição e Participação",
+          "num": "5.1",
+          "title": "INSCRIÇÃO E PARTICIPAÇÃO",
           "items": [
             "Poderão participar do Concurso Cosplay Animeingá os participantes devidamente inscritos na modalidade correspondente e que cumprirem todas as exigências estabelecidas neste regulamento.",
             "A inscrição no concurso implica o conhecimento e a aceitação integral deste regulamento.",
@@ -171,7 +191,8 @@
           ]
         },
         {
-          "title": "O Cosplay",
+          "num": "5.2",
+          "title": "COSPLAY",
           "items": [
             "O cosplay (fantasia) e a performance deverão, obrigatoriamente, ser baseados em personagens de mangás (histórias em quadrinhos japonesas), animes (animações japonesas), games, tokusatsu (produções japonesas live-action), HQs, filmes, séries, séries animadas, desenhos animados, manhwas, webtoons e novels, bem como outras obras diretamente relacionadas à temática do evento.",
             "O cosplay deverá apresentar elementos confeccionados, modificados ou customizados pelo próprio participante, de modo que seja possível identificar trabalho de produção artesanal e/ou adaptação na caracterização.",
@@ -183,27 +204,43 @@
           ]
         },
         {
-          "title": "Conduta",
-          "paragraphs": [
-            "Todos os participantes deverão manter comportamento respeitoso com os demais cosplayers, público, jurados, convidados, equipe do evento, prestadores de serviço e demais participantes.",
-            "O participante deverá seguir os horários, orientações e procedimentos determinados pela organização, além de colaborar com o bom andamento do concurso. Entende-se por não colaboração com o bom andamento do Concurso Cosplay Animeingá, entre outras situações:"
-          ],
+          "num": "5.3",
+          "title": "CONDUTA",
           "items": [
-            "Atrasar-se ou não cumprir o cronograma estabelecido;",
-            "Desrespeitar ou dificultar o trabalho dos colaboradores da organização;",
-            "Brigar ou iniciar conflitos com outros cosplayers, participantes, jurados, colaboradores ou público;",
-            "Utilizar palavras, gestos ou atitudes ofensivas, discriminatórias ou ameaçadoras;",
-            "Desrespeitar as orientações de segurança;",
-            "Danificar intencionalmente equipamentos, cenários, estruturas ou bens de terceiros;",
-            "Prejudicar propositalmente a apresentação de outro participante;",
-            "Descumprir qualquer outra regra estabelecida neste regulamento."
-          ],
-          "trailingParagraph": "As condutas descritas neste item poderão resultar em advertência, perda de pontos, interrupção da apresentação, desclassificação e/ou retirada do participante do evento, conforme a gravidade da situação."
+            "Todos os participantes deverão manter comportamento respeitoso com os demais cosplayers, público, jurados, convidados, equipe do evento, prestadores de serviço e demais participantes.",
+            "O participante deverá seguir os horários, orientações e procedimentos determinados pela organização, além de colaborar com o bom andamento do concurso; aqueles que não cumprirem com as regras do evento serão penalizados.",
+            {
+              "text": "Entende-se por não colaboração com o bom andamento do Concurso Cosplay Animeingá, entre outras situações:",
+              "subItems": [
+                "atrasar-se ou não cumprir o cronograma estabelecido;",
+                "desrespeitar ou dificultar o trabalho dos colaboradores da organização;",
+                "brigar ou iniciar conflitos com outros cosplayers, participantes, jurados, colaboradores ou público;",
+                "utilizar palavras, gestos ou atitudes ofensivas, discriminatórias ou ameaçadoras;",
+                "desrespeitar as orientações de segurança;",
+                "danificar intencionalmente equipamentos, cenários, estruturas ou bens de terceiros;",
+                "prejudicar propositalmente a apresentação de outro participante;",
+                "descumprir qualquer outra regra estabelecida neste regulamento."
+              ]
+            },
+            "As condutas descritas neste item poderão resultar em advertência, perda de pontos, interrupção da apresentação, desclassificação e/ou retirada do participante do evento, conforme a gravidade da situação."
+          ]
         },
         {
-          "title": "Penalidades e Desclassificação",
-          "paragraphs": [
-            "O descumprimento deste regulamento poderá resultar, conforme a gravidade da situação, em advertência; perda de pontos; retirada de determinado objeto ou elemento; interrupção da apresentação; desclassificação; retirada do participante do concurso; ou retirada do participante do evento.",
+          "num": "5.4",
+          "title": "PENALIDADES E DESCLASSIFICAÇÃO",
+          "items": [
+            {
+              "text": "O descumprimento deste regulamento poderá resultar, conforme a gravidade da situação, em:",
+              "subItems": [
+                "advertência;",
+                "perda de pontos;",
+                "retirada de determinado objeto ou elemento;",
+                "interrupção da apresentação;",
+                "desclassificação;",
+                "retirada do participante do concurso;",
+                "retirada do participante do evento."
+              ]
+            },
             "A desclassificação poderá ocorrer antes, durante ou após a apresentação, caso seja identificada irregularidade, descumprimento das regras ou situação que comprometa a segurança ou a integridade do concurso.",
             "Elementos considerados perigosos poderão ser imediatamente impedidos de serem utilizados, independentemente de sua previsão específica neste regulamento.",
             "As decisões relacionadas à segurança e à continuidade das apresentações deverão ser acatadas imediatamente pelos participantes."
@@ -213,17 +250,20 @@
     },
     {
       "id": "modalidade-desfile",
-      "title": "Modalidade Desfile",
+      "num": "6",
+      "title": "MODALIDADE DESFILE",
       "subsections": [
         {
-          "title": "Funcionamento",
-          "paragraphs": [
+          "num": "6.1",
+          "title": "FUNCIONAMENTO",
+          "items": [
             "O Desfile – Competição consiste em uma apresentação individual realizada no palco, diante do público e dos jurados.",
             "Durante o desfile, o participante deverá utilizar o tempo disponível para que o público possa observar e apreciar seu trabalho, podendo realizar poses características do personagem, pequenas encenações e demais movimentos compatíveis com a modalidade."
           ]
         },
         {
-          "title": "Tempo de Apresentação",
+          "num": "6.2",
+          "title": "TEMPO DE APRESENTAÇÃO",
           "items": [
             "Cada participante terá o tempo máximo de 30 (trinta) segundos para sua apresentação no palco.",
             "O tempo será destinado exclusivamente à apresentação.",
@@ -231,7 +271,8 @@
           ]
         },
         {
-          "title": "Avaliação Preliminar",
+          "num": "6.3",
+          "title": "AVALIAÇÃO PRELIMINAR",
           "items": [
             "A avaliação preliminar é obrigatória para os participantes do Desfile – Competição.",
             "A avaliação preliminar ocorrerá aproximadamente 2 (duas) horas antes do início do concurso, em local indicado pela organização através do estande do Cosplay Help.",
@@ -241,18 +282,20 @@
           ]
         },
         {
-          "title": "Critérios de Avaliação",
+          "num": "6.4",
+          "title": "CRITÉRIOS DE AVALIAÇÃO",
           "paragraphs": [
             "A avaliação será realizada considerando os seguintes critérios:"
           ],
-          "bullets": [
-            "QUALIDADE: serão considerados o acabamento; a qualidade da confecção; a escolha e utilização de tecidos e demais materiais, observando características como brilho, textura e volume quando aplicáveis; o grau de manufatura e/ou customização; a riqueza de acessórios; a complexidade e a atenção aos detalhes.",
-            "FIDELIDADE: serão considerados a similaridade da maquiagem, cabelo e/ou peruca, roupas, acessórios, proporções, cores e demais características visuais em relação à referência escolhida.",
-            "PALCO: serão considerados a interpretação do personagem, a desenvoltura, a presença de palco, a utilização do espaço e a capacidade de transmitir ao público as características do personagem durante o desfile."
+          "leads": [
+            {"term": "QUALIDADE", "text": "Serão considerados o acabamento; a qualidade da confecção; a escolha e utilização de tecidos e demais materiais, observando características como brilho, textura e volume quando aplicáveis; o grau de manufatura e/ou customização; a riqueza de acessórios; a complexidade e a atenção aos detalhes."},
+            {"term": "FIDELIDADE", "text": "Serão considerados a similaridade da maquiagem, cabelo e/ou peruca, roupas, acessórios, proporções, cores e demais características visuais em relação à referência escolhida."},
+            {"term": "PALCO", "text": "Serão considerados a interpretação do personagem, a desenvoltura, a presença de palco, a utilização do espaço e a capacidade de transmitir ao público as características do personagem durante o desfile."}
           ]
         },
         {
-          "title": "Notas",
+          "num": "6.5",
+          "title": "NOTAS",
           "items": [
             "O corpo de jurados será composto por 5 (cinco) jurados.",
             "Cada critério receberá 1 (uma) nota, em escala de 0 (zero) a 10 (dez), sendo zero a nota mínima e dez a nota máxima. Serão consideradas notas com até 1 (uma) casa decimal após a vírgula, como, por exemplo, 9,1 e 3,5.",
@@ -263,7 +306,8 @@
           ]
         },
         {
-          "title": "Critérios de Desempate",
+          "num": "6.6",
+          "title": "CRITÉRIOS DE DESEMPATE",
           "paragraphs": [
             "Em caso de Nota Final igual entre participantes, serão utilizados os seguintes critérios de desempate:"
           ],
@@ -278,17 +322,26 @@
     },
     {
       "id": "modalidade-apresentacao",
-      "title": "Modalidade Apresentação",
+      "num": "7",
+      "title": "MODALIDADE APRESENTAÇÃO",
       "subsections": [
         {
-          "title": "Funcionamento",
-          "paragraphs": [
-            "A modalidade Apresentação será dividida em Apresentação Individual e Apresentação em Dupla.",
+          "num": "7.1",
+          "title": "FUNCIONAMENTO",
+          "items": [
+            {
+              "text": "A modalidade Apresentação será dividida em:",
+              "subItems": [
+                "Apresentação Individual;",
+                "Apresentação em Dupla."
+              ]
+            },
             "A Apresentação consiste em uma performance preparada pelos participantes que tem como objetivo interpretar e dar vida aos personagens escolhidos por meio de atuação, criatividade, expressão corporal e interação com o público. A apresentação poderá utilizar recursos como trilha sonora, vídeo, cenários e outros elementos cênicos, desde que respeitadas as regras de segurança e os limites estabelecidos neste regulamento."
           ]
         },
         {
-          "title": "Áudio e Vídeo",
+          "num": "7.2",
+          "title": "ÁUDIO E VÍDEO",
           "items": [
             "É necessário gravar previamente o áudio da apresentação. Os participantes poderão também optar por trazer um vídeo que será exibido no telão, desde que o formato seja previamente aprovado pela organização.",
             "Serão permitidos áudios em língua portuguesa, bem como músicas em português, inglês e japonês.",
@@ -299,7 +352,8 @@
           ]
         },
         {
-          "title": "Tempo de Apresentação",
+          "num": "7.3",
+          "title": "TEMPO DE APRESENTAÇÃO",
           "items": [
             "As apresentações deverão ter duração mínima de 2 (dois) minutos e máxima de 2 (dois) minutos e 30 (trinta) segundos, ou seja, entre 2:00 e 2:30 minutos.",
             "Os participantes terão 60 (sessenta) segundos para preparar o palco antes do início da apresentação e mais 60 (sessenta) segundos para finalizar a apresentação e deixar o palco livre para o próximo participante.",
@@ -312,7 +366,8 @@
           ]
         },
         {
-          "title": "Cenário",
+          "num": "7.4",
+          "title": "CENÁRIO",
           "items": [
             "Não será permitido o uso de cenários ou acessórios que precisem ser pendurados, pregados, colados, perfurados ou fixados permanentemente ao palco.",
             "Os cenários e acessórios deverão ser de fácil manuseio e transporte.",
@@ -327,7 +382,8 @@
           ]
         },
         {
-          "title": "Efeitos Especiais",
+          "num": "7.5",
+          "title": "EFEITOS ESPECIAIS",
           "items": [
             "Todos os efeitos especiais deverão ser secos e seguros.",
             "Não será permitido o uso de líquidos ou materiais viscosos.",
@@ -339,7 +395,8 @@
           ]
         },
         {
-          "title": "Avaliação Preliminar",
+          "num": "7.6",
+          "title": "AVALIAÇÃO PRELIMINAR",
           "items": [
             "A avaliação preliminar é obrigatória para todos os participantes da modalidade Apresentação.",
             "A avaliação preliminar ocorrerá aproximadamente 2 (duas) horas antes do início da apresentação, em local indicado pela organização através do estande do Cosplay Help.",
@@ -348,7 +405,8 @@
           ]
         },
         {
-          "title": "Desclassificação",
+          "num": "7.7",
+          "title": "DESCLASSIFICAÇÃO",
           "items": [
             "Mesmo depois de realizada a apresentação, o participante que comprovadamente causar intencionalmente ou por descumprimento das regras algum dano a outro(s) cosplayer(s), ao público, aos jurados, aos colaboradores, aos equipamentos, ao palco ou ao local do evento poderá ser penalizado com perda de pontos e/ou desclassificação do concurso.",
             "Caso a organização ou a comissão julgadora considere que qualquer elemento da apresentação possa oferecer risco ao participante, à comissão, aos prestadores de serviço, aos jurados, aos convidados, ao público ou às demais pessoas presentes no local, a apresentação poderá ser interrompida e o participante poderá ser desclassificado.",
@@ -357,20 +415,23 @@
           ]
         },
         {
-          "title": "Critérios de Avaliação",
+          "num": "7.8",
+          "title": "CRITÉRIOS DE AVALIAÇÃO",
           "paragraphs": [
             "A avaliação será realizada considerando os seguintes critérios:"
           ],
-          "bullets": [
-            "QUALIDADE: serão considerados o acabamento; a qualidade da confecção; a escolha e utilização de tecidos e demais materiais, considerando características como brilho, textura e volume quando aplicáveis; o grau de manufatura e/ou customização; a riqueza de acessórios; a complexidade e a atenção aos detalhes.",
-            "FIDELIDADE: serão considerados a similaridade da maquiagem, cabelo e/ou peruca, roupas, acessórios, cores, proporções e demais características visuais em relação à referência escolhida.",
-            "PERFORMANCE: serão considerados a interpretação do personagem; a criatividade; a qualidade e execução da apresentação; o impacto e capacidade de envolver o público; a desenvoltura no palco; a utilização do espaço; a sincronia dos movimentos e a integração entre atuação, trilha sonora, áudio, cenário e demais elementos utilizados."
+          "leads": [
+            {"term": "QUALIDADE", "text": "Serão considerados o acabamento; a qualidade da confecção; a escolha e utilização de tecidos e demais materiais, considerando características como brilho, textura e volume quando aplicáveis; o grau de manufatura e/ou customização; a riqueza de acessórios; a complexidade e a atenção aos detalhes."},
+            {"term": "FIDELIDADE", "text": "Serão considerados a similaridade da maquiagem, cabelo e/ou peruca, roupas, acessórios, cores, proporções e demais características visuais em relação à referência escolhida."},
+            {"term": "PERFORMANCE", "text": "Serão considerados a interpretação do personagem; a criatividade; a qualidade e execução da apresentação; o impacto e capacidade de envolver o público; a desenvoltura no palco; a utilização do espaço; a sincronia dos movimentos e a integração entre atuação, trilha sonora, áudio, cenário e demais elementos utilizados."}
           ]
         },
         {
-          "title": "Notas",
+          "num": "7.9",
+          "title": "NOTAS",
           "items": [
             "O corpo de jurados será composto por 5 (cinco) jurados.",
+            "Cada jurado atribuirá uma nota de 0 a 10 para cada critério.",
             "Cada critério receberá 1 (uma) nota, em escala de 0 (zero) a 10 (dez), sendo zero a nota mínima e dez a nota máxima. Serão consideradas notas com até 1 (uma) casa decimal após a vírgula, como, por exemplo, 9,1 e 3,5.",
             "Das 5 (cinco) notas atribuídas pelos jurados em cada critério, serão desconsideradas a maior e a menor nota, restando 3 (três) notas para a avaliação.",
             "Com as 3 (três) notas restantes será calculada a média aritmética de cada critério.",
@@ -380,7 +441,8 @@
           ]
         },
         {
-          "title": "Critérios de Desempate",
+          "num": "7.10",
+          "title": "CRITÉRIOS DE DESEMPATE",
           "paragraphs": [
             "Em caso de Nota Final igual entre os participantes, serão utilizados os seguintes critérios de desempate:"
           ],
@@ -395,36 +457,43 @@
     },
     {
       "id": "seguranca",
-      "title": "Segurança",
+      "num": "8",
+      "title": "SEGURANÇA",
       "subsections": [
         {
-          "title": "Objetos e Materiais Proibidos",
-          "paragraphs": [
-            "É proibida a utilização de objetos ou materiais que possam oferecer risco aos participantes, público, jurados, equipe, prestadores de serviço ou instalações do evento. Entre os itens proibidos estão:"
-          ],
-          "bullets": [
-            "Fogo ou chamas;",
-            "Fogos de artifício e materiais explosivos;",
-            "Armas de fogo funcionais;",
-            "Armas brancas funcionais;",
-            "Objetos cortantes ou perfurantes;",
-            "Materiais abrasivos;",
-            "Substâncias corrosivas ou tóxicas;",
-            "Solventes e substâncias inflamáveis;",
-            "Extintores;",
-            "Materiais que produzam calor ou faíscas;",
-            "Quaisquer outros objetos considerados perigosos pela organização."
+          "num": "8.1",
+          "title": "OBJETOS E MATERIAIS PROIBIDOS",
+          "items": [
+            "É proibida a utilização de objetos ou materiais que possam oferecer risco aos participantes, público, jurados, equipe, prestadores de serviço ou instalações do evento.",
+            {
+              "text": "Entre os itens proibidos estão:",
+              "subItems": [
+                "fogo ou chamas;",
+                "fogos de artifício e materiais explosivos;",
+                "armas de fogo funcionais;",
+                "armas brancas funcionais;",
+                "objetos cortantes ou perfurantes;",
+                "materiais abrasivos;",
+                "substâncias corrosivas ou tóxicas;",
+                "solventes e substâncias inflamáveis;",
+                "extintores;",
+                "materiais que produzam calor ou faíscas;",
+                "quaisquer outros objetos considerados perigosos pela organização."
+              ]
+            }
           ]
         },
         {
-          "title": "Réplicas e Armas Cênicas",
-          "paragraphs": [
+          "num": "8.2",
+          "title": "RÉPLICAS E ARMAS CÊNICAS",
+          "items": [
             "Réplicas e armas cenográficas não funcionais poderão ser utilizadas, desde que confeccionadas em materiais seguros e previamente submetidas à avaliação da organização, quando solicitado. A organização poderá impedir a entrada ou utilização de qualquer objeto que considere potencialmente perigoso, ainda que este esteja previsto como parte do personagem.",
             "A organização e a equipe de segurança poderão impedir a entrada ou utilização de qualquer objeto que considere potencialmente perigoso, ainda que este esteja previsto como parte do personagem."
           ]
         },
         {
-          "title": "Procedimentos de Segurança",
+          "num": "8.3",
+          "title": "PROCEDIMENTOS DE SEGURANÇA",
           "items": [
             "Todos os participantes deverão seguir imediatamente as orientações da organização, equipe de palco e segurança.",
             "A organização poderá interromper uma apresentação, retirar determinado objeto ou desclassificar um participante caso identifique risco à segurança.",
@@ -436,10 +505,12 @@
     },
     {
       "id": "responsabilidades",
-      "title": "Responsabilidades e Direitos de Imagem",
+      "num": "9",
+      "title": "RESPONSABILIDADES E DIREITOS DE IMAGEM",
       "subsections": [
         {
-          "title": "Responsabilidade do Participante",
+          "num": "9.1",
+          "title": "RESPONSABILIDADE DO PARTICIPANTE",
           "items": [
             "O participante será responsável por seus objetos pessoais, cosplays, acessórios, cenários, equipamentos e demais materiais utilizados no concurso.",
             "O participante deverá zelar pela preservação do espaço, equipamentos e estruturas disponibilizados pelo evento.",
@@ -447,22 +518,25 @@
           ]
         },
         {
-          "title": "Áudio, Vídeo e Direitos Autorais",
+          "num": "9.2",
+          "title": "ÁUDIO, VÍDEO E DIREITOS AUTORAIS",
           "items": [
             "O participante será responsável pela regularidade e pelas autorizações necessárias referentes às músicas, vídeos, imagens, textos, personagens e demais materiais utilizados em sua apresentação.",
             "A organização poderá solicitar a substituição ou retirada de material que apresente problemas legais, técnicos ou incompatibilidade com as regras do evento."
           ]
         },
         {
-          "title": "Direito de Imagem",
+          "num": "9.3",
+          "title": "DIREITO DE IMAGEM",
           "items": [
             "Ao participar do concurso, o participante declara estar ciente de que poderá ser fotografado e/ou filmado durante sua participação.",
             "Os registros poderão ser utilizados pela organização para divulgação do concurso, do ANIMEINGÁ e de futuras edições do evento, incluindo redes sociais, materiais promocionais e demais canais oficiais."
           ]
         },
         {
-          "title": "Objetos Pessoais",
-          "paragraphs": [
+          "num": "9.4",
+          "title": "OBJETOS PESSOAIS",
+          "items": [
             "A organização não se responsabiliza por objetos pessoais, cosplays, acessórios, cenários, equipamentos ou materiais deixados nas áreas do concurso."
           ]
         }
@@ -470,7 +544,8 @@
     },
     {
       "id": "disposicoes-finais",
-      "title": "Disposições Finais",
+      "num": "10",
+      "title": "DISPOSIÇÕES FINAIS",
       "items": [
         "A inscrição e participação no Concurso Cosplay Animeingá implicam a aceitação integral deste regulamento e das orientações fornecidas pela organização durante o evento.",
         "A organização poderá realizar alterações neste regulamento antes do concurso, desde que tais alterações sejam comunicadas aos participantes por meio dos canais oficiais do evento.",

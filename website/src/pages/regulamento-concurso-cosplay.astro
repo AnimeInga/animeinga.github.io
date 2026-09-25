@@ -16,7 +16,6 @@ import site from '../data/site.json';
         <a class="btn btn--primary" href={data.formUrl} target="_blank" rel="noopener noreferrer">
           Inscrever-se
         </a>
-        <span class="hero-badge">{data.heroBadge}</span>
       </div>
     </div>
   </section>
@@ -26,14 +25,20 @@ import site from '../data/site.json';
       <p class="toc__title">Neste regulamento</p>
       <ol>
         {data.sections.map((section) => (
-          <li><a href={`#${section.id}`}>{section.title}</a></li>
+          <li>
+            <a href={`#${section.id}`}>
+              {section.num ? `${section.num}. ` : ''}{section.title}
+            </a>
+          </li>
         ))}
       </ol>
     </nav>
 
     {data.sections.map((section) => (
       <section id={section.id} class="reg-section reveal">
-        <h2 class="reg-section__title">{section.title}</h2>
+        <h2 class="reg-section__title">
+          {section.num ? `${section.num}. ` : ''}{section.title}
+        </h2>
 
         {section.paragraphs?.map((paragraph) => (
           <p class="reg-text">{paragraph}</p>
@@ -53,21 +58,45 @@ import site from '../data/site.json';
         {section.items && (
           <ol class="reg-list">
             {section.items.map((item) => (
-              <li>{item}</li>
+              <li>{typeof item === 'string' ? item : (
+                <>
+                  {item.text}
+                  {item.subItems && (
+                    <ol class="reg-list reg-list--nested">
+                      {item.subItems.map((subItem) => (
+                        <li>{subItem}</li>
+                      ))}
+                    </ol>
+                  )}
+                </>
+              )}</li>
             ))}
           </ol>
         )}
 
         {section.subsections?.map((sub) => (
           <div class="reg-sub">
-            <h3 class="reg-sub__title">{sub.title}</h3>
+            <h3 class="reg-sub__title">
+              {sub.num ? `${sub.num} ` : ''}{sub.title}
+            </h3>
             {sub.paragraphs?.map((paragraph) => (
               <p class="reg-text">{paragraph}</p>
             ))}
             {sub.items && (
               <ol class="reg-list">
                 {sub.items.map((item) => (
-                  <li>{item}</li>
+                  <li>{typeof item === 'string' ? item : (
+                    <>
+                      {item.text}
+                      {item.subItems && (
+                        <ol class="reg-list reg-list--nested">
+                          {item.subItems.map((subItem) => (
+                            <li>{subItem}</li>
+                          ))}
+                        </ol>
+                      )}
+                    </>
+                  )}</li>
                 ))}
               </ol>
             )}
@@ -78,8 +107,12 @@ import site from '../data/site.json';
                 ))}
               </ul>
             )}
-            {sub.trailingParagraph && (
-              <p class="reg-text">{sub.trailingParagraph}</p>
+            {sub.leads && (
+              <div class="reg-criteria">
+                {sub.leads.map((lead) => (
+                  <p class="reg-text"><strong>{lead.term}:</strong> {lead.text}</p>
+                ))}
+              </div>
             )}
             {(sub.formButton || sub.driveButton) && (
               <div class="reg-sub__actions">
@@ -114,14 +147,6 @@ import site from '../data/site.json';
     flex-wrap: wrap;
     gap: 1.1rem;
     margin-top: 2.2rem;
-  }
-
-  .hero-badge {
-    padding: 0.55rem 1.2rem;
-    border: 1px dashed rgba(255, 183, 197, 0.45);
-    border-radius: 10px;
-    color: var(--color-sakura);
-    font-weight: 800;
   }
 
   .toc {
@@ -180,6 +205,10 @@ import site from '../data/site.json';
     line-height: 1.8;
   }
 
+  .reg-criteria strong {
+    color: #fff;
+  }
+
   .reg-sub {
     margin-top: 1.8rem;
   }
@@ -206,6 +235,10 @@ import site from '../data/site.json';
   .reg-list li::marker {
     color: var(--color-primary-light);
     font-weight: 700;
+  }
+
+  .reg-list--nested {
+    margin-top: 0.8rem;
   }
 
   .reg-list--unordered {
