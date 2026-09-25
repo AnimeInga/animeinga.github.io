@@ -3,7 +3,7 @@
   "page": {
     "title": "Regulamentos & Competições",
     "subtitle": "Os palcos e as arenas do AnimeIngá 2026 estão se preparando. Confira as competições confirmadas e fique de olho: regulamentos e inscrições serão publicados aqui.",
-    "notice": "O regulamento e as inscrições do Artists' Alley já estão disponíveis! Os das demais competições serão divulgados em breve nesta página e nas nossas redes sociais. Todo o conteúdo é gratuito para consulta."
+    "notice": "Os regulamentos e as inscrições do Artists' Alley e do Concurso Cosplay já estão disponíveis! Os das demais competições serão divulgados em breve nesta página e nas nossas redes sociais. Todo o conteúdo é gratuito para consulta."
   },
   "competitions": [
     {
@@ -43,16 +43,16 @@
       "title": "Concurso Cosplay",
       "icon": "🎭",
       "tagline": "Dê vida ao seu personagem",
-      "description": "A passarela mais esperada do evento! Categorias para todos os níveis, jurados convidados e premiação especial. Apresentações individuais e em grupo serão detalhadas no regulamento.",
-      "status": "em-breve",
+      "description": "A passarela mais esperada do evento! Quatro modalidades — Desfile Competição, Desfile For Fun (sem inscrição), Apresentação Individual e Apresentação em Dupla — avaliadas por jurados convidados. Inscrições de 25/09 a 31/10/2026. Leia o regulamento e suba ao palco!",
+      "status": "inscricoes",
       "highlights": [
-        "Categorias a anunciar",
-        "Jurados convidados",
-        "Apresentações individuais e em grupo",
-        "Premiação especial do público"
+        "Inscrições de 25/09 a 31/10/2026",
+        "Desfile For Fun sem inscrição",
+        "R$ 4.000 em premiação + troféus",
+        "Apresentações de 2:00 a 2:30 min"
       ],
-      "regulationUrl": "",
-      "registrationUrl": ""
+      "regulationUrl": "regulamento-concurso-cosplay.html",
+      "registrationUrl": "https://forms.gle/8cGecuwsJMrJwsPj9"
     },
     {
       "id": "kpop",
