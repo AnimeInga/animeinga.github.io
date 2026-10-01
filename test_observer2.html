@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .spacer { height: 100vh; background: lightblue; }
+  .reveal { opacity: 0; background: pink; height: 300vh; transition: opacity 1s; }
+  .reveal.is-visible { opacity: 1; }
+</style>
+</head>
+<body>
+  <div class="spacer">Scroll down</div>
+  <div class="reveal" id="target">I am a very tall element</div>
+  <div class="spacer">Bottom</div>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          console.log('intersecting at ratio', e.intersectionRatio);
+          document.body.style.background = 'red';
+          e.target.classList.add('is-visible');
+        }
+      });
+    }, { threshold: 0.15 });
+    observer.observe(document.getElementById('target'));
+  </script>
+</body>
+</html>
