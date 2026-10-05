@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import SakuraFall from '../components/SakuraFall.astro';
-import data from '../data/regulamento-concurso-cosplay.json';
+import data from '../data/regulamento-concurso-kpop.json';
 import site from '../data/site.json';
 ---
 
@@ -16,6 +16,7 @@ import site from '../data/site.json';
         <a class="btn btn--primary" href={data.formUrl} target="_blank" rel="noopener noreferrer">
           Inscrever-se
         </a>
+        <span class="price-tag">Inscrição: {data.price}</span>
       </div>
     </div>
   </section>
@@ -114,26 +115,16 @@ import site from '../data/site.json';
                 ))}
               </div>
             )}
-            {sub.blocks?.map((block) => (
-              <>
-                {block.label && <p class="reg-block-label">{block.label}</p>}
-                <ol class="reg-list">
-                  {block.items.map((blockItem) => (
-                    <li>{blockItem}</li>
-                  ))}
-                </ol>
-              </>
-            ))}
-            {(sub.formButton || sub.driveButton) && (
+            {(sub.formButton || sub.authButton) && (
               <div class="reg-sub__actions">
                 {sub.formButton && (
                   <a class="btn btn--primary" href={data.formUrl} target="_blank" rel="noopener noreferrer">
                     Preencher a ficha de inscrição
                   </a>
                 )}
-                {sub.driveButton && (
-                  <a class="btn btn--ghost" href={data.driveUrl} target="_blank" rel="noopener noreferrer">
-                    Enviar imagens de referência
+                {sub.authButton && (
+                  <a class="btn btn--ghost" href={data.authUrl} target="_blank" rel="noopener noreferrer">
+                    Baixar modelo de autorização
                   </a>
                 )}
               </div>
@@ -161,6 +152,14 @@ import site from '../data/site.json';
     flex-wrap: wrap;
     gap: 1.1rem;
     margin-top: 2.2rem;
+  }
+
+  .price-tag {
+    padding: 0.55rem 1.2rem;
+    border: 1px dashed rgba(255, 183, 197, 0.45);
+    border-radius: 10px;
+    color: var(--color-sakura);
+    font-weight: 800;
   }
 
   .toc {
@@ -269,19 +268,6 @@ import site from '../data/site.json';
     gap: 0.8rem;
     flex-wrap: wrap;
     margin-top: 1.2rem;
-  }
-
-  .reg-block-label {
-    margin: 1.1rem 0 0.6rem;
-    font-weight: 800;
-    font-size: 0.8rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--color-sakura);
-  }
-
-  .reg-sub__title + .reg-block-label {
-    margin-top: 0.2rem;
   }
 
   .timeline {

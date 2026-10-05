@@ -1,5 +1,5 @@
 {
-  "_leia-me": "Regulamento do Concurso Cosplay Animeingá 2026 (fonte: REGULAMENTO CONCURSO COSPLAY 2026_REV_00.docx). A página regulamento-concurso-cosplay.html é gerada automaticamente a partir deste arquivo — edite os textos aqui e rode o build. A estrutura espelha a numeração oficial do documento: 'num' é a numeração exibida no título da seção (ex.: '1', '1.1'); 'items' são itens numerados que se renumeram sozinhos e aceitam objeto {text, subItems} para subitens aninhados (ex.: 5.3.3); 'leads' são pares {term, text} renderizados como 'TERM: texto' para os critérios de avaliação; 'entries' são as datas do cronograma; 'formButton' e 'driveButton' renderizam os botões do formulário de inscrição e da pasta de imagens ('formUrl' e 'driveUrl').",
+  "_leia-me": "Regulamento do Concurso Cosplay Animeingá 2026 (fonte: REGULAMENTO CONCURSO COSPLAY 2026_REV_01.docx). A página regulamento-concurso-cosplay.html é gerada automaticamente a partir deste arquivo — edite os textos aqui e rode o build. A estrutura espelha a numeração oficial do documento: 'num' é a numeração exibida no título da seção (ex.: '1', '1.1'); 'items' são itens numerados que se renumeram sozinhos e aceitam objeto {text, subItems} para subitens aninhados (ex.: 5.3.3); 'leads' são pares {term, text} renderizados como 'TERM: texto' para os critérios de avaliação; 'entries' são as datas do cronograma; 'formButton' e 'driveButton' renderizam os botões do formulário de inscrição e da pasta de imagens ('formUrl' e 'driveUrl'); 'blocks' são grupos {label, items} usados na premiação por dia (ex.: SÁBADO/DOMINGO em 4.1); 'closing' são parágrafos finais exibidos após as subseções.",
   "page": {
     "title": "Regulamento Concurso Cosplay 2026",
     "subtitle": "Regras oficiais do Concurso Cosplay Animeingá 2026: modalidades, cronograma, inscrição, critérios de avaliação, premiação e segurança."
@@ -54,7 +54,12 @@
             "Poderão participar do concurso os interessados que cumprirem as regras estabelecidas neste regulamento.",
             "A participação será individual no Desfile e na Apresentação Individual, e em dupla na modalidade Apresentação em Dupla.",
             "A organização poderá estabelecer limite de participantes em cada modalidade, caso necessário.",
-            "O mesmo participante poderá participar de mais de uma modalidade, desde que cumpra os requisitos específicos de cada uma."
+            "O participante poderá se inscrever e participar de mais de uma modalidade do Concurso Cosplay Animeingá 2026, desde que cumpra os requisitos específicos de cada uma e respeite os horários e procedimentos estabelecidos pela organização.",
+            "É permitido ao participante utilizar o mesmo cosplay em diferentes modalidades do concurso, inclusive no Desfile – Competição, Desfile – For Fun, Apresentação Individual e Apresentação em Dupla.",
+            "A utilização do mesmo cosplay em diferentes modalidades não impede o participante de receber mais de uma premiação no mesmo dia. Dessa forma, o participante poderá, por exemplo, ser premiado no Desfile – Competição e na Apresentação realizada no mesmo dia utilizando o mesmo cosplay.",
+            "Cada cosplay poderá receber premiação competitiva em apenas um dia do evento. Caso um participante seja premiado com determinado cosplay no sábado, poderá continuar participando das modalidades realizadas no domingo com o mesmo cosplay, porém este cosplay não estará apto a receber nova premiação no domingo.",
+            "Para concorrer novamente à premiação no domingo, o participante deverá utilizar um cosplay diferente daquele com o qual tenha recebido premiação no sábado.",
+            "A regra estabelecida nos itens anteriores refere-se exclusivamente à premiação. A utilização do mesmo cosplay em diferentes dias ou modalidades continua permitida, desde que o participante cumpra as demais regras e procedimentos do concurso."
           ]
         }
       ]
@@ -143,34 +148,39 @@
       "id": "premiacao",
       "num": "4",
       "title": "PREMIAÇÃO",
+      "paragraphs": [
+        "As premiações serão realizadas separadamente em cada dia do evento, de acordo com as modalidades programadas para cada dia.",
+        "O Desfile – Competição será realizado nos dois dias do ANIMEINGÁ 2026, com classificação e premiação independentes para o sábado e para o domingo.",
+        "No sábado, serão realizadas as premiações da Apresentação Individual e do Desfile – Competição.",
+        "No domingo, serão realizadas as premiações da Apresentação em Dupla e do Desfile – Competição.",
+        "A regra de utilização do mesmo cosplay para fins de premiação está estabelecida no item 1.3 deste regulamento."
+      ],
       "subsections": [
         {
           "num": "4.1",
-          "title": "DESFILE",
-          "items": [
-            "1º lugar: R$ 500 + troféu",
-            "2º lugar: R$ 300 + medalha",
-            "3º lugar: R$ 200 + medalha"
+          "title": "DESFILE – COMPETIÇÃO",
+          "blocks": [
+            {"label": "SÁBADO", "items": ["1º lugar: R$ 500,00 + troféu", "2º lugar: R$ 300,00 + medalha", "3º lugar: R$ 200,00 + medalha"]},
+            {"label": "DOMINGO", "items": ["1º lugar: R$ 500,00 + troféu", "2º lugar: R$ 300,00 + medalha", "3º lugar: R$ 200,00 + medalha"]}
           ]
         },
         {
           "num": "4.2",
           "title": "APRESENTAÇÃO INDIVIDUAL",
-          "items": [
-            "1º lugar: R$ 700 + troféu",
-            "2º lugar: R$ 500 + medalha",
-            "3º lugar: R$ 300 + medalha"
+          "blocks": [
+            {"label": "SÁBADO", "items": ["1º lugar: R$ 700,00 + troféu", "2º lugar: R$ 500,00 + medalha", "3º lugar: R$ 300,00 + medalha"]}
           ]
         },
         {
           "num": "4.3",
           "title": "APRESENTAÇÃO EM DUPLA",
-          "items": [
-            "1º lugar: R$ 700 + troféu",
-            "2º lugar: R$ 500 + medalha",
-            "3º lugar: R$ 300 + medalha"
+          "blocks": [
+            {"label": "DOMINGO", "items": ["1º lugar: R$ 700,00 + troféu", "2º lugar: R$ 500,00 + medalha", "3º lugar: R$ 300,00 + medalha"]}
           ]
         }
+      ],
+      "closing": [
+        "O Desfile – For Fun possui caráter exclusivamente recreativo e não possui premiação competitiva."
       ]
     },
     {
@@ -208,7 +218,7 @@
           "title": "CONDUTA",
           "items": [
             "Todos os participantes deverão manter comportamento respeitoso com os demais cosplayers, público, jurados, convidados, equipe do evento, prestadores de serviço e demais participantes.",
-            "O participante deverá seguir os horários, orientações e procedimentos determinados pela organização, além de colaborar com o bom andamento do concurso; aqueles que não cumprirem com as regras do evento serão penalizados.",
+            "O participante deverá seguir os horários, orientações e procedimentos determinados pela organização, além de colaborar com o bom andamento do concurso, aqueles que não cumprirem com as regras do evento serão penalizados.",
             {
               "text": "Entende-se por não colaboração com o bom andamento do Concurso Cosplay Animeingá, entre outras situações:",
               "subItems": [
@@ -241,7 +251,7 @@
                 "retirada do participante do evento."
               ]
             },
-            "A desclassificação poderá ocorrer antes, durante ou após a apresentação, caso seja identificada irregularidade, descumprimento das regras ou situação que comprometa a segurança ou a integridade do concurso.",
+            "Mesmo depois de realizada a apresentação, o participante que comprovadamente causar intencionalmente ou por descumprimento das regras algum dano a outro(s) cosplayer(s), ao público, aos jurados, aos colaboradores, aos equipamentos, ao palco ou ao local do evento poderá ser penalizado com perda de pontos e/ou desclassificação do concurso.",
             "Elementos considerados perigosos poderão ser imediatamente impedidos de serem utilizados, independentemente de sua previsão específica neste regulamento.",
             "As decisões relacionadas à segurança e à continuidade das apresentações deverão ser acatadas imediatamente pelos participantes."
           ]
@@ -389,7 +399,7 @@
             "Não será permitido o uso de líquidos ou materiais viscosos.",
             "Não será permitido o uso de fogo, fogos de artifício, faíscas, explosivos, fumaça, materiais inflamáveis, armas de corte, armas brancas funcionais, armas de fogo, abrasivos, corrosivos, tinturas tóxicas, solventes, extintores ou outras substâncias ou objetos nocivos.",
             "Não serão permitidos efeitos que produzam resíduos, pó, partículas ou materiais que possam sujar ou danificar o palco ou oferecer risco às pessoas presentes.",
-            "O uso de glitter, confetes, papéis picados, areia, farinha, líquidos ou materiais similares dependerá de autorização prévia e expressa da organização.",
+            "O uso de glitter, confetes, papéis picados, areia, farinha ou materiais similares dependerá de autorização prévia e expressa da organização.",
             "Máquinas de fumaça, efeitos pirotécnicos, sprays, aerossóis ou equipamentos similares somente poderão ser utilizados mediante autorização prévia e expressa da organização, quando tecnicamente viáveis e seguros.",
             "O uso de substâncias ou efeitos não autorizados poderá acarretar perda de pontos e/ou desclassificação do concurso."
           ]
@@ -406,16 +416,6 @@
         },
         {
           "num": "7.7",
-          "title": "DESCLASSIFICAÇÃO",
-          "items": [
-            "Mesmo depois de realizada a apresentação, o participante que comprovadamente causar intencionalmente ou por descumprimento das regras algum dano a outro(s) cosplayer(s), ao público, aos jurados, aos colaboradores, aos equipamentos, ao palco ou ao local do evento poderá ser penalizado com perda de pontos e/ou desclassificação do concurso.",
-            "Caso a organização ou a comissão julgadora considere que qualquer elemento da apresentação possa oferecer risco ao participante, à comissão, aos prestadores de serviço, aos jurados, aos convidados, ao público ou às demais pessoas presentes no local, a apresentação poderá ser interrompida e o participante poderá ser desclassificado.",
-            "Objetos, cenários, efeitos ou condutas que não estejam expressamente proibidos neste regulamento também poderão ser impedidos caso apresentem risco à segurança ou ao funcionamento do concurso.",
-            "A decisão referente à segurança e à continuidade da apresentação caberá à organização, podendo ser tomada imediatamente diante de uma situação de risco."
-          ]
-        },
-        {
-          "num": "7.8",
           "title": "CRITÉRIOS DE AVALIAÇÃO",
           "paragraphs": [
             "A avaliação será realizada considerando os seguintes critérios:"
@@ -427,7 +427,7 @@
           ]
         },
         {
-          "num": "7.9",
+          "num": "7.8",
           "title": "NOTAS",
           "items": [
             "O corpo de jurados será composto por 5 (cinco) jurados.",
@@ -437,11 +437,11 @@
             "Com as 3 (três) notas restantes será calculada a média aritmética de cada critério.",
             "Com as médias obtidas em cada um dos 3 (três) critérios será calculada uma nova média aritmética, que será considerada a Nota Final.",
             "No caso da apresentação em dupla, a nota será atribuída à apresentação como um todo, sendo considerada uma única nota para todos os integrantes.",
-            "Será considerado vencedor o participante ou grupo que obtiver a maior Nota Final."
+            "Será considerado vencedor o participante ou dupla que obtiver a maior Nota Final."
           ]
         },
         {
-          "num": "7.10",
+          "num": "7.9",
           "title": "CRITÉRIOS DE DESEMPATE",
           "paragraphs": [
             "Em caso de Nota Final igual entre os participantes, serão utilizados os seguintes critérios de desempate:"

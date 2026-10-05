@@ -1,0 +1,502 @@
+{
+  "_leia-me": "Regulamento da Competição K-Pop Animeingá 2026 (fonte: REGULAMENTO CONCURSO KPOP 2026_REV_00.docx). A página regulamento-concurso-kpop.html é gerada automaticamente a partir deste arquivo — edite os textos aqui e rode o build. A estrutura espelha a numeração oficial do documento: 'num' é a numeração exibida no título da seção (ex.: '1', '1.1'); 'items' são itens numerados que se renumeram sozinhos e aceitam objeto {text, subItems} para subitens aninhados; 'leads' são pares {term, text} renderizados como 'TERM: texto' (critérios de avaliação e deduções); 'entries' são as datas do cronograma; 'formButton' e 'authButton' renderizam os botões do formulário de inscrição e do modelo de autorização ('formUrl' e 'authUrl'); 'price' alimenta o destaque de valor da taxa no topo da página; 'closing' são parágrafos finais exibidos após as subseções.",
+  "page": {
+    "title": "Regulamento Competição K-Pop 2026",
+    "subtitle": "Regras oficiais da Competição K-Pop Animeingá 2026: modalidades Solo e Grupo, fases, inscrição, critérios de avaliação, deduções e premiação."
+  },
+  "formUrl": "https://forms.gle/vUXimHvZVzeowBQt5",
+  "authUrl": "https://drive.google.com/file/d/1qPLRVPB_kIETyV00JpSMojDBpKfROtpC",
+  "price": "R$ 20,00",
+  "sections": [
+    {
+      "id": "apresentacao",
+      "title": "APRESENTAÇÃO",
+      "paragraphs": [
+        "A Competição de K-POP ANIMEINGÁ 2026 tem como objetivo proporcionar aos participantes um espaço para apresentar seu talento, dedicação e criatividade por meio da dança, além de celebrar e valorizar a cultura e a música popular coreana.",
+        "A competição é destinada a fãs e praticantes de K-POP, que poderão participar como Solo ou Grupos, apresentando coreografias baseadas em performances de grupos ou artistas de K-POP.",
+        "Este regulamento estabelece as normas, condições de participação, critérios de avaliação, etapas da competição, regras para as apresentações, formas de classificação e demais procedimentos necessários para o bom andamento da competição.",
+        "Ao realizar sua inscrição, o participante declara estar ciente e de acordo com todas as regras estabelecidas neste regulamento, comprometendo-se a cumpri-las durante todas as etapas da competição.",
+        "A organização do ANIMEINGÁ 2026 poderá realizar ajustes operacionais necessários ao bom funcionamento da competição, desde que sejam comunicados aos participantes pelos canais oficiais de comunicação do evento."
+      ]
+    },
+    {
+      "id": "disposicoes-gerais",
+      "num": "1",
+      "title": "DISPOSIÇÕES GERAIS",
+      "subsections": [
+        {
+          "num": "1.1",
+          "title": "OBJETIVO DO COMPETIÇÃO",
+          "items": [
+            "A Competição K-Pop Animeingá 2026 é uma competição de dança que tem como objetivo proporcionar aos participantes um espaço para demonstrar suas habilidades artísticas e técnicas por meio de coreografias de músicas de K-POP, contribuindo para a valorização da cultura K-POP e para o desenvolvimento artístico dos participantes.",
+            "A competição será realizada durante o ANIMEINGÁ 2026, seguindo as regras e critérios estabelecidos neste regulamento."
+          ]
+        },
+        {
+          "num": "1.2",
+          "title": "MODALIDADE",
+          "items": [
+            "A Competição de K-POP ANIMEINGÁ 2026 será realizada em modalidade única, reunindo participantes individuais e grupos em uma mesma competição e classificação.",
+            {
+              "text": "A participação poderá ocorrer em dois formatos:",
+              "subItems": [
+                "Solo: apresentação realizada por um único participante;",
+                "Grupo: apresentação realizada por dois ou mais participantes."
+              ]
+            },
+            "Participantes Solo e Grupos serão avaliados pela mesma banca de jurados, utilizando os mesmos critérios de avaliação e concorrerão entre si pela mesma classificação e premiação.",
+            "Cada participante poderá realizar uma inscrição na competição como Solo e uma inscrição como integrante de um Grupo, desde que cumpra todas as demais regras estabelecidas neste regulamento.",
+            "No formato Grupo, não haverá limite máximo de integrantes, desde que todos os participantes estejam devidamente inscritos e atendam aos requisitos de elegibilidade estabelecidos neste regulamento.",
+            "A premiação será única, independentemente do formato de participação, não havendo premiação ou classificação separada para Solo e Grupo."
+          ]
+        },
+        {
+          "num": "1.3",
+          "title": "ELEGIBILIDADE",
+          "paragraphs": [
+            "Para participar da competição, o participante deverá atender às seguintes condições:"
+          ],
+          "items": [
+            "Ter, no mínimo, 7 (sete) anos completos até a data do evento. Não haverá limite máximo de idade.",
+            "Menores de idade deverão apresentar autorização de seu responsável legal, conforme as orientações da organização. Baixe o modelo da autorização abaixo e anexe o documento já assinado no formulário de inscrição; o arquivo deve estar em formato pdf, jpg ou png.",
+            "Donos, gerentes, técnicos e integrantes da equipe diretamente responsável pela organização da competição não poderão participar da competição.",
+            "Não haverá limite máximo de integrantes por grupo, desde que a apresentação seja compatível com as condições de segurança e com o espaço disponível no palco.",
+            "O participante deverá fornecer informações verdadeiras e atualizadas à organização.",
+            "O descumprimento das regras deste regulamento poderá resultar em penalização ou desclassificação."
+          ],
+          "authButton": true
+        },
+        {
+          "num": "1.4",
+          "title": "DESISTÊNCIA",
+          "items": [
+            "O participante ou grupo que desejar desistir da competição deverá comunicar imediatamente à organização.",
+            "Em caso de desistência o participante poderá solicitar o reembolso da taxa de inscrição até o dia 14 de novembro de 2026. Após essa data, não serão realizados reembolsos em caso de desistência."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cronograma",
+      "num": "2",
+      "title": "CRONOGRAMA",
+      "entries": [
+        {"data": "02/10/2026", "evento": "Início das inscrições para a Competição K-Pop"},
+        {"data": "15/11/2026", "evento": "Término das inscrições para a Competição K-Pop"},
+        {"data": "22/11/2026", "evento": "Divulgação do resultado da fase preliminar"},
+        {"data": "13/12/2026 · DOM", "evento": "9h00 – Passagem de palco · 10h00 – Abertura do evento · 12h30 – Início da competição"}
+      ],
+      "items": [
+        "Os horários poderão sofrer atrasos ou alterações em razão da programação do palco e de outras atividades do evento."
+      ]
+    },
+    {
+      "id": "inscricao",
+      "num": "3",
+      "title": "INSCRIÇÃO",
+      "subsections": [
+        {
+          "num": "3.1",
+          "title": "COMO SE INSCREVER",
+          "items": [
+            "As inscrições deverão ser realizadas exclusivamente de forma online, por meio do formulário oficial de inscrição, no período de 02 de outubro a 15 de novembro de 2026.",
+            "O participante deverá preencher corretamente todas as informações solicitadas no formulário.",
+            "Cada competidor pode participar das duas categorias, mas não da mesma categoria duas vezes.",
+            "Para cada categoria de competição é necessário fazer uma inscrição separadamente através do mesmo formulário.",
+            "A falta de informações obrigatórias, o preenchimento incorreto ou a apresentação de informações falsas poderá resultar no cancelamento da inscrição.",
+            "Após o encerramento das inscrições, alterações de informações somente poderão ser realizadas mediante autorização da organização.",
+            "A inscrição somente será considerada válida após o preenchimento de todos os campos obrigatórios e o pagamento da taxa de inscrição.",
+            "A realização da inscrição implica a ciência e a concordância do participante com todas as disposições deste regulamento."
+          ],
+          "formButton": true
+        },
+        {
+          "num": "3.2",
+          "title": "FASE PRELIMINAR",
+          "items": [
+            "O vídeo enviado para a fase preliminar deverá apresentar o participante ou grupo executando a coreografia definida no formulário de inscrição.",
+            "O vídeo deverá ser publicado no YouTube com a configuração de privacidade “Não listado”, e seu link deverá ser inserido no campo indicado no formulário de inscrição, sendo de responsabilidade do participante verificar se o link está correto e permite o acesso ao vídeo pela organização e pela banca avaliadora.",
+            "O vídeo deverá apresentar a coreografia de forma contínua, sem cortes, montagens ou edições que alterem a apresentação. Não será permitido editar o vídeo, sendo autorizada apenas a substituição do áudio, conforme as orientações da organização.",
+            "O uso do figurino oficial ou completo não será obrigatório na Fase Preliminar. Os participantes poderão gravar o vídeo com roupas de sua preferência, desde que sejam adequadas à apresentação e permitam a execução segura da coreografia.",
+            "O vídeo deverá permitir que os jurados avaliem adequadamente a execução da coreografia."
+          ]
+        },
+        {
+          "num": "3.3",
+          "title": "PERÍODO DE INSCRIÇÃO",
+          "items": [
+            "As inscrições estarão abertas de 02 de outubro até 15 de novembro de 2026."
+          ]
+        },
+        {
+          "num": "3.4",
+          "title": "TAXA DE INSCRIÇÃO",
+          "items": [
+            "A taxa de inscrição será de R$ 20,00 (vinte reais) por participante e deverá ser paga por meio de PIX, utilizando a chave correspondente ao CNPJ: 77.935.567/0001-84.",
+            "Nos grupos, a taxa será cobrada individualmente de cada integrante.",
+            "Quando o pagamento da taxa de inscrição for realizado por uma pessoa diferente do participante ao qual o pagamento se refere, deverá ser informado, no campo de observação/mensagem do PIX, o nome completo do participante.",
+            "O comprovante de pagamento do PIX deverá ser anexado no campo indicado no formulário de inscrição, no momento da realização da inscrição.",
+            "É responsabilidade do participante realizar o pagamento corretamente e anexar um comprovante legível, que permita a identificação da transação e a conferência do pagamento pela organização.",
+            "A ausência do comprovante de pagamento ou a impossibilidade de identificar a qual participante o pagamento se refere poderá resultar na não validação da inscrição, até que a situação seja regularizada dentro do período de inscrições."
+          ]
+        },
+        {
+          "num": "3.5",
+          "title": "POLÍTICA DE REEMBOLSO",
+          "items": [
+            "Desistência: o participante poderá solicitar o reembolso da taxa de inscrição até o dia 14 de novembro de 2026. Após essa data, não serão realizados reembolsos em caso de desistência.",
+            "Desclassificação: em caso de desclassificação decorrente do descumprimento das regras estabelecidas neste regulamento, não haverá reembolso da taxa de inscrição.",
+            "Cancelamento da competição: em caso de cancelamento da competição por decisão da organização, os participantes serão informados sobre as condições e os procedimentos para eventual reembolso da taxa de inscrição."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "premiacao",
+      "num": "4",
+      "title": "PREMIAÇÃO",
+      "items": [
+        "1º lugar: R$ 1.000",
+        "2º lugar: R$ 500",
+        "3º lugar: R$ 300"
+      ],
+      "closing": [
+        "O participante ou grupo vencedor, classificado em primeiro lugar na competição, receberá, além da premiação em dinheiro prevista neste regulamento, o direito à participação automática no campeonato na próxima edição do ANIMEINGÁ, com os benefícios estabelecidos pela organização.",
+        "Para que o grupo vencedor possa usufruir do direito de participação imediata na próxima edição, deverá ser mantido pelo menos 50% (cinquenta por cento) dos integrantes que participaram da apresentação vencedora.",
+        "A composição do grupo poderá sofrer alterações entre as edições, desde que seja mantido, no mínimo, o percentual estabelecido no item anterior de integrantes que participaram da apresentação vencedora.",
+        "A organização poderá solicitar a identificação dos integrantes do grupo vencedor para fins de verificação do cumprimento desta condição no momento da inscrição para a próxima edição."
+      ]
+    },
+    {
+      "id": "fases",
+      "num": "5",
+      "title": "FASES DA COMPETIÇÃO",
+      "items": [
+        {
+          "text": "A competição será composta por duas fases:",
+          "subItems": [
+            "Fase Preliminar — Online;",
+            "Fase Final — Presencial."
+          ]
+        },
+        "Os participantes poderão se inscrever para apresentações individuais (Solo) ou em Grupo. Independentemente do formato de inscrição, todos os participantes concorrerão em uma única classificação geral e à mesma premiação."
+      ],
+      "subsections": [
+        {
+          "num": "5.2",
+          "title": "FASE PRELIMINAR",
+          "items": [
+            "A Fase Preliminar será realizada por meio dos vídeos enviados pelos participantes no momento da inscrição.",
+            "O vídeo deverá ser publicado no YouTube na configuração “Não listado”, e o respectivo link deverá ser inserido no campo indicado no formulário de inscrição. Será responsabilidade do participante verificar se o link informado está correto e permite o acesso ao vídeo pela organização e pela comissão avaliadora.",
+            "O vídeo deverá apresentar a coreografia de forma contínua, sem cortes, montagens ou edições que alterem ou interrompam a apresentação. Não será permitida qualquer edição do vídeo.",
+            "O uso do figurino oficial ou completo não será obrigatório na Fase Preliminar. Os participantes poderão utilizar roupas de sua preferência, desde que sejam adequadas à execução da coreografia e permitam a avaliação dos movimentos.",
+            "Nesta etapa, os vídeos serão submetidos a uma triagem realizada pela organização e/ou comissão avaliadora, considerando a qualidade geral da apresentação, execução da coreografia, sincronia, fidelidade à performance original, musicalidade, dificuldade e demais critérios previstos neste regulamento.",
+            "A Fase Preliminar possui caráter eliminatório e classificatório, tendo como objetivo selecionar as apresentações que avançarão para a Fase Final. A avaliação realizada nesta etapa não será utilizada para compor a nota da classificação final.",
+            "O número de apresentações que avançarão para a Fase Final poderá variar de acordo com a quantidade de inscrições recebidas e com a disponibilidade de tempo e estrutura do evento.",
+            "Como os formatos Solo e Grupo concorrem em uma única classificação geral, a seleção dos finalistas será realizada considerando todas as apresentações inscritas conjuntamente, independentemente do formato de participação.",
+            "A organização poderá ajustar o número de apresentações classificadas de acordo com o tempo disponível para a Fase Final, buscando manter um número compatível com o cronograma e a estrutura do evento."
+          ]
+        },
+        {
+          "num": "5.3",
+          "title": "FASE FINAL",
+          "items": [
+            "A Fase Final será realizada presencialmente durante o ANIMEINGÁ 2026, no palco oficial da competição, e contará exclusivamente com os participantes classificados na Fase Preliminar.",
+            "As apresentações individuais e em grupo serão avaliadas dentro da mesma classificação geral, não havendo categorias, classificações ou premiações separadas por formato de apresentação.",
+            "As apresentações serão avaliadas por uma banca de cinco jurados, conforme os critérios de avaliação estabelecidos neste regulamento.",
+            "A classificação final dos participantes será determinada exclusivamente pelas notas obtidas na Fase Final. A pontuação obtida na Fase Preliminar terá caráter exclusivamente eliminatório e não será somada à pontuação da Fase Final.",
+            "Durante a Fase Final, os participantes deverão realizar a apresentação utilizando a música, coreografia e demais elementos informados à organização e aprovados durante os procedimentos anteriores à competição.",
+            "Ao final das apresentações, serão calculadas as pontuações dos participantes, aplicadas as eventuais deduções previstas neste regulamento e definida a classificação final.",
+            "A ausência do participante ou grupo na Fase Final poderá resultar em sua desclassificação da competição.",
+            "Os participantes classificados que não comparecerem à passagem de palco poderão perder o direito ao ensaio técnico, sem que isso implique, por si só, sua desclassificação da competição.",
+            "Os horários, ordem de apresentação e demais orientações referentes à Fase Final serão informadas pela organização aos participantes classificados por meio dos canais oficiais de comunicação do ANIMEINGÁ."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regras-gerais",
+      "num": "6",
+      "title": "REGRAS GERAIS",
+      "subsections": [
+        {
+          "num": "6.1",
+          "title": "MÚSICA",
+          "items": [
+            "Serão aceitas músicas originalmente lançadas por artistas, grupos ou solistas vinculados à indústria musical sul-coreana (K-pop), independentemente do idioma predominante na música ou da nacionalidade dos integrantes.",
+            "Também serão permitidas músicas de projetos e grupos oficialmente vinculados à indústria K-pop e/ou desenvolvidos dentro de sua estrutura, incluindo projetos voltados ao mercado internacional.",
+            "Não serão consideradas elegíveis músicas de artistas ou grupos que não possuam vínculo com a indústria K-pop, ainda que a música seja cantada em coreano ou apresente elementos visuais, sonoros ou coreográficos associados ao gênero.",
+            "A música utilizada na apresentação deverá ser reproduzida de acordo com a versão e a performance originais do grupo ou artista.",
+            "Será permitida apenas a inclusão de uma intro original executada pelo próprio grupo ou artista, desde que essa intro faça parte da performance original da música.",
+            "Não serão permitidos mashups, remixes, edições, cortes, alterações de velocidade, alterações de áudio ou quaisquer outras modificações que não façam parte da música ou da performance original do grupo ou artista.",
+            "A apresentação deverá reproduzir a música e a coreografia originais da performance selecionada, não sendo permitidas criações, adaptações ou alterações coreográficas por parte dos participantes.",
+            "A duração máxima da apresentação será de 5 (cinco) minutos, incluindo a intro, quando houver. A contagem do tempo terá início no primeiro som audível e será encerrada no último som audível da apresentação.",
+            "A música deverá ser entregue à organização durante a passagem de palco, no domingo, em formato MP3, preferencialmente em dispositivo USB. O arquivo deverá estar identificado com o nome do participante ou grupo.",
+            "É responsabilidade do participante ou grupo verificar previamente se o arquivo entregue está correto, completo e corresponde à música utilizada na apresentação.",
+            "O descumprimento das regras relativas à música poderá resultar na aplicação das deduções previstas neste regulamento ou, conforme a gravidade da ocorrência, na desclassificação do participante ou grupo."
+          ]
+        },
+        {
+          "num": "6.2",
+          "title": "TEMPO DE APRESENTAÇÃO",
+          "items": [
+            "A música utilizada na apresentação deverá possuir duração máxima de 5 minutos (5:00), incluindo a introdução, quando houver.",
+            "Será permitida somente a utilização da introdução original executada pelo artista ou grupo original da música.",
+            "O tempo da apresentação será contado a partir do primeiro som audível e terminará no último som audível.",
+            "Apresentações que ultrapassem o tempo máximo permitido estarão sujeitas à dedução prevista neste regulamento."
+          ]
+        },
+        {
+          "num": "6.3",
+          "title": "FIGURINO",
+          "items": [
+            "O figurino poderá incluir acessórios como chapéus, bonés, toucas, lenços, joias e outros elementos compatíveis com a apresentação.",
+            "Será permitida a remoção de peças de vestuário durante a apresentação, desde que isso não resulte em exposição inadequada ou viole as regras do evento.",
+            "Peças de roupas retiradas durante a apresentação deverão ser colocadas fora da área de apresentação e não poderão ser arremessadas para a plateia.",
+            "Os participantes deverão utilizar roupas íntimas adequadas e apropriadas durante toda a apresentação.",
+            "É proibida a utilização de óleos, tintas corporais ou faciais e outras substâncias aplicadas ao corpo ou às roupas que possam afetar a superfície do palco ou comprometer a segurança de outros participantes.",
+            "Não haverá restrição específica quanto ao tipo de calçado, desde que este não represente risco à segurança do participante, do palco ou de terceiros.",
+            "Os participantes deverão levar, para a passagem de palco, referências visuais de seus figurinos para avaliação dos jurados."
+          ]
+        },
+        {
+          "num": "6.4",
+          "title": "ADEREÇOS",
+          "items": [
+            "Adereços e objetos utilizados durante a apresentação deverão ser previamente compatíveis com as condições de segurança determinadas pela organização.",
+            "É proibida a utilização de objetos ou materiais que possam causar risco aos participantes, equipe técnica, jurados, público ou estrutura do evento.",
+            "É proibida a utilização de materiais inflamáveis, líquidos, substâncias que deixem resíduos no palco ou objetos cortantes, perfurantes ou potencialmente perigosos.",
+            "Qualquer elemento que possa danificar o palco ou dificultar a apresentação de outros participantes poderá ser proibido pela organização."
+          ]
+        },
+        {
+          "num": "6.5",
+          "title": "OBJETOS DE CENA",
+          "items": [
+            "Serão permitidos objetos de cena durante as apresentações, desde que sejam seguros e não ofereçam riscos aos participantes, ao público, à equipe do evento, ao palco ou à estrutura do local, nem prejudiquem as apresentações seguintes.",
+            "Objetos de grande porte, estruturas ou itens que necessitem de montagem, fixação, organização ou qualquer preparação especial deverão ser previamente autorizados pela organização, por meio do canal oficial de comunicação do ANIMEINGÁ (Discord).",
+            "A solicitação de autorização para utilização de objetos de cena deverá ser realizada até o dia 14 de novembro de 2026. Após essa data, não serão analisados novos pedidos de autorização.",
+            "Não serão permitidos objetos ou materiais que deixem resíduos, sujeira, líquidos ou qualquer outro material sobre o palco, bem como aqueles que possam danificar o piso, prejudicar, atrasar ou interferir na apresentação seguinte.",
+            "Durante a apresentação, não será permitido arremessar objetos para fora do palco, seja em direção ao público ou a qualquer outra área externa à área de apresentação.",
+            "Caso seja necessário retirar um objeto de cena durante a apresentação, o participante deverá entregá-lo a uma pessoa posicionada fora do palco ou deixá-lo em local previamente determinado pela organização, de forma que sua retirada não interfira na apresentação.",
+            "A organização poderá, a qualquer momento, solicitar a retirada ou substituição de qualquer objeto de cena que considere inadequado, inseguro ou incompatível com as condições do evento.",
+            "A utilização de objetos de cena não poderá ultrapassar os limites da área destinada à apresentação nem comprometer a circulação, a segurança ou o funcionamento do palco."
+          ]
+        },
+        {
+          "num": "6.6",
+          "title": "PASSAGEM DE PALCO",
+          "items": [
+            "Sempre que as condições técnicas permitirem, será oferecida aos participantes a oportunidade de realizar uma passagem de palco ou ensaio técnico no palco oficial da competição.",
+            "Cada apresentação terá como tempo de passagem de palco a duração da música utilizada na apresentação, acrescida de 30 segundos.",
+            "O participante ou grupo será responsável por estar presente no horário determinado pela organização.",
+            "O não comparecimento no horário estabelecido poderá resultar na perda do direito à passagem de palco.",
+            "Informações adicionais sobre horários e procedimentos da passagem de palco serão encaminhadas aos finalistas após a divulgação do resultado da fase preliminar."
+          ]
+        },
+        {
+          "num": "6.7",
+          "title": "ALTERAÇÃO DE MEMBRO OU MÚSICA",
+          "items": [
+            "Qualquer alteração relacionada aos integrantes de um grupo ou à música que será apresentada deverá ser comunicada previamente à organização.",
+            "A alteração somente será válida após autorização da organização.",
+            "Alterações realizadas sem comunicação ou autorização poderão resultar em desclassificação.",
+            "Os participantes deverão possuir uma conta no Discord para acessar o servidor oficial do ANIMEINGÁ.",
+            "A comunicação oficial da organização com os participantes será realizada por meio do servidor oficial do Discord."
+          ]
+        },
+        {
+          "num": "6.8",
+          "title": "CONDUTA DOS PARTICIPANTES",
+          "items": [
+            "Todos os participantes deverão manter comportamento respeitoso com os demais competidores, jurados, equipe organizadora, equipe técnica e público.",
+            "Não serão toleradas agressões, ameaças, assédio, discriminação, ofensas ou qualquer comportamento que prejudique o andamento da competição.",
+            "É proibida qualquer tentativa deliberada de interferir na apresentação de outro participante ou grupo.",
+            "A organização poderá aplicar penalidades ou determinar a desclassificação de participantes que apresentem comportamento incompatível com as regras do evento."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "classificacao",
+      "num": "7",
+      "title": "CLASSIFICAÇÃO FINAL",
+      "subsections": [
+        {
+          "num": "7.1",
+          "title": "NOTAS",
+          "items": [
+            "A avaliação será composta por 6 critérios, sendo cada um avaliado individualmente pelos jurados com notas de 1 a 10.",
+            "Todos os critérios possuem o mesmo peso na composição da nota final.",
+            "A pontuação máxima possível será de 10 (dez) pontos.",
+            "As deduções previstas neste regulamento serão descontadas da pontuação obtida pelo participante ou grupo.",
+            "A pontuação final será arredondada para o centésimo de ponto mais próximo."
+          ]
+        },
+        {
+          "num": "7.2",
+          "title": "CRITÉRIOS DE AVALIAÇÃO",
+          "leads": [
+            {"term": "FIGURINO", "text": "Avalia a indumentária utilizada pelo participante ou grupo, considerando aspectos como qualidade, similaridade com a apresentação original e sua relação com a coreografia apresentada."},
+            {"term": "DIFICULDADE", "text": "Avalia o nível de dificuldade da coreografia apresentada, considerando os movimentos, formações e elementos técnicos utilizados."},
+            {"term": "FIDELIDADE", "text": "Avalia a fidelidade da apresentação em relação à performance original, considerando aspectos como estilo, interpretação, expressões e características marcantes da apresentação original."},
+            {"term": "MUSICALIDADE", "text": "Avalia a capacidade dos participantes de interpretar a música por meio da dança, considerando expressões corporais, poses, acentuação dos movimentos e relação entre dança e música."},
+            {"term": "EXECUÇÃO", "text": "Avalia a precisão com que os participantes executam os movimentos da coreografia, demonstrando domínio técnico e conhecimento da dança."},
+            {"term": "SINCRONIA", "text": "Avalia a capacidade dos participantes de executar os movimentos de forma sincronizada entre si e com a música, considerando também amplitude, velocidade e precisão dos movimentos."}
+          ]
+        },
+        {
+          "num": "7.3",
+          "title": "CRITÉRIOS DE DESEMPATE",
+          "items": [
+            {
+              "text": "Em caso de empate na nota final entre dois ou mais competidores ou grupos, serão utilizados os seguintes critérios de desempate, nesta ordem:",
+              "subItems": [
+                "Será favorecido o competidor ou grupo que obtiver a maior pontuação no critério de EXECUÇÃO.",
+                "Persistindo o empate, será favorecido o competidor ou grupo que obtiver a maior pontuação no critério de SINCRONIA.",
+                "Persistindo o empate, será favorecido o competidor ou grupo que obtiver a maior pontuação no critério de DIFICULDADE DE COREOGRAFIA."
+              ]
+            },
+            "Caso o empate persista, será realizada uma nova análise das avaliações individuais dos jurados, considerando a posição atribuída por cada jurado aos competidores ou grupos empatados.",
+            "Será declarado vencedor o competidor ou grupo que tiver recebido a melhor classificação pela maioria dos jurados."
+          ]
+        },
+        {
+          "num": "7.4",
+          "title": "RESULTADO E ACESSO ÀS NOTAS",
+          "items": [
+            "Após a competição, os participantes poderão solicitar suas respectivas pontuações e os comentários dos jurados à equipe responsável pela competição.",
+            "As notas dos jurados poderão ser disponibilizadas aos competidores após o encerramento de cada fase, conforme os procedimentos definidos pela organização."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deducoes",
+      "num": "8",
+      "title": "DEDUÇÕES",
+      "paragraphs": [
+        "As deduções previstas abaixo serão descontadas da pontuação final do participante ou grupo."
+      ],
+      "subsections": [
+        {
+          "num": "8.1",
+          "title": "PERFORMANCE",
+          "leads": [
+            {"term": "Não aparição — Desclassificação", "text": "Caso o participante ou grupo não compareça ao palco e não esteja em sua posição inicial até 60 segundos após ser chamado, será desclassificado."},
+            {"term": "Início tardio — 0,05 ponto", "text": "Caso o participante ou grupo não esteja em sua posição inicial no prazo de 30 segundos após ser chamado, será considerada ocorrência de início tardio."},
+            {"term": "Pré-início — 0,05 ponto", "text": "Caso, antes de assumir a posição inicial, o participante ou grupo realize uma introdução ou exposição por mais de 10 segundos, contados após todos os participantes terem entrado no palco, será aplicada a dedução correspondente."},
+            {"term": "Falso início — 0,25 ponto", "text": "Caso um ou mais integrantes realizem movimentos antes do início da música, ocasionando a necessidade de reiniciar a apresentação, será aplicada a dedução correspondente."},
+            {"term": "Queda menor — 0,05 ponto por ocorrência", "text": "Será considerada queda menor um erro perceptível durante a apresentação, mas que seja recuperável, como tropeçar, escorregar ou cair rapidamente."},
+            {"term": "Queda maior — 0,10 ponto por ocorrência", "text": "Será considerada queda maior um erro muito perceptível durante a apresentação e que comprometa significativamente sua execução."}
+          ]
+        },
+        {
+          "num": "8.2",
+          "title": "MÚSICA",
+          "leads": [
+            {"term": "Excesso de duração — 0,10 ponto", "text": "Apresentações cuja duração ultrapasse o limite máximo estabelecido estarão sujeitas à dedução de 0,10 ponto."}
+          ]
+        },
+        {
+          "num": "8.3",
+          "title": "FIGURINO",
+          "leads": [
+            {"term": "Vestuário inadequado — 0,05 ponto", "text": "Será aplicada dedução quando o figurino utilizado estiver em desacordo com as regras estabelecidas neste regulamento."},
+            {"term": "Uso de substâncias — 0,10 ponto", "text": "Será aplicada dedução pela utilização de óleos corporais, tintas ou outras substâncias que afetem ou possam afetar a superfície do palco."},
+            {"term": "Arremesso de roupas ou adereços — 0,05 ponto por ocorrência", "text": "Será aplicada dedução para cada roupa ou adereço arremessado em direção ao público."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ocorrencias",
+      "num": "9",
+      "title": "OCORRÊNCIAS EXTRAORDINÁRIAS",
+      "subsections": [
+        {
+          "num": "9.1",
+          "title": "DEFINIÇÃO",
+          "items": [
+            "Considera-se circunstância extraordinária qualquer ocorrência fora do controle dos participantes que afete sua capacidade de iniciar ou continuar a apresentação.",
+            {
+              "text": "São exemplos de circunstâncias extraordinárias:",
+              "subItems": [
+                "música reproduzida ou sinalizada de forma incorreta;",
+                "falhas nos equipamentos de som;",
+                "falhas na iluminação;",
+                "problemas relacionados ao palco;",
+                "interferências externas na área de apresentação;",
+                "introdução de objetos estranhos na área de apresentação;",
+                "outras ocorrências que, a critério da organização, comprometam a apresentação."
+              ]
+            }
+          ]
+        },
+        {
+          "num": "9.2",
+          "title": "PROCEDIMENTO",
+          "items": [
+            "Caso ocorra uma circunstância extraordinária durante a apresentação, o participante ou grupo deverá interromper a apresentação assim que for seguro fazê-lo.",
+            "A organização analisará a situação e determinará se a ocorrência caracteriza uma circunstância extraordinária.",
+            "Caso a ocorrência seja considerada procedente, o problema será solucionado e o participante ou grupo poderá reiniciar sua apresentação.",
+            "Caso a organização determine que a ocorrência não caracteriza uma circunstância extraordinária, não será permitido o reinício da apresentação, podendo resultar no abandono ou desclassificação do participante ou grupo.",
+            "Reclamações relacionadas a circunstâncias extraordinárias apresentadas somente após o término da apresentação não serão aceitas para fins de reinício da performance."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "responsabilidades",
+      "num": "10",
+      "title": "RESPONSABILIDADES E DIREITOS DE IMAGEM",
+      "subsections": [
+        {
+          "num": "10.1",
+          "title": "RESPONSABILIDADE DO PARTICIPANTE",
+          "items": [
+            "O participante será responsável por seus objetos pessoais, figurinos, acessórios, cenários, equipamentos e demais materiais utilizados na competição.",
+            "O participante deverá zelar pela preservação do espaço, equipamentos e estruturas disponibilizados pelo evento.",
+            "Eventuais danos causados de forma intencional ou em decorrência do descumprimento das regras poderão gerar responsabilização do participante, nos termos da legislação aplicável."
+          ]
+        },
+        {
+          "num": "10.2",
+          "title": "ÁUDIO, VÍDEO E DIREITOS AUTORAIS",
+          "items": [
+            "O participante será responsável pela regularidade e pelas autorizações necessárias referentes às músicas, vídeos, imagens, textos, personagens e demais materiais utilizados em sua apresentação.",
+            "A organização poderá solicitar a substituição ou retirada de material que apresente problemas legais, técnicos ou incompatibilidade com as regras do evento."
+          ]
+        },
+        {
+          "num": "10.3",
+          "title": "DIREITO DE IMAGEM",
+          "items": [
+            "Ao participar da competição, o participante declara estar ciente de que poderá ser fotografado e/ou filmado durante sua participação.",
+            "Os registros poderão ser utilizados pela organização para divulgação da competição, do ANIMEINGÁ e de futuras edições do evento, incluindo redes sociais, materiais promocionais e demais canais oficiais."
+          ]
+        },
+        {
+          "num": "10.4",
+          "title": "OBJETOS PESSOAIS",
+          "items": [
+            "A organização não se responsabiliza por objetos pessoais, figurinos, acessórios, cenários, equipamentos ou materiais deixados nas áreas da competição."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "disposicoes-finais",
+      "num": "11",
+      "title": "DISPOSIÇÕES FINAIS",
+      "items": [
+        "A inscrição na competição implica ciência e concordância com todas as regras estabelecidas neste regulamento.",
+        "A organização poderá realizar alterações neste regulamento quando necessário para garantir o bom funcionamento da competição, devendo comunicar eventuais alterações aos participantes.",
+        "Caso não previstos neste regulamento serão analisados e decididos pela organização da competição.",
+        "As decisões da organização relacionadas ao cumprimento das regras, segurança, funcionamento da competição e situações extraordinárias serão consideradas definitivas.",
+        "Este regulamento poderá sofrer alterações até a realização do evento.",
+        "Em caso de dúvidas, os participantes deverão utilizar o canal oficial de dúvidas disponibilizado pela organização no servidor do Discord do ANIMEINGÁ."
+      ]
+    }
+  ]
+}

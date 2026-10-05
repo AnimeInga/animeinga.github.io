@@ -3,7 +3,7 @@
   "page": {
     "title": "Regulamentos & Competições",
     "subtitle": "Os palcos e as arenas do AnimeIngá 2026 estão se preparando. Confira as competições confirmadas e fique de olho: regulamentos e inscrições serão publicados aqui.",
-    "notice": "Os regulamentos e as inscrições do Artists' Alley e do Concurso Cosplay já estão disponíveis! Os das demais competições serão divulgados em breve nesta página e nas nossas redes sociais. Todo o conteúdo é gratuito para consulta."
+    "notice": "Os regulamentos e as inscrições do Artists' Alley, do Concurso Cosplay e da Competição K-Pop já estão disponíveis! Os das demais competições serão divulgados em breve nesta página e nas nossas redes sociais. Todo o conteúdo é gratuito para consulta."
   },
   "competitions": [
     {
@@ -59,16 +59,16 @@
       "title": "Competições K-Pop",
       "icon": "🎤",
       "tagline": "O palco é seu",
-      "description": "As competições de K-Pop do AnimeIngá 2026 vão aquecer o palco com performances de dança e canto. Categorias, jurados, premiação e regulamento oficial serão divulgados em breve — fique de olho nas nossas redes!",
-      "status": "em-breve",
+      "description": "O palco do AnimeIngá 2026 vai aquecer com a Competição K-Pop! Participe como Solo ou Grupo, apresentando coreografias de K-POP em duas fases: preliminar online e final presencial no domingo. Inscrições de 02/10 a 15/11/2026 (taxa de R$ 20,00 por participante). Leia o regulamento e prepare sua performance!",
+      "status": "inscricoes",
       "highlights": [
-        "Categorias a anunciar",
-        "Apresentações individuais e em grupo",
-        "Jurados convidados",
-        "Premiação para os finalistas"
+        "Inscrições de 02/10 a 15/11/2026",
+        "Solo e Grupo na mesma classificação",
+        "Fase preliminar online (vídeo no YouTube)",
+        "Premiação de R$ 300 a R$ 1.000"
       ],
-      "regulationUrl": "",
-      "registrationUrl": ""
+      "regulationUrl": "regulamento-concurso-kpop.html",
+      "registrationUrl": "https://forms.gle/vUXimHvZVzeowBQt5"
     }
   ]
 }
