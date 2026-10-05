@@ -191,6 +191,8 @@ const year = new Date().getFullYear();
       if (reduceMotion) {
         revealEls.forEach((el) => el.classList.add('is-visible'));
       } else {
+        // threshold 0 and rootMargin ensures it triggers when the element is about to enter the viewport
+        // This prevents issues with very tall elements on mobile screens where 15% threshold might never be reached
         const observer = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
@@ -200,7 +202,7 @@ const year = new Date().getFullYear();
               }
             });
           },
-          {threshold: 0.15},
+          { threshold: 0, rootMargin: '0px 0px 50px 0px' },
         );
         revealEls.forEach((el) => observer.observe(el));
       }
