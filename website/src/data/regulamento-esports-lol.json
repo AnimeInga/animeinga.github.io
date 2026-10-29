@@ -1,0 +1,222 @@
+{
+  "_leia-me": "Transcrição integral estruturada do regulamento oficial de League of Legends (LoL), extraída do PDF oficial fornecido para o Animeingá 2026. A página correspondente renderiza todas as seções e o Anexo I.",
+  "page": {
+    "title": "Regulamento Oficial — League of Legends (LoL) Animeingá 2026",
+    "subtitle": "Regulamento técnico e desportivo oficial do campeonato de League of Legends (LoL) no Animeingá 2026. Leia as regras completas, incluindo elegibilidade, inscrições, formato, partidas, premiação e autorização para menores."
+  },
+  "registrationUrl": "https://www.sympla.com.br/evento/animeinga-2026-inscricoes-dos-campeonatos-de-e-sports/3630410",
+  "price": "R$ 110,00 por equipe (R$ 100,00 de inscrição + R$ 10,00 de taxa Sympla)",
+  "sections": [
+    {
+      "id": "sec-1",
+      "num": "1",
+      "title": "DISPOSIÇÕES GERAIS E NATUREZA DO EVENTO",
+      "paragraphs": [
+        "1.1. O Campeonato de League of Legends (LoL) do Animeingá E-Sports 2026 é uma competição esportiva privada e independente organizada pela Comissão de Esportes Eletrônicos do evento Animeingá, sediado na cidade de Maringá, Estado do Paraná.",
+        "1.2. O presente Regulamento Oficial vincula juridicamente e desportivamente todos os atletas inscritos, capitães, reservas, técnicos (coaches) e representantes de equipes participantes, sendo sua leitura e integral cumprimento obrigatórios antes da inscrição.",
+        "1.3. A competição é estruturada em duas fases sucessivas e interdependentes:",
+        "a) Fase Online Classificatória: Etapa exclusivamente classificatória disputada à distância pelas equipes homologadas nos dias 14 e 15/11, 21 e 22/11, 28 e 29/11, e 05 e 06/12/2026, no servidor oficial brasileiro (BR), com o único objetivo de definir 4 (quatro) equipes classificadas;",
+        "b) Fase Final Presencial (LAN): Disputada no dia 13 de dezembro de 2026 (domingo), no palco principal localizado na Sala de Apoio anexada ao Pavilhão Unimed, em Maringá-PR, reunindo as 4 (quatro) equipes classificadas na Fase Online Classificatória para a disputa das Semifinais e da Grande Final.",
+        "1.4. Desvinculação Institucional: Esta competição opera em estrita observância às Diretrizes de Competição da Comunidade dos Esports do LoL, tratando-se de realização comunitária independente não patrocinada, endossada ou administrada diretamente pela Riot Games Inc."
+      ]
+    },
+    {
+      "id": "sec-2",
+      "num": "2",
+      "title": "INSCRIÇÕES, TAXAS, REEMBOLSO E COMPOSIÇÃO DE ELENCO (ROSTER)",
+      "paragraphs": [
+        "2.1. Procedimento de Inscrição em Duas Etapas (Sympla + Formulário Oficial): O processo de inscrição no campeonato será mediado pela plataforma Sympla (https://www.sympla.com.br/) e compreende duas etapas obrigatórias e sucessivas:",
+        "a) 1ª Etapa – Aquisição da Vaga na Sympla: O representante da equipe deverá acessar a página oficial do evento Animeingá E-Sports 2026 na plataforma Sympla e adquirir o ingresso de inscrição correspondente à sua modalidade;",
+        "b) 2ª Etapa – Preenchimento do Formulário de Elenco: Após a aprovação e validação do pagamento pela plataforma Sympla, o responsável pela compra receberá um e-mail de confirmação contendo o link oficial do formulário de inscrição, o qual deverá ser integralmente preenchido com os dados de todos os integrantes da equipe para tornar a inscrição completa, homologada e elegível para o campeonato.",
+        "2.2. Período de Inscrições e Prazo de Cadastro: As inscrições na plataforma Sympla estarão disponíveis do dia 29 de outubro de 2026, a partir das 10h00, até o dia 08 de novembro de 2026, às 23h00 (horário de Brasília), ou até o esgotamento do limite máximo de 32 (trinta e duas) vagas da modalidade. As equipes com compra aprovada na Sympla terão até o dia 09 de novembro de 2026, às 23h59, para concluir o envio do formulário oficial de elenco e anexar os termos de autorização de menores.",
+        "2.3. Taxa de Inscrição: O valor total para aquisição da inscrição na plataforma Sympla é de R$ 110,00 (cento e dez reais) por equipe, composto pelo valor de R$ 100,00 (cem reais) referente à taxa de inscrição do campeonato acrescido de R$ 10,00 (dez reais) referentes à taxa de serviço da plataforma Sympla, independentemente do cadastro de reservas ou técnico.",
+        "2.4. Política de Cancelamento e Reembolso:",
+        "a) Como a aquisição da inscrição é realizada de forma online, o direito de arrependimento previsto no artigo 49 do Código de Defesa do Consumidor (Lei nº 8.078/1990) pode ser aplicável, inclusive no período posterior ao encerramento das vendas, dependendo a sua aplicação concreta das circunstâncias da contratação e não sendo afastados pelo presente regulamento quaisquer direitos legais obrigatórios;",
+        "b) O encerramento do período de inscrições (disponíveis de 29/10/2026 a 08/11/2026, ou até o esgotamento das vagas) não afasta eventuais direitos de arrependimento, reembolso ou outros direitos assegurados pela legislação vigente;",
+        "c) Os pedidos de cancelamento e reembolso serão processados e analisados em conformidade com a legislação de defesa do consumidor aplicável, as condições operacionais da plataforma de pagamento Sympla e a política oficial do evento, não estando o cumprimento de direito legal condicionado à aprovação discricionária da organização;",
+        "d) Em caso de desistência, o representante da equipe deverá entrar em contato com a organização pelos canais oficiais para receber as orientações aplicáveis ao seu pedido.",
+        "2.5. Composição da Equipe (Line-up): Cada equipe deverá inscrever obrigatoriamente 5 (cinco) atletas titulares, podendo cadastrar opcionalmente até 2 (dois) atletas reservas e 1 (um) técnico (Coach).",
+        "2.6. Travamento de Elenco (Roster Lock): Após o prazo final de envio do formulário de inscrição em 09 de novembro de 2026, às 23h59, o elenco cadastrado será considerado definitivo e travado. Nenhuma inclusão, substituição externa ou troca de membros será permitida até a conclusão do campeonato.",
+        "2.7. Regras de Substituição e Atuação do Coach:",
+        "a) As substituições entre jogadores titulares e reservas previamente inscritos somente poderão ocorrer antes do início da série ou no intervalo entre partidas da série, mediante comunicação obrigatória à arbitragem (Staff) antes do início da Seleção de Campeões subsequente;",
+        "b) É vedada a substituição de atletas com o jogo/mapa em andamento, salvo autorização excepcional da Coordenação Técnica em casos de força maior devidamente comprovados;",
+        "c) O membro inscrito exclusivamente na função de Técnico (Coach) está terminantemente proibido de atuar como jogador reserva ou substituir atletas em qualquer etapa do torneio;",
+        "d) Um mesmo atleta ou técnico não poderá constar no cadastro de mais de uma equipe na mesma modalidade."
+      ]
+    },
+    {
+      "id": "sec-3",
+      "num": "3",
+      "title": "ELEGIBILIDADE, IDADE MÍNIMA E REGULARIDADE DE CONTAS",
+      "paragraphs": [
+        "3.1. Idade Mínima: Todos os atletas e técnicos devem possuir a idade mínima de 16 (dezesseis) anos completos até a data de início da Fase Online Classificatória (14/11/2026).",
+        "3.2. Atletas Menores de Idade (16 e 17 anos):",
+        "a) Para competidores com 16 (dezesseis) ou 17 (dezessete) anos, é obrigatória a entrega do Termo de Autorização para Participação de Menor de Idade (Anexo I deste Regulamento), integralmente preenchido e assinado pelo pai, mãe ou responsável legal;",
+        "b) A via digitalizada do termo assinado deverá ser enviada no formulário oficial de inscrição até 09/11/2026 e a via física original deverá ser entregue no credenciamento da Fase Presencial, acompanhada de cópia de documento oficial de identificação com foto do atleta e do responsável legal;",
+        "c) A não apresentação da autorização válida implicará o impedimento imediato de participação do menor.",
+        "3.3. Regularidade de Contas Riot ID e Campeões Mínimos:",
+        "a) Todos os jogadores devem utilizar sua própria conta Riot Games (Riot ID + Tagline idênticos aos informados na inscrição), localizada no servidor brasileiro (BR), sem suspensões disciplinares ativas e com o cliente Riot Vanguard habilitado;",
+        "b) Cada atleta deve possuir em sua conta a quantidade mínima de Campeões habilitados exigida pelo cliente do jogo para ingressar no modo Escolha de Torneio (Tournament Draft).",
+        "3.4. Impedimento Organizacional: Diretores, coordenadores, árbitros, narradores, comentaristas e membros da Staff do Animeingá 2026 estão proibidos de competir como atletas ou integrar comissões técnicas no torneio."
+      ]
+    },
+    {
+      "id": "sec-4",
+      "num": "4",
+      "title": "CRONOGRAMA OFICIAL, PUBLICAÇÃO DA CHAVE E PREMIAÇÃO",
+      "paragraphs": [
+        "4.1. Datas Oficiais e Calendário Técnico: O campeonato obedecerá rigorosamente ao cronograma oficial abaixo estabelecido, cujas datas são divulgadas previamente às inscrições e constituem compromissos obrigatórios das equipes: ETAPA DO CAMPEONATO DATAS E PERÍODOS OFICIAIS Vendas de Inscrições (Sympla) 29/10/2026 (a partir das 10h00) até 08/11/2026 (às 23h00) ou até esgotarem as 32 vagas Envio do Formulário e Roster Lock Até 09/11/2026, às 23h59 (prazo final de cadastro de elenco e termos de menores) Publicação da Chave e Cronograma Até 13/11/2026 (antes do início da Fase Online Classificatória) Fase Online Classificatória – Semana 1 14/11/2026 (Sábado) e 15/11/2026 (Domingo) Fase Online Classificatória – Semana 2 21/11/2026 (Sábado) e 22/11/2026 (Domingo) Fase Online Classificatória – Semana 3 28/11/2026 (Sábado) e 29/11/2026 (Domingo) Fase Online Classificatória – Semana 4 05/12/2026 (Sábado) – Conclusão preferencial da classificação Data Oficial de Contingência Online 06/12/2026 (Domingo) – Reservada para contingências autorizadas pela Staff Fase Presencial – League of Legends (Palco Principal) 13 de dezembro de 2026 (Domingo) – Semifinais e Grande Final",
+        "4.2. Caráter Vinculante das Datas Oficiais: As datas oficiais da Fase Online Classificatória (14/11, 15/11, 21/11, 22/11, 28/11, 29/11, 05/12 e 06/12/2026) e da Fase Presencial não são sugestões. A efetivação da inscrição implica ciência e aceitação prévia de todas as datas e regras de comparecimento, devendo os participantes planejar sua disponibilidade antecipadamente. É vedado às equipes escolher livremente outro dia, criar datas adicionais por iniciativa própria, exigir remarcação por indisponibilidade particular ou reivindicar prioridade automática por preferência entre sábado ou domingo.",
+        "4.3. Publicação da Chave e Distinção Normativa:",
+        "a) O presente Regulamento estabelece as regras permanentes conhecidas antes das inscrições. A chave de confrontos e o cronograma detalhado não integram este documento inicial, pois serão gerados pela Staff após o encerramento das inscrições com base no número efetivo de equipes homologadas;",
+        "b) A chave oficial e o cronograma de partidas serão publicados até o dia 13 de novembro de 2026 (antes do primeiro dia de confrontos previsto para 14/11/2026), contendo: a estrutura da chave correspondente ao total de equipes homologadas, a identificação dos confrontos, a distribuição das partidas pelas datas oficiais, os horários de referência, a identificação de eventuais BYEs e as instruções operacionais de disputa.",
+        "4.4. Autoridade e Responsabilidades da Staff sobre o Calendário: Compete exclusivamente à Staff gerar a chave após a homologação das inscrições, definir os confrontos e horários de referência, distribuir as partidas pelas datas oficiais e eventuais BYEs, homologar resultados, aplicar as regras de W.O., autorizar eventuais alterações de horário dentro da mesma data, validar a progressão da chave e assegurar que a classificação das 4 (quatro) equipes presenciais seja concluída até 06 de dezembro de 2026, sendo vedada qualquer alteração unilateral da programação pelas equipes.",
+        "4.5. Regra de Negociação Exclusiva de Horários (Vedada Alteração de Data):",
+        "a) As datas dos confrontos são inegociáveis. Publicados os horários de referência pela Staff, as equipes envolvidas em um confronto poderão negociar exclusivamente a alteração do horário de início, desde que cumpridos cumulativamente os seguintes requisitos: (i) a partida permaneça na mesma data oficial; (ii) ambas as equipes concordem expressamente com o novo horário; (iii) o pedido conjunto seja submetido à aprovação da Staff até as 20h00 do dia anterior ao confronto (ou com no mínimo 6 horas de antecedência quando o confronto decorrer da progressão de rodadas do próprio dia); e (iv) a Staff aprove expressamente, registre e comunique a mudança;",
+        "b) Caso não haja consenso entre as equipes ou autorização da Staff, permanecerá integralmente válido o horário de referência originalmente publicado. Nenhuma equipe terá prioridade automática por alegar indisponibilidade no horário original, e a ausência de acordo não obrigará a Staff a criar novo horário ou transferir a data da partida.",
+        "4.6. Dia Oficial de Contingência (06/12/2026): O domingo, dia 06 de dezembro de 2026, é reservado especificamente para contingências operacionais autorizadas pela Staff e para a conclusão de confrontos pendentes necessários à definição dos 4 (quatro) classificados. O objetivo da programação é concluir a classificação preferencialmente até 05/12/2026, mantendo 06/12/2026 como margem de segurança. Esta data não constitui janela livre para remarcações, não pode ser escolhida unilateralmente pelas equipes e não obriga a Staff a agendar partidas caso a classificação já esteja concluída.",
+        "4.7. Premiação Oficial Garantida (1º e 2º Lugares): A premiação financeira e honorífica é fixa e garantida pela organização para o Campeão e o Vice-Campeão da modalidade (não havendo disputa ou premiação de 3º lugar), independentemente do número de equipes inscritas: COLOCAÇÃO FINAL PREMIAÇÃO OFICIAL GARANTIDA 1º Lugar (Campeão) R$ 2.000,00 (dois mil reais) + Troféu Oficial + Medalhas de Ouro 2º Lugar (Vice-Campeão) R$ 1.000,00 (mil reais) + Medalhas de Prata",
+        "4.8. Pagamento da Premiação: Os valores em espécie serão pagos via transferência bancária ou PIX exclusivamente em conta de titularidade do capitão ou representante legal indicado pela equipe, em até 10 (dez) dias úteis após o encerramento do evento e validação fiscal."
+      ]
+    },
+    {
+      "id": "sec-5",
+      "num": "5",
+      "title": "ESTRUTURA DO TORNEIO, FORMATO DE DISPUTA E REGRAS DE BYE",
+      "paragraphs": [
+        "5.1. Princípio Fundamental da Fase Online Classificatória: A Fase Online Classificatória tem natureza exclusivamente classificatória, sendo seu único objetivo definir as 4 (quatro) equipes classificadas para a Fase Presencial (13 de dezembro de 2026 – Domingo). A Fase Online Classificatória não define o campeão do torneio e não inclui partidas adicionais cuja finalidade seja apenas declarar um vencedor online.",
+        "5.2. Formatos Oficiais por Quantidade de Equipes Homologadas: O formato da Fase Online Classificatória será determinado pelo número total de equipes homologadas após o encerramento das inscrições:",
+        "a) Até 8 equipes inscritas: Formato de Eliminação Dupla (Upper/Winner Bracket e Lower Bracket), com confrontos em Melhor de 3 partidas (MD3) e objetivo exclusivo de classificar 4 (quatro) equipes para a Fase Presencial;",
+        "b) De 9 a 16 equipes inscritas: Formato de Eliminação Dupla (Upper/Winner Bracket e Lower Bracket), com confrontos em Melhor de 1 partida (MD1) e objetivo exclusivo de classificar 4 (quatro) equipes para a Fase Presencial;",
+        "c) De 17 a 32 equipes inscritas: Formato de Eliminação Simples (Single Elimination), com confrontos em Melhor de 3 partidas (MD3) e objetivo exclusivo de classificar 4 (quatro) equipes para a Fase Presencial.",
+        "5.3. Regras de Progressão na Eliminação Dupla e na Eliminação Simples:",
+        "a) Nos formatos de Eliminação Dupla (até 16 equipes): A Winner Bracket reunirá as equipes invictas; a equipe derrotada na Winner prosseguirá na competição pela Lower Bracket, enquanto a equipe que sofrer derrota na Lower Bracket estará eliminada (segunda derrota). A progressão da Lower considerará os resultados da Winner, sendo a Fase Online Classificatória encerrada assim que 2 (duas) equipes garantirem vaga pela Winner Bracket e 2 (duas) equipes garantirem vaga pela Lower Bracket (não havendo final da Winner, final da Lower ou grande final online);",
+        "b) No formato de Eliminação Simples (de 17 a 32 equipes): Não haverá Lower Bracket; a equipe derrotada em qualquer série MD3 estará eliminada e a vencedora avançará, encerrando-se a Fase Online Classificatória assim que restarem as 4 (quatro) equipes semifinalistas classificadas dentro do calendário oficial até 06/12/2026;",
+        "c) Coerência e Ordem de Agendamento: Nenhum confronto dependerá de resultado que ainda não possa ser conhecido a tempo. Quando partidas da Winner Bracket forem necessárias para definir os adversários da Lower Bracket, a Staff poderá programar os horários da Winner antes dos horários da Lower, preservada a autoridade da Staff para ordenar os jogos cujos adversários já estejam definidos.",
+        "5.4. Regras Aplicáveis ao BYE (Avanço Automático na Chave): O BYE consiste no avanço automático previsto na matemática da chave quando não houver adversário naquela posição da rodada, observando-se as seguintes normas:",
+        "a) Compete exclusivamente à Staff definir a distribuição de BYEs conforme o formato de chaveamento adotado e o número de equipes homologadas;",
+        "b) A equipe beneficiada por um BYE avançará à rodada seguinte sem disputar partida naquela rodada específica, não sendo o avanço por BYE registrado como vitória por W.O.;",
+        "c) A equipe beneficiada por BYE deverá permanecer integralmente disponível para o próximo confronto oficialmente agendado, e a equipe que vencer a partida preliminar correspondente deverá enfrentá-la normalmente no horário programado;",
+        "d) A existência de um BYE não autoriza alteração unilateral de data ou horário e jamais poderá ser utilizada para substituir ou abonar uma equipe ausente em partida oficialmente agendada.",
+        "5.5. Formato da Fase Final Presencial (13 de dezembro de 2026 – Domingo): As 4 (quatro) equipes classificadas na Fase Online Classificatória disputarão as Semifinais e a Grande Final presencialmente no Palco Principal (Sala de Apoio anexada ao Pavilhão Unimed), não havendo partida de disputa de 3º lugar:",
+        "a) Semifinais Presenciais (2 confrontos): Disputadas em séries Melhor de 3 partidas (MD3);",
+        "b) Grande Final Presencial: Disputada em série Melhor de 3 (MD3) ou Melhor de 5 (MD5), a ser confirmada e anunciada pela Coordenação Técnica no dia do evento conforme o tempo hábil na grade do palco.",
+        "5.6. Seleção de Lado (Side Selection – Blue / Red Side):",
+        "a) Em partidas únicas (MD1) e no Jogo 1 de séries MD3 ou MD5, a escolha do lado do mapa (Azul/Blue Side ou Vermelho/Red Side) caberá à equipe de melhor posicionamento na chave (seed) ou será definida por sorteio conduzido pela arbitragem;",
+        "b) A partir do Jogo 2 de qualquer série MD3 ou MD5, o direito de escolha de lado caberá obrigatoriamente à equipe derrotada na partida imediatamente anterior, devendo o capitão informar a decisão à arbitragem em até 5 (cinco) minutos após a queda do Nexus."
+      ]
+    },
+    {
+      "id": "sec-6",
+      "num": "6",
+      "title": "CONFIGURAÇÕES TÉCNICAS DO JOGO E SELEÇÃO DE CAMPEÕES",
+      "paragraphs": [
+        "6.1. Ambiente e Parâmetros de Lobby: Todas as partidas serão disputadas na versão pública (patch) vigente no servidor brasileiro (BR) de League of Legends, com a seguinte configuração de partida personalizada:",
+        "a) Mapa: Summoner's Rift (5v5);",
+        "b) Tipo de Jogo: Escolha de Torneio (Tournament Draft – Formato de Draft Tradicional, com 5 banimentos por equipe divididos em duas fases);",
+        "c) Espectadores Permitidos: Apenas Lobby / Oficial da Arbitragem (vedada a entrada de espectadores externos não autorizados pela Staff).",
+        "6.2. Restrição de Novos Campeões e Reworks (Regra de 14 Dias): Campeões recém-lançados ou que tenham recebido Atualização Visual e Mecânica Completa (VGU / Rework) há menos de 14 (quatorze) dias corridos do início da respectiva etapa do torneio estarão automaticamente desabilitados e proibidos de serem escolhidos. Caso o cliente não bloqueie automaticamente, as equipes não deverão selecioná-los (nem utilizá-los como placeholder), sob pena de punição ou reinício do Draft.",
+        "6.3. Uso de Placeholders na Seleção de Campeões: Caso um atleta não possua um Campeão específico para realizar a troca com um companheiro de equipe, o uso de Campeão substituto (Placeholder) somente será permitido se informado previamente à arbitragem e ao capitão adversário no chat do lobby antes da confirmação da escolha (Lock-in), devendo a partida ser reiniciada imediatamente após o Draft apenas para a alocação correta dos Campeões acordados."
+      ]
+    },
+    {
+      "id": "sec-7",
+      "num": "7",
+      "title": "PROCEDIMENTOS DE PARTIDA, COMPARECIMENTO, W.O., PAUSAS E REMAKE",
+      "paragraphs": [
+        "7.1. Obrigação de Comparecimento nos Confrontos Agendados:",
+        "a) A obrigação de comparecimento de cada equipe é determinada pelos confrontos efetivamente gerados pela progressão da chave e agendados pela Staff, não existindo obrigatoriedade de que todas as equipes joguem em todas as datas oficiais caso não possuam adversário definido ou partida programada naquele dia;",
+        "b) Toda equipe deverá comparecer pontualmente a todos os confrontos oficialmente agendados para ela e permanecer disponível para as rodadas seguintes conforme a evolução da chave, não podendo alegar dispensa de comparecimento em rodada posterior por ter avançado automaticamente (BYE) na rodada anterior;",
+        "c) A quantidade de partidas disputadas por cada equipe poderá variar conforme o formato, os resultados e a distribuição de BYEs, podendo a Staff agendar duas ou mais partidas para a mesma equipe na mesma data oficial quando previsto no cronograma.",
+        "7.2. Check-in, Tolerância Oficial de 15 Minutos e Aplicação de W.O.:",
+        "a) Os capitães e atletas deverão se apresentar no lobby da partida personalizada e no canal de voz oficial do Discord do Animeingá antes do horário marcado. O criador do lobby deverá aguardar a autorização da Staff e a confirmação de \"pronto\" de ambos os capitães antes de iniciar a Seleção de Campeões;",
+        "b) A tolerância oficial de atraso é estritamente de 15 (quinze) minutos, contados a partir do horário oficial válido do confronto;",
+        "c) Após o término do prazo de 15 (quinze) minutos sem que os 5 (cinco) atletas titulares/reservas inscritos estejam conectados no lobby, aptos e prontos para iniciar a Seleção de Campeões, a equipe ausente ou incompleta sofrerá derrota por W.O. (Walkover);",
+        "d) Problemas técnicos individuais (falhas de conexão de internet, quedas de energia, atualizações de cliente/Vanguard, falhas de computador ou periféricos) NÃO ampliam automaticamente a tolerância de 15 minutos e não concedem à equipe direito automático de solicitar novo horário. A regra aplica-se de forma uniforme e rigorosa a todas as equipes, cabendo à Staff registrar a ocorrência e comunicar o resultado oficial.",
+        "7.3. Comunicação Obrigatória no Discord e Regras do Técnico (Coach):",
+        "a) Durante todas as partidas da Fase Online Classificatória, é obrigatória a permanência dos 5 (cinco) jogadores em atividade nos canais de voz oficiais do servidor do Discord do Animeingá E-Sports, permitindo a fiscalização direta pela Staff;",
+        "b) Atuação do Coach na Fase Online Classificatória: A comunicação do Técnico (Coach) devidamente inscrito com seus jogadores no canal de voz oficial da equipe é livre durante a Seleção de Campeões e durante a partida, exceto durante Pausas Técnicas, nas quais qualquer conversa estratégica é proibida;",
+        "c) Atuação do Coach na Fase Final Presencial (LAN): Além da participação durante a Seleção de Campeões (Draft) e nos intervalos entre jogos da série, será permitida a comunicação tática do Coach com os atletas durante a partida em andamento por meio de até 3 (três) ativações de voz de no máximo 45 (quarenta e cinco) segundos cada por partida, controladas e fiscalizadas pela arbitragem de palco.",
+        "7.4. Proibição de Transmissão Pessoal (Streaming): Os direitos de transmissão de todas as fases do campeonato pertencem exclusivamente ao Animeingá. É terminantemente proibido que jogadores, reservas ou técnicos realizem transmissões ao vivo (livestreams pessoais em Twitch, YouTube, Kick, Discord para terceiros, etc.) de suas partidas, sob pena de desclassificação imediata da equipe.",
+        "7.5. Pausas Técnicas na Partida (Pause):",
+        "a) Cada equipe possui o tempo limite acumulado de até 10 (dez) minutos de pausa técnica por partida, acionada por meio do comando /pause ou /p no chat do jogo;",
+        "b) A pausa destina-se exclusivamente a solucionar desconexões involuntárias, panes de periféricos ou falhas críticas de hardware/rede ocorridas após o início da partida, sendo estritamente proibido pausar durante confrontos ativos entre jogadores (teamfights ou escaramuças), salvo desconexão simultânea ou queda geral de energia/rede;",
+        "c) Imediatamente após acionar a pausa, o capitão deverá informar o motivo no chat para a equipe adversária e reportar à arbitragem no Discord/palco. A retomada do jogo (/unpause) somente poderá ocorrer após a confirmação no chat de que ambas as equipes estão prontas;",
+        "d) Durante todo o período de pausa técnica, os atletas e o técnico estão rigorosamente proibidos de manter comunicação estratégica ou tática sobre o jogo;",
+        "e) Em partidas nas quais tenha ocorrido pausa técnica ou disputa regulamentar, os jogadores deverão permanecer na tela de estatísticas pós-jogo e no canal do Discord por até 10 (dez) minutos ou até a liberação formal pelo árbitro da rodada.",
+        "7.6. Critérios de Reinício de Partida (Remake) e Suporte Técnico Presencial:",
+        "a) O reinício da partida (Remake) poderá ser autorizado pela arbitragem caso um jogador sofra desconexão involuntária ou falha impeditiva de carregamento antes dos 02:00 (dois minutos) do cronômetro de jogo e antes da ocorrência do Primeiro Abate (First Blood);",
+        "b) Também poderá ser autorizado Remake em caso de bug crítico comprovado que impeça o funcionamento básico de Campeão, Feitiço de Invocador ou Runa, reportado imediatamente no momento de sua ocorrência;",
+        "c) Em caso de Remake determinado pela arbitragem, a partida será reiniciada mantendo-se obrigatoriamente os mesmos Campeões, Feitiços de Invocador, Runas, lados e sequência de banimentos, salvo se o Remake decorrer de bug específico de um Campeão, hipótese na qual este será banido e um novo Draft será realizado;",
+        "d) Compromisso de Suporte Técnico e Resolução Justa na Fase Presencial: Na Fase Final Presencial, a equipe de Staff e Coordenação Técnica fará tudo o que estiver ao seu alcance para diagnosticar, contornar e solucionar eventuais problemas técnicos de hardware, software, rede ou infraestrutura de palco, visando preservar a integridade competitiva do campeonato e buscando sempre uma resolução justa, transparente e, quando aplicável, em comum acordo entre as equipes envolvidas.",
+        "7.7. Vitória Concedida por Decisão da Arbitragem (Awarded Game Victory):",
+        "a) Caso ocorra uma falha técnica irreversível após os 20 (vinte) minutos de partida (00:20:00) que impossibilite a continuidade do jogo, a arbitragem poderá, a seu exclusivo critério técnico, declarar a vitória à equipe que detiver vantagem inequívoca e irreversível, verificada pelo cumprimento dos seguintes parâmetros objetivos: 1) Diferença de Ouro (Gold Differential): O ouro total acumulado por uma equipe ser superior em mais de 33% (trinta e três por cento) em relação ao ouro total da equipe adversária; 2) Diferença de Torres Destruídas: A vantagem no número de torres destruídas entre as equipes ser superior a 7 (sete) torres; 3) Diferença de Inibidores Destruídos: A vantagem no número de inibidores destruídos no momento da interrupção ser igual ou superior a 2 (dois) inibidores."
+      ]
+    },
+    {
+      "id": "sec-8",
+      "num": "8",
+      "title": "DIRETRIZES DE IDENTIDADE VISUAL, PERFIL DE INVOCADOR E PATROCÍNIOS",
+      "paragraphs": [
+        "8.1. Nomes de Invocador (Riot ID) e Tags de Equipe:",
+        "a) Os nomes de invocador (Riot ID) exibidos no jogo devem corresponder aos registrados na inscrição oficial;",
+        "b) É vedado o uso de nomes ou tags que contenham palavrões, cunho discriminatório, alusão a drogas ilícitas, teor sexual explícito, conotação político-partidária ou menção a patrocinadores proibidos.",
+        "8.2. Ícones de Invocador e Apresentação Visual:",
+        "a) Os ícones de perfil e emotes utilizados devem respeitar a integridade da transmissão ao vivo. A recusa em atender determinação da arbitragem para substituição de ícone ou nome inadequado resultará em proibição de participação na partida ou desclassificação.",
+        "8.3. Restrições Comerciais e de Patrocínio: Em conformidade com as Diretrizes de Competição da Comunidade da Riot Games e políticas do Animeingá, é expressamente proibida a exibição em uniformes, tags, avatares, banners ou periféricos de marcas vinculadas aos seguintes setores:",
+        "• Casas de apostas esportivas, cassinos virtuais, roletas de skins e plataformas de jogos de azar;",
+        "• Operadores de apostas de esportes eletrônicos ou fantasy games pagos;",
+        "• Medicamentos controlados sob prescrição médica e produtos derivados de canabidiol (CBD);",
+        "• Fabricação e comércio de armas de fogo, réplicas bélicas, munições e acessórios táticos reais;",
+        "• Conteúdos pornográficos, produtos eróticos e plataformas adultas;",
+        "• Produtos de tabacaria, cigarros convencionais, narguilés, vaporizadores e cigarros eletrônicos (vapes);",
+        "• Bebidas alcoólicas de qualquer natureza ou graduação;",
+        "• Criptomoedas, NFTs e instrumentos financeiros não regulamentados pelos órgãos competentes."
+      ]
+    },
+    {
+      "id": "sec-9",
+      "num": "9",
+      "title": "CÓDIGO DE CONDUTA, INTEGRIDADE COMPETITIVA E SANÇÕES",
+      "paragraphs": [
+        "9.1. Soberania da Arbitragem: As decisões proferidas pelos árbitros e pelo Head Staff de E-Sports do Animeingá são soberanas, finais e irrecorríveis. Quaisquer irregularidades ocorridas durante uma partida devem ser reportadas imediatamente à arbitragem antes do término do jogo, acompanhadas de evidências (capturas de tela ou gravações). Reclamações apresentadas após a conclusão da partida não alterarão o resultado homologado.",
+        "9.2. Proibição de Scripts, Softwares de Terceiros e Exploits:",
+        "a) É terminantemente proibido o uso de scripts de automação, programas de alteração de câmera (zoom hacks), cronômetros externos não autorizados pela Riot Games, modificações de arquivos do cliente ou exploração intencional de bugs conhecidos ou desconhecidos de Campeões e itens;",
+        "b) A constatação do uso de recursos ilícitos acarretará a desclassificação sumária do atleta e de sua equipe.",
+        "9.3. Infrações Disciplinares Graves: Constituem violações severas, passíveis de advertência, perda de escolha de lado, perda de banimentos no Draft, derrota por W.O., desclassificação imediata sem direito a premiação e banimento de futuras edições do Animeingá:",
+        "a) Desrespeito, ofensas verbais, injúria, ameaças, gestos obscenos, intimidação ou agressão física contra adversários, membros da Staff ou público presente;",
+        "b) Atos discriminatórios de cunho racista, homofóbico, transfóbico, machista, xenofóbico, capacitista ou de intolerância religiosa, seja no chat do jogo (/all), no Discord ou presencialmente;",
+        "c) Prática de Telagem (Ghosting / Screen Watching): Olhar diretamente para o telão do palco na Fase Presencial, acompanhar transmissões externas durante a partida ou receber sinais e informações táticas da plateia;",
+        "d) Manipulação de resultados (Match-fixing), entrega intencional de partidas (Griefing / Intentional Feeding) ou uso de conta de terceiro (Smurfing/Ringer não inscrito);",
+        "e) Danos ao Patrimônio: Golpear, chutar ou avariar monitores, computadores, periféricos, mesas, cadeiras ou estruturas do palco. Além da desclassificação imediata, o atleta infrator e sua equipe responderão civil e financeiramente pelo ressarcimento integral dos danos materiais causados."
+      ]
+    },
+    {
+      "id": "sec-10",
+      "num": "10",
+      "title": "DIREITO DE IMAGEM E PROTEÇÃO DE DADOS PESSOAIS (LGPD)",
+      "paragraphs": [
+        "10.1. Cessão Gratuita de Direito de Imagem e Voz: Ao efetivar a inscrição no campeonato, todos os atletas titulares, reservas e técnicos autorizam e cedem à organização do Animeingá, a título gratuito, em caráter definitivo, irrevogável e irretratável, o uso de sua imagem, voz, nome, apelido desportivo (nickname) e desempenho técnico nas partidas para fins de transmissão ao vivo (livestreaming), retransmissão, cortes de vídeo, fotografias promocionais e divulgação institucional em qualquer mídia.",
+        "10.2. Conformidade com a LGPD (Lei Federal nº 13.709/2018): Os dados pessoais coletados no ato da inscrição e do credenciamento (nome completo, RG, CPF, data de nascimento, contatos e documentos de responsáveis legais) serão tratados exclusivamente pela Comissão Organizadora para fins de auditoria de elegibilidade, controle de acesso ao recinto presencial, segurança do evento e processamento de pagamentos de premiação, sendo vedada sua comercialização ou compartilhamento com terceiros não autorizados."
+      ]
+    },
+    {
+      "id": "sec-11",
+      "num": "11",
+      "title": "INFRAESTRUTURA DE PALCO E EQUIPAMENTOS (FASE PRESENCIAL)",
+      "paragraphs": [
+        "11.1. Local e Especificações Oficiais de Hardware: As disputas da Fase Final Presencial ocorrerão na Sala de Apoio anexada ao Pavilhão Unimed (Maringá-PR), onde a organização disponibilizará 10 (dez) estações competitivas padronizadas com a seguinte configuração técnica: COMPONENTE / ESTRUTURA ESPECIFICAÇÃO TÉCNICA OFICIAL DE PALCO Local da Fase Presencial Sala de Apoio anexada ao Pavilhão Unimed – Maringá/PR Processador (CPU) AMD Ryzen 7 5700X3D (com Watercooler 240mm) Placa de Vídeo (GPU) NVIDIA GeForce RTX 3070 Ti (8GB GDDR6X) Memória RAM e Armazenamento 32GB RAM DDR4 (3200MHz) / SSD NVMe M.2 High-Speed Monitor Gamer Monitor 27\" com Taxa de Atualização Fixada em 360 Hz Suporte de Monitor Suporte Articulado Vinik PM40AQ com Pistão a Gás Periféricos Fornecidos Headset HyperX Cloud III, Teclado Mecânico Clanm King, Mouse HyperX Pulsefire e Mousepad Estendido Sistema Operacional Windows 11 Pro otimizado e configurado para e-Sports",
+        "11.2. Tempo de Configuração e Aquecimento Presencial: Durante a Fase Presencial, antes do início de sua série no palco, todos os jogadores terão direito a 3 (três) minutos em partida personalizada para testar, calibrar e validar seus equipamentos e configurações de teclas/vídeo, devendo respeitar rigorosamente o cronograma de transmissão.",
+        "11.3. Nota Normativa sobre Periféricos Pessoais: Os atletas poderão utilizar seus próprios mouses, teclados, fones (headsets/intra-auriculares), mousepads e mouse bungees durante a Fase Presencial, mediante vistoria técnica prévia obrigatória pela arbitragem. Dispositivos com macros programados na memória interna ou que exijam instalação de softwares não homologados serão retidos pela coordenação até o término da partida.",
+        "11.4. Garantia de Suporte Técnico Presencial e Disposições Finais: Na Fase Presencial, a Staff envidará todos os esforços técnicos ao seu alcance para sanar eventuais intercorrências de equipamentos ou servidor, garantindo a integridade do torneio e buscando sempre uma solução justa em comum acordo com as equipes. Os casos omissos serão resolvidos de forma soberana pela Coordenação de E-Sports do Animeingá 2026."
+      ]
+    },
+    {
+      "id": "anexo-i",
+      "title": "ANEXO I – TERMO DE AUTORIZAÇÃO DO RESPONSÁVEL LEGAL PARA PARTICIPAÇÃO DE MENOR DE IDADE (16 E 17 ANOS) – LEAGUE OF",
+      "paragraphs": [
+        "LEGENDS (LoL) Eu, ______________________________________________________________________, nacionalidade ______________________, estado civil ____________________, portador(a) da Cédula de Identidade RG nº __________________________ (Órgão Expedidor: ________) e inscrito(a) no CPF sob o nº _______._______._______-_____, residente e domiciliado(a) no endereço _____________________________________________________________________ ____________________________, Cidade/UF: ____________________________/_____, telefone/WhatsApp de contato (____) ___________________, na qualidade de [ ] PAI [ ] MÃE [ ] TUTOR/RESPONSÁVEL LEGAL, AUTORIZO formalmente o(a) adolescente ______________________________________________________________________, nascido(a) em _____/_____/________ (idade atual: _____ anos), portador(a) do RG nº __________________________ e inscrito(a) no CPF sob o nº _______._______._______-_____, integrante da equipe denominada \"________________________________________________\" com o apelido no jogo (Nickname/Riot ID/Steam) \"_____________________________________\", a participar de todas as etapas do CAMPEONATO OFICIAL DE LEAGUE OF LEGENDS (LoL) DO ANIMEINGÁ E-SPORTS 2026. DECLARO estar plenamente ciente e de acordo com todos os termos do Regulamento Oficial da modalidade, compreendendo que a competição abrange a Fase Online Classificatória (dias 14 e 15/11, 21 e 22/11, 28 e 29/11, e 05 e 06/12/2026) e, em caso de classificação entre as 4 (quatro) melhores equipes, a Fase Final Presencial a ser realizada no dia 13 de dezembro de 2026 (Domingo), na Sala de Apoio anexada ao Pavilhão Unimed, em Maringá – PR. AUTORIZO, ainda, a título gratuito, nos termos da Cláusula 10 do Regulamento Oficial e da Lei Geral de Proteção de Dados (Lei nº 13.709/2018), a captação e utilização da imagem, voz e nome desportivo do(a) referido(a) menor exclusivamente para as transmissões ao vivo (livestreams), fotografias oficiais e materiais de divulgação institucional do evento Animeingá 2026, bem como assumo responsabilidade solidária pelo zelo aos equipamentos disponibilizados no palco presencial. OBSERVAÇÃO OBRIGATÓRIA: Este documento deverá ser assinado pelo responsável legal, digitalizado e enviado no formulário oficial de inscrição até 09/11/2026, devendo a via física original ser entregue obrigatoriamente no credenciamento da Fase Presencial acompanhada de cópia simples do documento oficial com foto do responsável legal e do atleta menor de idade. ________________________/______, _____ de ______________________ de 2026. ________________________________________________________________________ Assinatura do Pai, Mãe ou Responsável Legal (Conforme Documento de Identidade) ________________________________________________________________________ Assinatura do(a) Atleta Competidor(a) (16 ou 17 anos)"
+      ]
+    }
+  ]
+}
