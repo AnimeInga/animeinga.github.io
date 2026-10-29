@@ -42,23 +42,69 @@ import {STATUS_LABEL} from '../lib/competitions';
                 ))}
               </ul>
 
+              {comp.id === 'esports' && (
+                <div class="esports-details">
+                  <section class="esports-block" aria-labelledby="esports-regulations-title">
+                    <h3 id="esports-regulations-title">Regulamentos oficiais</h3>
+                    <ul class="esports-regulations">
+                      {comp.regulations.map((regulation) => (
+                        <li>
+                          <span>{regulation.title}</span>
+                          <a
+                            class="btn btn--ghost"
+                            href={regulation.url}
+                            aria-label={`Ler regulamento completo de ${regulation.title}`}>
+                            Ler regulamento completo
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
+
+                  <section class="esports-block" aria-labelledby="esports-prizes-title">
+                    <h3 id="esports-prizes-title">Premiação por modalidade</h3>
+                    <ul>
+                      {comp.prizes.map((prize) => <li>{prize}</li>)}
+                    </ul>
+                    <p>{comp.prizeNote}</p>
+                  </section>
+
+                  <section class="esports-block" aria-labelledby="esports-schedule-title">
+                    <h3 id="esports-schedule-title">Cronograma</h3>
+                    <p><strong>Fases online:</strong></p>
+                    <ul>
+                      {comp.schedule.online.map((date) => <li>{date}</li>)}
+                    </ul>
+                    <p><strong>Fases presenciais:</strong></p>
+                    <ul>
+                      {comp.schedule.inPerson.map((date) => <li>{date}</li>)}
+                    </ul>
+                    <p><strong>Local:</strong> {comp.schedule.venue}</p>
+                  </section>
+
+                  <p class="esports-registration-note">{comp.registrationNote}</p>
+                </div>
+              )}
+
               <div class="competition-card__actions">
-                {comp.regulationUrl ? (
-                  <a
-                    class="btn btn--primary"
-                    href={comp.regulationUrl}
-                    target={comp.regulationUrl.startsWith('http') ? '_blank' : undefined}
-                    rel={comp.regulationUrl.startsWith('http') ? 'noopener noreferrer' : undefined}>
-                    Ver regulamento
-                  </a>
-                ) : (
-                  <span class="btn btn--disabled" title="O regulamento será publicado em breve">
-                    Regulamento em breve
-                  </span>
+                {comp.id !== 'esports' && (
+                  comp.regulationUrl ? (
+                    <a
+                      class="btn btn--primary"
+                      href={comp.regulationUrl}
+                      target={comp.regulationUrl.startsWith('http') ? '_blank' : undefined}
+                      rel={comp.regulationUrl.startsWith('http') ? 'noopener noreferrer' : undefined}>
+                      Ver regulamento
+                    </a>
+                  ) : (
+                    <span class="btn btn--disabled" title="O regulamento será publicado em breve">
+                      Regulamento em breve
+                    </span>
+                  )
                 )}
                 {comp.registrationUrl ? (
                   <a class="btn btn--ghost" href={comp.registrationUrl} target="_blank" rel="noopener noreferrer">
-                    Inscrever-se
+                    {comp.id === 'esports' ? 'Inscreva sua equipe na Sympla' : 'Inscrever-se'}
                   </a>
                 ) : (
                   <span class="btn btn--disabled" title="As inscrições abrirão em breve">
@@ -185,5 +231,55 @@ import {STATUS_LABEL} from '../lib/competitions';
     display: flex;
     gap: 0.9rem;
     flex-wrap: wrap;
+  }
+
+  .esports-details {
+    display: grid;
+    gap: 1.5rem;
+    margin: 0 0 2rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+  }
+
+  .esports-block h3 {
+    margin: 0 0 0.6rem;
+    color: var(--color-sakura);
+    font-size: 1.05rem;
+  }
+
+  .esports-block ul {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+
+  .esports-block p {
+    margin: 0.5rem 0 0.2rem;
+  }
+
+  .esports-regulations {
+    display: grid;
+    gap: 0.7rem;
+    padding: 0 !important;
+    list-style: none;
+  }
+
+  .esports-regulations li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.7rem;
+  }
+
+  .esports-regulations .btn {
+    font-size: 0.8rem;
+    padding: 0.55rem 0.8rem;
+  }
+
+  .esports-registration-note {
+    margin: 0;
+    padding: 1rem;
+    border-left: 3px solid var(--color-primary-light);
+    background: rgba(255, 255, 255, 0.04);
   }
 </style>
