@@ -1,9 +1,9 @@
 {
-  "_leia-me": "Competições e regulamentos. 'status' controla o banner: 'em-breve' | 'inscricoes' | 'encerrado'. Preencha 'regulationUrl' e 'registrationUrl' quando os links oficiais existirem (deixe \"\" enquanto não houver). Para nova competição, copie um bloco inteiro.",
+  "_leia-me": "Competições e regulamentos. 'status' controla o banner: 'em-breve' | 'inscricoes' | 'encerrado'. Preencha 'regulationUrl' e 'registrationUrl' quando os links oficiais existirem (deixe \"\" enquanto não houver). A competição esports também pode informar 'regulations', 'prizes', 'schedule' e 'registrationNote'. Para nova competição, copie um bloco inteiro.",
   "page": {
     "title": "Regulamentos & Competições",
-    "subtitle": "Os palcos e as arenas do AnimeIngá 2026 estão se preparando. Confira as competições confirmadas e fique de olho: regulamentos e inscrições serão publicados aqui.",
-    "notice": "Os regulamentos e as inscrições do Artists' Alley, do Concurso Cosplay e da Competição K-Pop já estão disponíveis! Os das demais competições serão divulgados em breve nesta página e nas nossas redes sociais. Todo o conteúdo é gratuito para consulta."
+    "subtitle": "Confira as competições confirmadas do AnimeIngá 2026, consulte os regulamentos e encontre os links de inscrição.",
+    "notice": "Consulte os regulamentos oficiais e as informações de inscrição de cada competição. Leia atentamente as regras antes de participar."
   },
   "competitions": [
     {
@@ -27,16 +27,48 @@
       "title": "Campeonatos de eSports",
       "icon": "🎮",
       "tagline": "A arena vai pegar fogo",
-      "description": "Torneios de games com premiação e transmissão ao vivo no palco principal. Os jogos, formatos, regras de elegibilidade e premiações serão definidos no regulamento oficial.",
-      "status": "em-breve",
+      "description": "Dispute os campeonatos oficiais de Counter-Strike 2, VALORANT ou League of Legends. As partidas classificatórias serão online, com fases presenciais durante o AnimeIngá 2026.",
+      "status": "inscricoes",
       "highlights": [
-        "Modalidades a anunciar",
-        "Premiação para os finalistas",
-        "Transmissão ao vivo no evento",
-        "Inscrições online e gratuitas"
+        "Inscrições de 29/10 a 08/11/2026, ou até esgotarem as vagas",
+        "32 equipes por modalidade — até 96 equipes no total",
+        "R$ 100,00 por equipe + taxa Sympla de R$ 10,00 (total: R$ 110,00)",
+        "Classificatórias online e fases presenciais no AnimeIngá 2026"
       ],
       "regulationUrl": "",
-      "registrationUrl": ""
+      "registrationUrl": "https://www.sympla.com.br/evento/animeinga-2026-inscricoes-dos-campeonatos-de-e-sports/3630410",
+      "regulations": [
+        {
+          "title": "Counter-Strike 2 (CS2)",
+          "url": "/docs/regulamento-cs2-animeinga-2026.pdf"
+        },
+        {
+          "title": "VALORANT",
+          "url": "/docs/regulamento-valorant-animeinga-2026.pdf"
+        },
+        {
+          "title": "League of Legends (LoL)",
+          "url": "/docs/regulamento-lol-animeinga-2026.pdf"
+        }
+      ],
+      "prizes": [
+        "1º lugar — R$ 2.000,00, troféu oficial e medalhas de ouro",
+        "2º lugar — R$ 1.000,00 e medalhas de prata"
+      ],
+      "schedule": {
+        "online": [
+          "14 e 15/11/2026",
+          "21 e 22/11/2026",
+          "28 e 29/11/2026",
+          "05 e 06/12/2026"
+        ],
+        "inPerson": [
+          "12/12/2026 — Counter-Strike 2 e VALORANT",
+          "13/12/2026 — League of Legends"
+        ],
+        "venue": "Parque de Exposições Francisco Feio Ribeiro, Maringá — Paraná"
+      },
+      "registrationNote": "Após a confirmação da compra, a Sympla enviará por e-mail as instruções e o link do formulário oficial de cadastro da equipe. A compra não substitui o preenchimento do formulário nem a validação dos dados pela organização."
     },
     {
       "id": "cosplay",
