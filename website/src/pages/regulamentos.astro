@@ -53,10 +53,8 @@ import {STATUS_LABEL} from '../lib/competitions';
                           <a
                             class="btn btn--ghost"
                             href={regulation.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            download>
-                            Baixar regulamento (PDF)
+                            aria-label={`Ler regulamento completo de ${regulation.title}`}>
+                            Ler regulamento completo
                           </a>
                         </li>
                       ))}
