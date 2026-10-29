@@ -64,18 +64,20 @@ const {regulation} = Astro.props;
         <h2 class="reg-section__title">
           {section.num ? `${section.num}. ` : ''}{section.title}
         </h2>
-        {section.entries && (
-          <ol class="timeline">
-            {section.entries.map((entry) => (
-              <li class="timeline__item">
-                <span class="timeline__date">{entry.data}</span>
-                <span class="timeline__evento">{entry.evento}</span>
-              </li>
-            ))}
-          </ol>
-        )}
-        {section.paragraphs.map((paragraph) => (
-          <p class="reg-text">{paragraph}</p>
+        {section.paragraphs.map((paragraph, index) => (
+          <>
+            <p class="reg-text">{paragraph}</p>
+            {index === 0 && section.entries && (
+              <ol class="timeline">
+                {section.entries.map((entry) => (
+                  <li class="timeline__item">
+                    <span class="timeline__date">{entry.data}</span>
+                    <span class="timeline__evento">{entry.evento}</span>
+                  </li>
+                ))}
+              </ol>
+            )}
+          </>
         ))}
       </section>
     ))}
