@@ -15,6 +15,10 @@ interface Regulation {
     num?: string;
     title: string;
     paragraphs: string[];
+    entries?: {
+      data: string;
+      evento: string;
+    }[];
   }[];
 }
 
@@ -60,6 +64,16 @@ const {regulation} = Astro.props;
         <h2 class="reg-section__title">
           {section.num ? `${section.num}. ` : ''}{section.title}
         </h2>
+        {section.entries && (
+          <ol class="timeline">
+            {section.entries.map((entry) => (
+              <li class="timeline__item">
+                <span class="timeline__date">{entry.data}</span>
+                <span class="timeline__evento">{entry.evento}</span>
+              </li>
+            ))}
+          </ol>
+        )}
         {section.paragraphs.map((paragraph) => (
           <p class="reg-text">{paragraph}</p>
         ))}
@@ -144,5 +158,42 @@ const {regulation} = Astro.props;
     margin: 0 0 1rem;
     color: rgba(255, 255, 255, 0.78);
     line-height: 1.8;
+  }
+
+  .timeline {
+    list-style: none;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .timeline__item {
+    display: grid;
+    grid-template-columns: minmax(150px, 0.8fr) 2fr;
+    gap: 1.2rem;
+    align-items: baseline;
+    padding: 1rem 1.3rem;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-primary);
+    border-radius: 12px;
+    background: var(--color-surface);
+  }
+
+  .timeline__date {
+    color: var(--color-sakura);
+    font-weight: 900;
+  }
+
+  .timeline__evento {
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 560px) {
+    .timeline__item {
+      grid-template-columns: 1fr;
+      gap: 0.15rem;
+    }
   }
 </style>

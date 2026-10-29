@@ -65,7 +65,7 @@
       "num": "4",
       "title": "CRONOGRAMA OFICIAL, PUBLICAÇÃO DA CHAVE E PREMIAÇÃO",
       "paragraphs": [
-        "4.1. Datas Oficiais e Calendário Técnico: O campeonato obedecerá rigorosamente ao cronograma oficial abaixo estabelecido, cujas datas são divulgadas previamente às inscrições e constituem compromissos obrigatórios das equipes: ETAPA DO CAMPEONATO DATAS E PERÍODOS OFICIAIS Vendas de Inscrições (Sympla) 29/10/2026 (a partir das 10h00) até 08/11/2026 (às 23h00) ou até esgotarem as 32 vagas Envio do Formulário e Roster Lock Até 09/11/2026, às 23h59 (prazo final de cadastro de elenco e termos de menores) Publicação da Chave e Cronograma Até 13/11/2026 (antes do início da Fase Online Classificatória) Fase Online Classificatória – Semana 1 14/11/2026 (Sábado) e 15/11/2026 (Domingo) Fase Online Classificatória – Semana 2 21/11/2026 (Sábado) e 22/11/2026 (Domingo) Fase Online Classificatória – Semana 3 28/11/2026 (Sábado) e 29/11/2026 (Domingo) Fase Online Classificatória – Semana 4 05/12/2026 (Sábado) – Conclusão preferencial da classificação Data Oficial de Contingência Online 06/12/2026 (Domingo) – Reservada para contingências autorizadas pela Staff Fase Presencial – CS2 (Palco Principal) 12 de dezembro de 2026 (Sábado) – Semifinais e Grande Final",
+        "4.1. Datas Oficiais e Calendário Técnico: O campeonato obedecerá rigorosamente ao cronograma oficial abaixo estabelecido, cujas datas são divulgadas previamente às inscrições e constituem compromissos obrigatórios das equipes:",
         "4.2. Caráter Vinculante das Datas Oficiais: As datas oficiais da Fase Online Classificatória (14/11, 15/11, 21/11, 22/11, 28/11, 29/11, 05/12 e 06/12/2026) e da Fase Presencial não são sugestões. A efetivação da inscrição implica ciência e aceitação prévia de todas as datas e regras de comparecimento, devendo os participantes planejar sua disponibilidade antecipadamente. É vedado às equipes escolher livremente outro dia, criar datas adicionais por iniciativa própria, exigir remarcação por indisponibilidade particular ou reivindicar prioridade automática por preferência entre sábado ou domingo.",
         "4.3. Publicação da Chave e Distinção Normativa:",
         "a) O presente Regulamento estabelece as regras permanentes conhecidas antes das inscrições. A chave de confrontos e o cronograma detalhado não integram este documento inicial, pois serão gerados pela Staff após o encerramento das inscrições com base no número efetivo de equipes homologadas;",
@@ -77,6 +77,44 @@
         "4.6. Dia Oficial de Contingência (06/12/2026): O domingo, dia 06 de dezembro de 2026, é reservado especificamente para contingências operacionais autorizadas pela Staff e para a conclusão de confrontos pendentes necessários à definição dos 4 (quatro) classificados. O objetivo da programação é concluir a classificação preferencialmente até 05/12/2026, mantendo 06/12/2026 como margem de segurança. Esta data não constitui janela livre para remarcações, não pode ser escolhida unilateralmente pelas equipes e não obriga a Staff a agendar partidas caso a classificação já esteja concluída.",
         "4.7. Premiação Oficial Garantida (1º e 2º Lugares): A premiação financeira e honorífica é fixa e garantida pela organização para o Campeão e o Vice-Campeão da modalidade (não havendo disputa ou premiação de 3º lugar), independentemente do número de equipes inscritas: COLOCAÇÃO FINAL PREMIAÇÃO OFICIAL GARANTIDA 1º Lugar (Campeão) R$ 2.000,00 (dois mil reais) + Troféu Oficial + Medalhas de Ouro 2º Lugar (Vice-Campeão) R$ 1.000,00 (mil reais) + Medalhas de Prata",
         "4.8. Pagamento da Premiação: Os valores em espécie serão pagos via transferência bancária ou PIX exclusivamente em conta de titularidade do capitão ou representante legal indicado pela equipe, em até 10 (dez) dias úteis após o encerramento do evento e validação fiscal."
+      ],
+      "entries": [
+        {
+          "data": "Vendas de Inscrições (Sympla)",
+          "evento": "29/10/2026 (a partir das 10h00) até 08/11/2026 (às 23h00) ou até esgotarem as 32 vagas"
+        },
+        {
+          "data": "Envio do Formulário e Roster Lock",
+          "evento": "Até 09/11/2026, às 23h59 (prazo final de cadastro de elenco e termos de menores)"
+        },
+        {
+          "data": "Publicação da Chave e Cronograma",
+          "evento": "Até 13/11/2026 (antes do início da Fase Online Classificatória)"
+        },
+        {
+          "data": "Fase Online Classificatória – Semana 1",
+          "evento": "14/11/2026 (Sábado) e 15/11/2026 (Domingo)"
+        },
+        {
+          "data": "Fase Online Classificatória – Semana 2",
+          "evento": "21/11/2026 (Sábado) e 22/11/2026 (Domingo)"
+        },
+        {
+          "data": "Fase Online Classificatória – Semana 3",
+          "evento": "28/11/2026 (Sábado) e 29/11/2026 (Domingo)"
+        },
+        {
+          "data": "Fase Online Classificatória – Semana 4",
+          "evento": "05/12/2026 (Sábado) – Conclusão preferencial da classificação"
+        },
+        {
+          "data": "Data Oficial de Contingência Online",
+          "evento": "06/12/2026 (Domingo) – Reservada para contingências autorizadas pela Staff"
+        },
+        {
+          "data": "Fase Presencial – CS2 (Palco Principal)",
+          "evento": "12 de dezembro de 2026 (Sábado) – Semifinais e Grande Final"
+        }
       ]
     },
     {
