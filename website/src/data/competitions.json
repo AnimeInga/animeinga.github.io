@@ -1,5 +1,5 @@
 {
-  "_leia-me": "Competições e regulamentos. 'status' controla o banner: 'em-breve' | 'inscricoes' | 'encerrado'. Preencha 'regulationUrl' e 'registrationUrl' quando os links oficiais existirem (deixe \"\" enquanto não houver). A competição esports também pode informar 'regulations', 'prizes', 'schedule' e 'registrationNote'. Para nova competição, copie um bloco inteiro.",
+  "_leia-me": "Competições e regulamentos. 'status' controla o banner: 'em-breve' | 'inscricoes' | 'encerrado'. Preencha 'regulationUrl' e 'registrationUrl' quando os links oficiais existirem (deixe \"\" enquanto não houver). A competição esports também pode informar 'regulations', 'prizes', 'prizeNote', 'schedule' e 'registrationNote'. Para nova competição, copie um bloco inteiro.",
   "page": {
     "title": "Regulamentos & Competições",
     "subtitle": "Confira as competições confirmadas do AnimeIngá 2026, consulte os regulamentos e encontre os links de inscrição.",
@@ -32,7 +32,7 @@
       "highlights": [
         "Inscrições de 29/10 a 08/11/2026, ou até esgotarem as vagas",
         "32 equipes por modalidade — até 96 equipes no total",
-        "R$ 100,00 por equipe + taxa Sympla de R$ 10,00 (total: R$ 110,00)",
+        "Inscrição: R$ 100,00 por equipe + taxa Sympla de R$ 10,00, paga pelo comprador (total: R$ 110,00 por inscrição)",
         "Classificatórias online e fases presenciais no AnimeIngá 2026"
       ],
       "regulationUrl": "",
@@ -55,6 +55,7 @@
         "1º lugar — R$ 2.000,00, troféu oficial e medalhas de ouro",
         "2º lugar — R$ 1.000,00 e medalhas de prata"
       ],
+      "prizeNote": "A participação e a premiação estão sujeitas às condições dos regulamentos oficiais.",
       "schedule": {
         "online": [
           "14 e 15/11/2026",
