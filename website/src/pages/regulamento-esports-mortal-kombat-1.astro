@@ -1,0 +1,28 @@
+---
+import EsportsRegulation from '../components/EsportsRegulation.astro';
+import regulationData from '../data/regulamento-esports-console.json';
+
+const competition = regulationData.competitions.find(({id}) => id === 'mortal-kombat-1');
+if (!competition) throw new Error('Informações de Mortal Kombat 1 não encontradas.');
+const regulation = {
+  page: {
+    title: competition.officialTitle,
+    subtitle: competition.subtitle,
+  },
+  documentAuthority: regulationData.documentAuthority,
+  indexTitle: 'SUMÁRIO EXECUTIVO E ÍNDICE DE SEÇÕES',
+  registrationUrl: regulationData.registrationUrl,
+  registrationButtonLabel: regulationData.registrationButtonLabel,
+  price: competition.price,
+  summary: competition.summary,
+  sections: regulationData.commonSections.map((section) => ({
+    ...section,
+    paragraphs: (section.id === 'configuracoes-regras' ? competition.rules : section.paragraphs)
+      .map((paragraph) => paragraph
+        .replaceAll('{{game}}', competition.game)
+        .replaceAll('{{date}}', competition.date)),
+  })),
+};
+---
+
+<EsportsRegulation regulation={regulation} />
