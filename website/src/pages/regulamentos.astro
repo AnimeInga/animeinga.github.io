@@ -49,40 +49,23 @@ import {STATUS_LABEL} from '../lib/competitions';
                     <ul class="esports-regulations">
                       {comp.regulations.map((regulation) => (
                         <li>
-                          <span>{regulation.title}</span>
                           <a
                             class="btn btn--ghost"
                             href={regulation.url}
-                            aria-label={`Ler regulamento completo de ${regulation.title}`}>
-                            Ler regulamento completo
+                            aria-label={`Regulamento oficial — ${regulation.title}`}>
+                            {regulation.title}
                           </a>
                         </li>
                       ))}
                     </ul>
                   </section>
 
-                  <section class="esports-block" aria-labelledby="esports-prizes-title">
-                    <h3 id="esports-prizes-title">Premiação por modalidade</h3>
-                    <ul>
-                      {comp.prizes.map((prize) => <li>{prize}</li>)}
-                    </ul>
-                    <p>{comp.prizeNote}</p>
+                  <section class="esports-registration" aria-labelledby="esports-registration-title">
+                    <h3 id="esports-registration-title">Garanta sua participação</h3>
+                    <a class="btn btn--primary" href={comp.registrationUrl} target="_blank" rel="noopener noreferrer">
+                      Inscrições — PC
+                    </a>
                   </section>
-
-                  <section class="esports-block" aria-labelledby="esports-schedule-title">
-                    <h3 id="esports-schedule-title">Cronograma</h3>
-                    <p><strong>Fases online:</strong></p>
-                    <ul>
-                      {comp.schedule.online.map((date) => <li>{date}</li>)}
-                    </ul>
-                    <p><strong>Fases presenciais:</strong></p>
-                    <ul>
-                      {comp.schedule.inPerson.map((date) => <li>{date}</li>)}
-                    </ul>
-                    <p><strong>Local:</strong> {comp.schedule.venue}</p>
-                  </section>
-
-                  <p class="esports-registration-note">{comp.registrationNote}</p>
                 </div>
               )}
 
@@ -102,14 +85,16 @@ import {STATUS_LABEL} from '../lib/competitions';
                     </span>
                   )
                 )}
-                {comp.registrationUrl ? (
-                  <a class="btn btn--ghost" href={comp.registrationUrl} target="_blank" rel="noopener noreferrer">
-                    {comp.id === 'esports' ? 'Inscreva sua equipe na Sympla' : 'Inscrever-se'}
-                  </a>
-                ) : (
-                  <span class="btn btn--disabled" title="As inscrições abrirão em breve">
-                    Inscrições em breve
-                  </span>
+                {comp.id !== 'esports' && (
+                  comp.registrationUrl ? (
+                    <a class="btn btn--ghost" href={comp.registrationUrl} target="_blank" rel="noopener noreferrer">
+                      Inscrever-se
+                    </a>
+                  ) : (
+                    <span class="btn btn--disabled" title="As inscrições abrirão em breve">
+                      Inscrições em breve
+                    </span>
+                  )
                 )}
               </div>
             </article>
@@ -235,51 +220,78 @@ import {STATUS_LABEL} from '../lib/competitions';
 
   .esports-details {
     display: grid;
-    gap: 1.5rem;
+    gap: 1.25rem;
     margin: 0 0 2rem;
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.7;
   }
 
   .esports-block h3 {
-    margin: 0 0 0.6rem;
+    margin: 0 0 0.75rem;
     color: var(--color-sakura);
-    font-size: 1.05rem;
-  }
-
-  .esports-block ul {
-    margin: 0;
-    padding-left: 1.25rem;
-  }
-
-  .esports-block p {
-    margin: 0.5rem 0 0.2rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
   }
 
   .esports-regulations {
     display: grid;
-    gap: 0.7rem;
-    padding: 0 !important;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+    gap: 0.65rem;
+    margin: 0;
+    padding: 0;
     list-style: none;
   }
 
-  .esports-regulations li {
+  .esports-regulations .btn {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0.65rem 0.75rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .esports-registration {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0.7rem;
-  }
-
-  .esports-regulations .btn {
-    font-size: 0.8rem;
-    padding: 0.55rem 0.8rem;
-  }
-
-  .esports-registration-note {
-    margin: 0;
+    gap: 1rem;
     padding: 1rem;
-    border-left: 3px solid var(--color-primary-light);
-    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(229, 9, 20, 0.35);
+    border-radius: 12px;
+    background: rgba(229, 9, 20, 0.08);
+  }
+
+  .esports-registration h3 {
+    margin: 0;
+    color: var(--color-text);
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .esports-registration .btn {
+    min-height: 48px;
+  }
+
+  .esports-regulations .btn:focus-visible,
+  .esports-registration .btn:focus-visible {
+    outline: 3px solid var(--color-sakura);
+    outline-offset: 3px;
+  }
+
+  @media (max-width: 480px) {
+    .esports-regulations {
+      grid-template-columns: 1fr;
+    }
+
+    .esports-registration {
+      align-items: stretch;
+      flex-direction: column;
+    }
+
+    .esports-registration .btn {
+      justify-content: center;
+      width: 100%;
+    }
   }
 </style>
