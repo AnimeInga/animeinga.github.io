@@ -1,0 +1,53 @@
+{
+  "_leia-me": "Este arquivo contém apenas informações fornecidas para os campeonatos de Console na Issue #22. Os regulamentos oficiais em PDF não estavam disponíveis para transcrição. Substitua/complete estas informações após receber e validar cada documento oficial.",
+  "registrationUrl": "https://www.zaipass.com.br/e/animeinga/animeinga-esports-2026",
+  "registrationButtonLabel": "Inscreva-se pela ZaiPass",
+  "price": "R$ 30,00 + taxas da plataforma por modalidade",
+  "documentNotice": "O regulamento oficial integral desta modalidade ainda precisa ser incluído. As informações abaixo reproduzem apenas os dados de inscrição, premiação e cronograma fornecidos para esta implementação; elas não substituem o regulamento oficial. O título original e as regras completas dependem do PDF oficial, que não estava disponível para transcrição.",
+  "competitions": [
+    {
+      "id": "ea-fc-25",
+      "title": "EA FC 25",
+      "date": "12/12/2026"
+    },
+    {
+      "id": "street-fighter-6",
+      "title": "Street Fighter 6",
+      "date": "13/12/2026"
+    },
+    {
+      "id": "mortal-kombat-1",
+      "title": "Mortal Kombat 1",
+      "date": "12/12/2026"
+    }
+  ],
+  "sections": [
+    {
+      "id": "inscricao",
+      "num": "1",
+      "title": "Inscrição e participação",
+      "paragraphs": [
+        "A inscrição é individual e independente para cada modalidade. O valor-base é R$ 30,00 por atleta, por modalidade, acrescido das taxas da ZaiPass. O valor final é o apresentado no checkout da plataforma.",
+        "As inscrições abrem em 03/11/2026, às 10h00, e encerram em 06/12/2026, às 23h59, podendo ser encerradas antes caso as vagas se esgotem.",
+        "Após a compra, o participante deverá seguir as orientações da organização para completar o cadastro da modalidade e apresentar os documentos exigidos. O prazo específico deve ser conferido no regulamento oficial."
+      ]
+    },
+    {
+      "id": "premiacao",
+      "num": "2",
+      "title": "Premiação",
+      "paragraphs": [
+        "A premiação é independente nesta modalidade: 1º lugar — R$ 1.000,00 em dinheiro e troféu oficial; 2º lugar — R$ 500,00 em dinheiro e medalha de prata. Não há premiação prevista para o 3º lugar.",
+        "A participação e o recebimento dos prêmios estão sujeitos às condições do regulamento oficial."
+      ]
+    },
+    {
+      "id": "cronograma",
+      "num": "3",
+      "title": "Data e local",
+      "paragraphs": [
+        "A competição de {{game}} será realizada presencialmente em {{date}}, durante o AnimeIngá 2026, no {{venue}}, em {{city}}."
+      ]
+    }
+  ]
+}

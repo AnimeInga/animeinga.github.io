@@ -9,6 +9,8 @@ interface Regulation {
     subtitle: string;
   };
   registrationUrl: string;
+  registrationButtonLabel?: string;
+  documentNotice?: string;
   price: string;
   sections: {
     id: string;
@@ -36,9 +38,10 @@ const {regulation} = Astro.props;
       <span class="chip">{site.dates.shortLabel}</span>
       <h1 class="page-hero__title" style="margin-top: 1rem;">{regulation.page.title}</h1>
       <p class="page-hero__subtitle">{regulation.page.subtitle}</p>
+      {regulation.documentNotice && <p class="document-notice" role="note">{regulation.documentNotice}</p>}
       <div class="hero-actions">
         <a class="btn btn--primary" href={regulation.registrationUrl} target="_blank" rel="noopener noreferrer">
-          Inscreva sua equipe na Sympla
+          {regulation.registrationButtonLabel ?? 'Inscreva sua equipe na Sympla'}
         </a>
         <span class="price-tag">{regulation.price}</span>
       </div>
@@ -104,6 +107,18 @@ const {regulation} = Astro.props;
     border-radius: 10px;
     color: var(--color-sakura);
     font-weight: 800;
+  }
+
+  .document-notice {
+    max-width: 48rem;
+    margin: 1.25rem auto 0;
+    padding: 1rem 1.2rem;
+    border: 1px solid rgba(255, 183, 197, 0.45);
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.88);
+    background: rgba(255, 255, 255, 0.06);
+    line-height: 1.65;
+    text-align: left;
   }
 
   .toc {

@@ -45,7 +45,7 @@ import {STATUS_LABEL} from '../lib/competitions';
               {comp.id === 'esports' && (
                 <div class="esports-details">
                   <section class="esports-block" aria-labelledby="esports-regulations-title">
-                    <h3 id="esports-regulations-title">Regulamentos oficiais</h3>
+                    <h3 id="esports-regulations-title">PC — regulamentos oficiais</h3>
                     <ul class="esports-regulations">
                       {comp.regulations.map((regulation) => (
                         <li>
@@ -60,10 +60,36 @@ import {STATUS_LABEL} from '../lib/competitions';
                     </ul>
                   </section>
 
+                  <section class="esports-block" aria-labelledby="console-regulations-title">
+                    <h3 id="console-regulations-title">Console — regulamentos e informações</h3>
+                    <ul class="esports-regulations">
+                      {comp.consoleRegulations.map((regulation) => (
+                        <li>
+                          <a
+                            class="btn btn--ghost"
+                            href={regulation.url}
+                            aria-label={`Informações da modalidade — ${regulation.title}`}>
+                            {regulation.title}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                    <ul class="esports-console-highlights">
+                      {comp.consoleHighlights.map((highlight) => <li>{highlight}</li>)}
+                    </ul>
+                  </section>
+
                   <section class="esports-registration" aria-labelledby="esports-registration-title">
-                    <h3 id="esports-registration-title">Garanta sua participação</h3>
+                    <h3 id="esports-registration-title">Garanta sua participação — PC via Sympla</h3>
                     <a class="btn btn--primary" href={comp.registrationUrl} target="_blank" rel="noopener noreferrer">
-                      Inscrições — PC
+                      Inscrições para modalidade PC — Sympla
+                    </a>
+                  </section>
+
+                  <section class="esports-registration" aria-labelledby="console-registration-title">
+                    <h3 id="console-registration-title">Inscrições para modalidade Console — ZaiPass</h3>
+                    <a class="btn btn--primary" href={comp.consoleRegistrationUrl} target="_blank" rel="noopener noreferrer">
+                      Inscrições para modalidade Console — ZaiPass
                     </a>
                   </section>
                 </div>
@@ -277,6 +303,15 @@ import {STATUS_LABEL} from '../lib/competitions';
   .esports-registration .btn:focus-visible {
     outline: 3px solid var(--color-sakura);
     outline-offset: 3px;
+  }
+
+  .esports-console-highlights {
+    display: grid;
+    gap: 0.4rem;
+    margin: 0.9rem 0 0;
+    padding-left: 1.2rem;
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.6;
   }
 
   @media (max-width: 480px) {

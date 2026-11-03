@@ -1,5 +1,5 @@
 {
-  "_leia-me": "Competições e regulamentos. 'status' controla o banner: 'em-breve' | 'inscricoes' | 'encerrado'. Preencha 'regulationUrl' e 'registrationUrl' quando os links oficiais existirem (deixe \"\" enquanto não houver). A competição esports também pode informar a lista 'regulations' com os regulamentos oficiais das modalidades de PC. Para nova competição, copie um bloco inteiro.",
+  "_leia-me": "Competições e regulamentos. 'status' controla o banner: 'em-breve' | 'inscricoes' | 'encerrado'. Preencha 'regulationUrl' e 'registrationUrl' quando os links oficiais existirem (deixe \"\" enquanto não houver). A competição esports pode informar 'regulations' para PC e 'consoleRegulations', 'consoleRegistrationUrl' e 'consoleHighlights' para Console. Para nova competição, copie um bloco inteiro.",
   "page": {
     "title": "Regulamentos & Competições",
     "subtitle": "Confira as competições confirmadas do AnimeIngá 2026, consulte os regulamentos e encontre os links de inscrição.",
@@ -26,8 +26,8 @@
       "id": "esports",
       "title": "Campeonatos de eSports",
       "icon": "🎮",
-      "tagline": "Sua equipe, sua estratégia e sua chance de conquistar o topo!",
-      "description": "Prepare sua equipe e participe dos campeonatos de eSports do AnimeIngá 2026! Escolha sua modalidade, reúna seus jogadores e dispute uma vaga nas finais presenciais. Consulte os regulamentos oficiais e garanta sua inscrição!",
+      "tagline": "Sua estratégia, seu jogo e sua chance de conquistar o topo!",
+      "description": "Participe dos campeonatos de eSports do AnimeIngá 2026: dispute as modalidades de PC em equipe ou inscreva-se individualmente nos torneios de Console. Consulte as informações e garanta sua participação!",
       "status": "inscricoes",
       "highlights": [
         "Três modalidades competitivas para PC",
@@ -50,6 +50,28 @@
           "title": "League of Legends (LoL)",
           "url": "regulamento-esports-lol.html"
         }
+      ],
+      "consoleRegulations": [
+        {
+          "title": "EA FC 25",
+          "url": "regulamento-esports-ea-fc-25.html"
+        },
+        {
+          "title": "Street Fighter 6",
+          "url": "regulamento-esports-street-fighter-6.html"
+        },
+        {
+          "title": "Mortal Kombat 1",
+          "url": "regulamento-esports-mortal-kombat-1.html"
+        }
+      ],
+      "consoleRegistrationUrl": "https://www.zaipass.com.br/e/animeinga/animeinga-esports-2026",
+      "consoleHighlights": [
+        "Inscrições individuais: 03/11/2026 às 10h00 a 06/12/2026 às 23h59, ou até esgotarem as vagas",
+        "R$ 30,00 + taxas da ZaiPass por atleta e por modalidade",
+        "Por modalidade: 1º lugar — R$ 1.000,00 + troféu; 2º — R$ 500,00 + medalha de prata; sem premiação prevista para o 3º",
+        "Presencial: EA FC 25 e Mortal Kombat 1 em 12/12; Street Fighter 6 em 13/12",
+        "Parque de Exposições Francisco Feio Ribeiro, Maringá-PR"
       ]
     },
     {

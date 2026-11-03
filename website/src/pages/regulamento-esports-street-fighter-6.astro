@@ -1,0 +1,25 @@
+---
+import EsportsRegulation from '../components/EsportsRegulation.astro';
+import regulationData from '../data/regulamento-esports-console.json';
+import site from '../data/site.json';
+
+const competition = regulationData.competitions.find(({id}) => id === 'street-fighter-6');
+if (!competition) throw new Error('Informações de Street Fighter 6 não encontradas.');
+const regulation = {
+  ...regulationData,
+  page: {
+    title: `Informações da modalidade — ${competition.title}`,
+    subtitle: 'Inscrição individual e informações confirmadas para a disputa presencial do AnimeIngá 2026.',
+  },
+  sections: regulationData.sections.map((section) => ({
+    ...section,
+    paragraphs: section.paragraphs.map((paragraph) => paragraph
+      .replaceAll('{{game}}', competition.title)
+      .replaceAll('{{date}}', competition.date)
+      .replaceAll('{{venue}}', site.location.venue)
+      .replaceAll('{{city}}', site.location.city)),
+  })),
+};
+---
+
+<EsportsRegulation regulation={regulation} />
