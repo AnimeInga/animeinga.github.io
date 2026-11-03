@@ -1,52 +1,218 @@
 {
-  "_leia-me": "Este arquivo contém apenas informações fornecidas para os campeonatos de Console na Issue #22. Os regulamentos oficiais em PDF não estavam disponíveis para transcrição. Substitua/complete estas informações após receber e validar cada documento oficial.",
+  "_leia-me": "Transcrição dos três regulamentos oficiais em PDF anexados à Issue #22. Não altere os títulos oficiais dos documentos. Dados comuns estão em commonSections; as regras específicas de cada jogo estão em competitions.rules.",
   "registrationUrl": "https://www.zaipass.com.br/e/animeinga/animeinga-esports-2026",
   "registrationButtonLabel": "Inscreva-se pela ZaiPass",
-  "price": "R$ 30,00 + taxas da plataforma por modalidade",
-  "documentNotice": "O regulamento oficial integral desta modalidade ainda precisa ser incluído. As informações abaixo reproduzem apenas os dados de inscrição, premiação e cronograma fornecidos para esta implementação; elas não substituem o regulamento oficial. O título original e as regras completas dependem do PDF oficial, que não estava disponível para transcrição.",
-  "competitions": [
+  "documentAuthority": "Animeingá 2026 — Comissão Oficial de Esportes Eletrônicos · Departamento Técnico e de Arbitragem de E-Sports",
+  "commonSections": [
     {
-      "id": "ea-fc-25",
-      "title": "EA FC 25",
-      "date": "12/12/2026"
-    },
-    {
-      "id": "street-fighter-6",
-      "title": "Street Fighter 6",
-      "date": "13/12/2026"
-    },
-    {
-      "id": "mortal-kombat-1",
-      "title": "Mortal Kombat 1",
-      "date": "12/12/2026"
-    }
-  ],
-  "sections": [
-    {
-      "id": "inscricao",
+      "id": "disposicoes-gerais",
       "num": "1",
-      "title": "Inscrição e participação",
+      "title": "DISPOSIÇÕES GERAIS E FORMATO DO TORNEIO",
+      "indexLabel": "Seção 1 — Disposições Gerais e Formato do Torneio",
+      "pdfPage": 1,
       "paragraphs": [
-        "A inscrição é individual e independente para cada modalidade. O valor-base é R$ 30,00 por atleta, por modalidade, acrescido das taxas da ZaiPass. O valor final é o apresentado no checkout da plataforma.",
-        "As inscrições abrem em 03/11/2026, às 10h00, e encerram em 06/12/2026, às 23h59, podendo ser encerradas antes caso as vagas se esgotem.",
-        "Após a compra, o participante deverá seguir as orientações da organização para completar o cadastro da modalidade e apresentar os documentos exigidos. O prazo específico deve ser conferido no regulamento oficial."
+        "1.1. O Torneio Oficial de {{game}} integra a programação de e-sports do evento Animeingá 2026, organizado sob a responsabilidade do Departamento Técnico e Comissão Organizadora de E-Sports.",
+        "1.2. O torneio será disputado no formato individual 1v1 presencial em plataforma de alta performance disponibilizada pela organização no Pavilhão Unimed.",
+        "1.3. A competição é estruturada no sistema de Chave de Dupla Eliminação (Winners e Losers Bracket), garantindo ao participante duas oportunidades de confronto antes de sua eliminação definitiva."
       ]
     },
     {
-      "id": "premiacao",
+      "id": "elegibilidade-inscricoes",
       "num": "2",
-      "title": "Premiação",
+      "title": "ELEGIBILIDADE, INSCRIÇÕES E TAXAS",
+      "indexLabel": "Seção 2 — Elegibilidade, Inscrições e Taxas",
+      "pdfPage": 1,
       "paragraphs": [
-        "A premiação é independente nesta modalidade: 1º lugar — R$ 1.000,00 em dinheiro e troféu oficial; 2º lugar — R$ 500,00 em dinheiro e medalha de prata. Não há premiação prevista para o 3º lugar.",
-        "A participação e o recebimento dos prêmios estão sujeitos às condições do regulamento oficial."
+        "2.1. A participação é aberta a todos os jogadores residentes no território nacional. Atletas menores de 18 anos (16 e 17 anos completos na data do evento) devem obrigatoriamente apresentar o Anexo I preenchido e assinado pelo responsável legal.",
+        "2.2. As inscrições são realizadas exclusivamente via plataforma Zaipass (www.zaipass.com.br) durante o período oficial de 03/11/2026 às 10h00 até 06/12/2026 às 23h59. As inscrições são livres, sem limite de vagas estipulado durante o prazo de abertura.",
+        "2.3. A taxa de inscrição é fixada em R$ 30,00 (trinta reais), acrescida de 7% de taxa de serviço cobrada diretamente pela Zaipass no momento do checkout.",
+        "2.4. A inscrição é pessoal e intransferível. Não haverá reembolso do valor pago em caso de desistência ou não comparecimento do participante no dia da prova."
       ]
     },
     {
       "id": "cronograma",
       "num": "3",
-      "title": "Data e local",
+      "title": "CRONOGRAMA TÉCNICO E PRAZOS OFICIAIS",
+      "indexLabel": "Seção 3 — Cronograma Técnico e Prazos Oficiais",
+      "pdfPage": 2,
       "paragraphs": [
-        "A competição de {{game}} será realizada presencialmente em {{date}}, durante o AnimeIngá 2026, no {{venue}}, em {{city}}."
+        "3.1. Período de Inscrição Oficial: 03/11/2026 (10h00) a 06/12/2026 (23h59).",
+        "3.2. Data da Competição Presencial: {{date}} no Pavilhão Unimed — Maringá/PR.",
+        "3.3. Check-in Obrigatório: Todos os atletas confirmados devem se apresentar no estande de e-sports entre 09h00 e 10h00 no dia da competição para validação de documento e credenciamento de entrada na área de jogo.",
+        "3.4. Tolerância de Atraso: O não comparecimento na estação de jogo após 5 (cinco) minutos da chamada oficial do árbitro resultará em W.O. no confronto."
+      ]
+    },
+    {
+      "id": "configuracoes-regras",
+      "num": "4",
+      "title": "CONFIGURAÇÕES E REGRAS TÉCNICAS DE JOGO",
+      "indexLabel": "Seção 4 — Configurações e Regras de Jogo",
+      "pdfPage": 2,
+      "paragraphs": []
+    },
+    {
+      "id": "perifericos-controles",
+      "num": "5",
+      "title": "REGRAS DE PERIFÉRICOS E CONTROLES",
+      "indexLabel": "Seção 5 — Regras de Periféricos e Controles",
+      "pdfPage": 2,
+      "paragraphs": [
+        "5.1. Os competidores podem utilizar seus próprios controles (DualSense, Xbox Wireless, Fightsticks, Hitbox/Leverless ou teclados), desde que sejam compatíveis com a estação oficial sem necessidade de instalações de drivers não homologados.",
+        "5.2. Para controles digitais e leverless, é obrigatório o uso de SOCD Cleaner com lógica neutra (Up + Down = Neutral, Left + Right = Neutral).",
+        "5.3. É terminantemente proibido o uso de funções macro, turbo, disparo contínuo ou mapeamento de múltiplas entradas direcionais no mesmo botão.",
+        "5.4. Todos os periféricos trazidos pelos atletas passarão por vistoria técnica da arbitragem de palco antes do início da primeira rodada."
+      ]
+    },
+    {
+      "id": "conduta",
+      "num": "6",
+      "title": "CONDUTA, CÓDIGO DE ÉTICA E FAIR PLAY",
+      "indexLabel": "Seção 6 — Conduta, Código de Ética e Fair Play",
+      "pdfPage": 3,
+      "paragraphs": [
+        "6.1. Espera-se que todos os participantes mantenham elevado padrão de conduta esportiva, respeito mútuo e cortesia em relação aos adversários, público e corpo de arbitragem.",
+        "6.2. São estritamente proibidas condutas antidesportivas, ofensas verbais, agressões físicas, linguagem discriminatória (racista, machista, homofóbica ou capacitista) ou provocação excessiva que perturbe o andamento das partidas.",
+        "6.3. Qualquer tentativa de trapaça, manipulação de resultado, conluio ou uso de ferramentas não autorizadas acarretará na desqualificação imediata do atleta do torneio e banimento de edições futuras."
+      ]
+    },
+    {
+      "id": "premiacao",
+      "num": "7",
+      "title": "PREMIAÇÃO E ENTREGA DE PRÊMIOS",
+      "indexLabel": "Seção 7 — Premiação e Entrega de Prêmios",
+      "pdfPage": 3,
+      "paragraphs": [
+        "7.1. A premiação garantida do torneio está estruturada da seguinte forma:",
+        "• 1º Lugar (Campeão): R$ 1.000,00 (um mil reais) pago via PIX + Troféu Oficial Animeingá 2026.",
+        "• 2º Lugar (Vice-Campeão): R$ 500,00 (quinhentos reais) pago via PIX + Medalha Oficial Animeingá 2026.",
+        "7.2. O pagamento dos valores em dinheiro será efetuado em até 5 (cinco) dias úteis após o encerramento do evento, mediante transferência bancária na conta de titularidade do atleta ou de seu responsável legal."
+      ]
+    },
+    {
+      "id": "direito-imagem",
+      "num": "8",
+      "title": "DIREITO DE IMAGEM E COMUNICAÇÃO",
+      "indexLabel": "Seção 8 — Direito de Imagem e Comunicação",
+      "pdfPage": 3,
+      "paragraphs": [
+        "8.1. Ao se inscrever no torneio, o participante cede à organização do Animeingá os direitos de uso de sua imagem, voz, nickname e registros audiovisuais para fins de transmissão, divulgação e material promocional em qualquer mídia, sem qualquer ônus financeiro."
+      ]
+    },
+    {
+      "id": "arbitragem",
+      "num": "9",
+      "title": "ARBITRAGEM E PENALIDADES",
+      "indexLabel": "Seção 9 — Arbitragem e Penalidades",
+      "pdfPage": 3,
+      "paragraphs": [
+        "9.1. O corpo de arbitragem nomeado pela organização possui autoridade soberana durante o evento presencial. Suas decisões em campo são finais e irrecorríveis.",
+        "9.2. As penalidades aplicáveis por descumprimento deste regulamento incluem: Advertência Verbal, Perda de Round/Jogo, Derrota por W.O. no confronto e Desqualificação Total da Competição."
+      ]
+    },
+    {
+      "id": "disposicoes-finais",
+      "num": "10",
+      "title": "DISPOSIÇÕES FINAIS",
+      "indexLabel": "Seção 10 — Disposições Finais",
+      "pdfPage": 4,
+      "paragraphs": [
+        "10.1. A inscrição no torneio implica na aceitação irrestrita de todas as cláusulas e termos dispostos neste regulamento.",
+        "10.2. Casos omissos ou situações não previstas neste documento serão resolvidos soberanamente pela Comissão Organizadora do Animeingá 2026."
+      ]
+    },
+    {
+      "id": "anexo-autorizacao-menores",
+      "title": "ANEXO I — TERMO DE AUTORIZAÇÃO PARA MENORES DE IDADE",
+      "indexLabel": "Anexo I — Termo de Autorização para Menores de Idade",
+      "pdfPage": 4,
+      "paragraphs": [
+        "(Obrigatório para participantes com 16 ou 17 anos na data do evento)",
+        "Eu, ______________________________________________________________________, portador(a) do RG nº ________________________ e CPF nº ________________________, residente e domiciliado(a) na ______________________________________________________________________, na qualidade de pai, mãe ou responsável legal do(a) menor ______________________________________________________, nascido(a) em ____/____/________, AUTORIZO o(a) referido(a) menor a participar do Campeonato Oficial de {{game}} no evento Animeingá 2026, a ser realizado na cidade de Maringá/PR, declarando estar ciente e de acordo com todas as regras do regulamento.",
+        "Nome Completo do Atleta Menor: ________________________________________________",
+        "Nickname do Jogador: ________________________________________________",
+        "Telefone de Contato do Responsável: ________________________________________________",
+        "Data e Local: Maringá/PR, ____ de __________________ de 2026.",
+        "_____________________________________________________",
+        "Assinatura do Responsável Legal"
+      ]
+    }
+  ],
+  "competitions": [
+    {
+      "id": "ea-fc-25",
+      "commercialTitle": "EA FC 25",
+      "game": "EA FIFA 2025",
+      "officialTitle": "REGULAMENTO OFICIAL DO CAMPEONATO DE EA FIFA 2025",
+      "subtitle": "Modalidade EA FIFA 2025 (1v1 presencial). Identificação comercial no site: EA FC 25.",
+      "date": "12/12/2026 (Sábado)",
+      "price": "R$ 30,00 + 7% de taxa de serviço Zaipass",
+      "summary": [
+        {"label": "Modalidade", "value": "EA FIFA 2025 (1v1 Presencial)"},
+        {"label": "Período de inscrições", "value": "03/11/2026 às 10h00 até 06/12/2026 às 23h59"},
+        {"label": "Plataforma de inscrição", "value": "Zaipass (www.zaipass.com.br)"},
+        {"label": "Taxa de inscrição", "value": "R$ 30,00 (+ 7% de taxa de serviço Zaipass)"},
+        {"label": "Vagas", "value": "Inscrições livres (sem limite de vagas durante o período oficial de inscrição)"},
+        {"label": "Etapa presencial", "value": "12/12/2026 (Sábado) no Pavilhão Unimed — Maringá/PR"},
+        {"label": "Premiação garantida", "value": "1º lugar: R$ 1.000,00 + troféu | 2º lugar: R$ 500,00 + medalha"}
+      ],
+      "rules": [
+        "4.1. Plataforma e Modo: Disputado em PlayStation 5 / PC no modo Kick-Off 1v1 com elencos atualizados (Online Squads).",
+        "4.2. Duração de Partida: Fases eliminatórias até a semifinal: 4 minutos por tempo (total de 8 minutos por partida). Grande Final: 6 minutos por tempo (total de 12 minutos por partida).",
+        "4.3. Configurações Técnicas: Dificuldade Lendário, Velocidade Normal, Defesa Tática (estritamente obrigatória; Defesa Clássica é proibida).",
+        "4.4. Critério de Desempate: Em caso de empate no tempo regulamentar, será jogada Prorrogação (2 tempos de 3 min) seguida de Disputa de Pênaltis.",
+        "4.5. Pausas e Substituições: Pausas só podem ser solicitadas quando a bola estiver fora de jogo ou durante a posse de bola no campo defensivo/meio-campo sem ataque promissor."
+      ]
+    },
+    {
+      "id": "street-fighter-6",
+      "commercialTitle": "Street Fighter 6",
+      "game": "Street Fighter 6",
+      "officialTitle": "REGULAMENTO OFICIAL DO CAMPEONATO DE STREET FIGHTER 6",
+      "subtitle": "Street Fighter 6 (1v1 presencial).",
+      "date": "13/12/2026 (Domingo)",
+      "price": "R$ 30,00 + 7% de taxa de serviço Zaipass",
+      "summary": [
+        {"label": "Modalidade", "value": "Street Fighter 6 (1v1 Presencial)"},
+        {"label": "Período de inscrições", "value": "03/11/2026 às 10h00 até 06/12/2026 às 23h59"},
+        {"label": "Plataforma de inscrição", "value": "Zaipass (www.zaipass.com.br)"},
+        {"label": "Taxa de inscrição", "value": "R$ 30,00 (+ 7% de taxa de serviço Zaipass)"},
+        {"label": "Vagas", "value": "Inscrições livres (sem limite de vagas durante o período oficial de inscrição)"},
+        {"label": "Etapa presencial", "value": "13/12/2026 (Domingo) no Pavilhão Unimed — Maringá/PR"},
+        {"label": "Premiação garantida", "value": "1º lugar: R$ 1.000,00 + troféu | 2º lugar: R$ 500,00 + medalha"}
+      ],
+      "rules": [
+        "4.1. Plataforma e Modo: Disputado em PC / PlayStation 5 no modo Fighting Ground / Versus 1v1.",
+        "4.2. Configuração de Partida: 3 Rounds por luta, tempo regulamentar de 99 segundos por round.",
+        "4.3. Formato dos Confrontos: Todas as fases classificatórias serão disputadas em First to 2 (Melhor de 3 Lutas — FT2). As Finais de Chave (Winners Final, Losers Final e Grande Final) serão disputadas em First to 3 (Melhor de 5 Lutas — FT3).",
+        "4.4. Seleção de Estágios: A escolha de cenário deve ser mantida em Random. O estágio Training Room é proibido em transmissões e palco presencial.",
+        "4.5. Tipos de Controle: Os esquemas de controle Clássico e Moderno são totalmente permitidos. O esquema Dinâmico é estritamente proibido.",
+        "4.6. Troca de Personagem: O vencedor da luta anterior obrigatoriamente mantém o mesmo personagem e esquema de controle. O perdedor pode alterar seu personagem e/ou tipo de controle."
+      ]
+    },
+    {
+      "id": "mortal-kombat-1",
+      "commercialTitle": "Mortal Kombat 1",
+      "game": "Mortal Kombat 1",
+      "officialTitle": "REGULAMENTO OFICIAL DO CAMPEONATO DE MORTAL KOMBAT 1",
+      "subtitle": "Mortal Kombat 1 (1v1 presencial).",
+      "date": "12/12/2026 (Sábado)",
+      "price": "R$ 30,00 + 7% de taxa de serviço Zaipass",
+      "summary": [
+        {"label": "Modalidade", "value": "Mortal Kombat 1 (1v1 Presencial)"},
+        {"label": "Período de inscrições", "value": "03/11/2026 às 10h00 até 06/12/2026 às 23h59"},
+        {"label": "Plataforma de inscrição", "value": "Zaipass (www.zaipass.com.br)"},
+        {"label": "Taxa de inscrição", "value": "R$ 30,00 (+ 7% de taxa de serviço Zaipass)"},
+        {"label": "Vagas", "value": "Inscrições livres (sem limite de vagas durante o período oficial de inscrição)"},
+        {"label": "Etapa presencial", "value": "12/12/2026 (Sábado) no Pavilhão Unimed — Maringá/PR"},
+        {"label": "Premiação garantida", "value": "1º lugar: R$ 1.000,00 + troféu | 2º lugar: R$ 500,00 + medalha"}
+      ],
+      "rules": [
+        "4.1. Plataforma e Modo: Disputado em PlayStation 5 / PC no modo Tournament Versus 1v1.",
+        "4.2. Configuração de Partida: 3 Rounds por luta, tempo limite de 90 segundos por round.",
+        "4.3. Formato dos Confrontos: Fases classificatórias em Melhor de 3 Lutas (MD3). Semifinais e Grande Final disputadas em Melhor de 5 Lutas (MD5).",
+        "4.4. Personagens e Kameos: Todos os personagens principais e lutadores Kameo lançados oficialmente até 14 dias antes do evento são permitidos.",
+        "4.5. Seleção de Estágio: Seleção aleatória de arena (Random Stage).",
+        "4.6. Regra de Vencedor/Perdedor: O vencedor de cada partida fica travado com seu Personagem Principal e Kameo. O perdedor da partida anterior pode alterar seu Personagem Principal, seu Kameo ou ambos."
       ]
     }
   ]
