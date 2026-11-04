@@ -124,6 +124,27 @@ const year = new Date().getFullYear();
             </li>
           ))}
           <li>
+            <details class:list={['navbar__dropdown', {'is-current': currentPath.endsWith('guia-participante.html') || currentPath.endsWith('acessibilidade.html')}]}>
+              <summary>Informações Gerais</summary>
+              <ul>
+                <li>
+                  <a
+                    href="guia-participante.html"
+                    aria-current={currentPath.endsWith('guia-participante.html') ? 'page' : undefined}>
+                    Guia do Participante
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="acessibilidade.html"
+                    aria-current={currentPath.endsWith('acessibilidade.html') ? 'page' : undefined}>
+                    Acessibilidade
+                  </a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
             <a
               class="navbar__cta"
               href={site.exhibitorFormUrl}

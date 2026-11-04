@@ -125,6 +125,58 @@ h1, h2, h3, h4 {
   color: var(--color-primary-light);
 }
 
+.navbar__dropdown {
+  position: relative;
+}
+
+.navbar__dropdown summary {
+  color: var(--color-text);
+  cursor: pointer;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  list-style: none;
+}
+
+.navbar__dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.navbar__dropdown summary::after {
+  content: '⌄';
+  margin-left: 0.35rem;
+}
+
+.navbar__dropdown.is-current summary,
+.navbar__dropdown summary:hover {
+  color: var(--color-primary-light);
+}
+
+.navbar__dropdown ul {
+  position: absolute;
+  top: 100%;
+  left: -1rem;
+  min-width: 13rem;
+  margin: 0;
+  padding: 0.5rem;
+  list-style: none;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  background: #080808;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.navbar__dropdown li a {
+  display: block;
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.45rem;
+}
+
+.navbar__dropdown li a:hover,
+.navbar__dropdown li a[aria-current='page'] {
+  background: rgba(229, 9, 20, 0.12);
+}
+
 .navbar__cta {
   padding: 0.55rem 1.1rem !important;
   border-radius: 10px;
@@ -173,6 +225,23 @@ h1, h2, h3, h4 {
   .navbar__links li {
     width: 100%;
   }
+  .navbar__dropdown summary {
+    display: block;
+    padding: 0.8rem 0;
+  }
+  .navbar__dropdown ul {
+    position: static;
+    min-width: 0;
+    padding: 0 0 0 0.75rem;
+    border: 0;
+    border-left: 1px solid var(--color-border);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  .navbar__dropdown li a {
+    padding: 0.65rem 0.75rem;
+  }
   .navbar__links a {
     display: block;
     padding: 0.8rem 0;
@@ -181,6 +250,74 @@ h1, h2, h3, h4 {
     margin-top: 0.5rem;
     text-align: center;
   }
+}
+
+.info-content {
+  padding-top: clamp(3rem, 7vw, 5rem);
+  padding-bottom: clamp(4rem, 9vw, 6.5rem);
+}
+
+.info-intro,
+.info-content p,
+.info-content li {
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.8;
+}
+
+.info-intro {
+  margin: 0 0 2.5rem;
+  font-size: 1.05rem;
+}
+
+.info-section {
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.info-section h2 {
+  margin: 0 0 1.2rem;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+}
+
+.info-section h3 {
+  margin: 1.5rem 0 0.5rem;
+  color: var(--color-sakura);
+  font-size: 1.05rem;
+}
+
+.info-section p {
+  margin: 0 0 1rem;
+}
+
+.info-section ul {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+  padding-left: 1.4rem;
+}
+
+.info-section li::marker {
+  color: var(--color-primary-light);
+}
+
+.info-content strong {
+  color: #fff;
+}
+
+.info-closing {
+  margin: 1rem 0;
+  color: var(--color-sakura) !important;
+  font-weight: 700;
+}
+
+.info-contact a {
+  color: var(--color-sakura);
+}
+
+.navbar__dropdown :focus-visible,
+.info-content a:focus-visible {
+  outline: 3px solid var(--color-sakura);
+  outline-offset: 3px;
 }
 
 /* ---------- Botões ---------- */
