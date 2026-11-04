@@ -1,0 +1,54 @@
+{
+  "_leia-me": "Conteúdo da página Acessibilidade. Edite textos, listas, benefícios, documentação e contato neste arquivo.",
+  "title": "Acessibilidade",
+  "description": "Conheça o atendimento prioritário, os benefícios e a documentação para pessoas prioritárias no AnimeIngá 2026.",
+  "subtitle": "Um evento feito para todos",
+  "intro": "O AnimeIngá é um evento feito para todos! Para garantir o conforto, a segurança e uma experiência acolhedora, preparamos uma estrutura dedicada e condições especiais para o atendimento de pessoas prioritárias. Confira abaixo quem tem direito às facilidades, quais são os benefícios e a documentação necessária para apresentação na portaria.",
+  "sections": [
+    {
+      "title": "👥 Quem tem direito ao Atendimento Preferencial?",
+      "bullets": [
+        "Pessoas com Deficiência (PcD);",
+        "Pessoas com Transtorno do Espectro Autista (TEA);",
+        "Idosos (idade igual ou superior a 60 anos);",
+        "Gestantes, lactantes e pessoas com criança de colo (crianças de até 2 anos);",
+        "Pessoas com mobilidade reduzida."
+      ]
+    },
+    {
+      "title": "⭐ Benefícios e Estrutura Exclusiva",
+      "subsections": [
+        {
+          "title": "Acesso antecipado ao evento",
+          "paragraphs": [
+            "As pessoas prioritárias e seus acompanhantes, conforme previsto em lei, terão entrada liberada antes da abertura dos portões para o público em geral, garantindo um ingresso tranquilo e proveitoso."
+          ]
+        },
+        {
+          "title": "Área reservada no Palco Principal",
+          "paragraphs": [
+            "Espaço preferencial exclusivo posicionado ao lado do Palco Principal, garantindo ótima visualização das atrações, shows e concursos com mais conforto e segurança."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "📑 Documentação Exigida na Portaria",
+      "paragraphs": [
+        "Para ter acesso à entrada antecipada e aos benefícios preferenciais, é necessária a validação de documento comprobatório no guichê de atendimento preferencial:",
+        "Para acompanhantes e crianças de colo, poderá ser solicitada identificação visual e, quando necessário, documento com foto."
+      ],
+      "bullets": [
+        "Pessoas com Transtorno do Espectro Autista (TEA): Carteirinha do Autista (CIPTEA) ou laudo médico correspondente.",
+        "Idosos: Carteira de Identidade (RG), CNH ou outro documento oficial com foto que comprove a idade.",
+        "PcD com deficiência oculta ou não aparente: Carteira de Identidade Nacional (CIN) contendo o símbolo PcD ou o Certificado da Pessoa com Deficiência, emitido pelo portal Gov.br.",
+        "Gestantes, lactantes, crianças de colo e pessoas com mobilidade reduzida: identificação visual/presencial e, quando aplicável, documento de identificação da criança/mãe ou atestado médico de mobilidade."
+      ]
+    }
+  ],
+  "closing": "Trabalhamos continuamente para tornar o Animeingá cada vez mais inclusivo e acessível a todos os públicos!",
+  "contact": {
+    "label": "Dúvidas? Entre em contato com",
+    "email": "thamiris@animeingá.com.br"
+  }
+}

@@ -3,12 +3,33 @@ import Layout from '../layouts/Layout.astro';
 import site from '../data/site.json';
 
 interface Props {
-  title: string;
-  description: string;
-  subtitle: string;
+  content: {
+    title: string;
+    description: string;
+    subtitle: string;
+    intro: string;
+    sections: {
+      title: string;
+      paragraphs?: string[];
+      bullets?: string[];
+      subsections?: {
+        title: string;
+        paragraphs?: string[];
+        bullets?: string[];
+      }[];
+    }[];
+    closing?: string;
+    contact?: {
+      label: string;
+      email: string;
+    };
+  };
 }
 
-const {title, description, subtitle} = Astro.props;
+const {content} = Astro.props;
+const {title, description, subtitle} = content;
+const renderText = (text: string) =>
+  text.replaceAll('{{datas}}', site.dates.label).replaceAll('{{local}}', site.location.venue);
 ---
 
 <Layout title={title} description={description}>
@@ -21,6 +42,34 @@ const {title, description, subtitle} = Astro.props;
   </section>
 
   <div class="section container--narrow info-content">
-    <slot />
+    <p class="info-intro">{renderText(content.intro)}</p>
+    {content.sections.map((section) => (
+      <section class="info-section">
+        <h2>{section.title}</h2>
+        {section.paragraphs?.map((paragraph) => <p>{renderText(paragraph)}</p>)}
+        {section.bullets && (
+          <ul>
+            {section.bullets.map((bullet) => <li>{renderText(bullet)}</li>)}
+          </ul>
+        )}
+        {section.subsections?.map((subsection) => (
+          <div class="info-subsection">
+            <h3>{subsection.title}</h3>
+            {subsection.paragraphs?.map((paragraph) => <p>{renderText(paragraph)}</p>)}
+            {subsection.bullets && (
+              <ul>
+                {subsection.bullets.map((bullet) => <li>{renderText(bullet)}</li>)}
+              </ul>
+            )}
+          </div>
+        ))}
+      </section>
+    ))}
+    {content.closing && <p class="info-closing">{renderText(content.closing)}</p>}
+    {content.contact && (
+      <p class="info-contact">
+        {content.contact.label} <a href={`mailto:${content.contact.email}`}>{content.contact.email}</a>.
+      </p>
+    )}
   </div>
 </Layout>

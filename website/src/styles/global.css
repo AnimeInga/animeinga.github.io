@@ -218,6 +218,10 @@ h1, h2, h3, h4 {
     border-bottom: 1px solid var(--color-border);
     padding: 0.5rem 1.25rem 1rem;
     display: none;
+    max-height: calc(100vh - var(--navbar-height));
+    max-height: calc(100dvh - var(--navbar-height));
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
   .navbar__links.is-open {
     display: flex;
