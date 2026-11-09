@@ -193,9 +193,10 @@ const year = new Date().getFullYear();
           (toggle as HTMLElement | null)?.focus();
         }
       });
-      menu?.addEventListener('focusout', (e) => {
+      const nav = toggle?.closest('nav');
+      nav?.addEventListener('focusout', (e) => {
         const next = (e as FocusEvent).relatedTarget as Node | null;
-        if (next && !menu.contains(next) && next !== toggle) setOpen(false);
+        if (!next || !nav.contains(next)) setOpen(false);
       });
     </script>
 

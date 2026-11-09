@@ -43,7 +43,7 @@ jobs:
       - name: Accessibility tests
         run: |
           cd website
-          node --test tests/
+          node --test
 
       - name: Set target branch
         id: branch_check

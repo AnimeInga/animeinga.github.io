@@ -38,7 +38,7 @@ for (const {name, html} of pages) {
     assert.equal(levels.filter((l) => l === 1).length, 1, 'deve haver um único h1');
     levels.reduce((prev, cur) => {
       assert.ok(cur <= prev + 1, `nível de título pulado: h${prev} -> h${cur}`);
-      return Math.max(prev, cur);
+      return cur;
     }, 0);
   });
 
@@ -101,4 +101,10 @@ test('Layout: Esc fecha o menu e devolve o foco ao botão', () => {
   const layout = readFileSync(new URL('../src/layouts/Layout.astro', import.meta.url), 'utf8');
   assert.match(layout, /e\.key === 'Escape'/);
   assert.match(layout, /toggle[^;]*\.focus\(\)/);
+});
+
+test('Layout: menu fecha quando o foco sai do nav (inclusive com destino nulo)', () => {
+  const layout = readFileSync(new URL('../src/layouts/Layout.astro', import.meta.url), 'utf8');
+  assert.match(layout, /closest\('nav'\)/);
+  assert.match(layout, /!next \|\| !nav\.contains\(next\)/);
 });
