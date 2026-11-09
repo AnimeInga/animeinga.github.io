@@ -40,6 +40,11 @@ jobs:
           cd website
           npm run build
 
+      - name: Accessibility tests
+        run: |
+          cd website
+          node --test
+
       - name: Set target branch
         id: branch_check
         run: |

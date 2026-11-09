@@ -101,6 +101,7 @@ const year = new Date().getFullYear();
     <title>{fullTitle}</title>
   </head>
   <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
     <header class="navbar">
       <nav class="navbar__inner" aria-label="Navegação principal">
         <a class="navbar__brand" href="index.html" aria-label="AnimeIngá — Página inicial">
@@ -111,7 +112,7 @@ const year = new Date().getFullYear();
           aria-label="Abrir menu"
           aria-expanded="false"
           data-nav-toggle>
-          ☰
+          <span aria-hidden="true">☰</span>
         </button>
         <ul class="navbar__links" data-nav-menu>
           {navItems.map((item) => (
@@ -150,14 +151,14 @@ const year = new Date().getFullYear();
               href={site.exhibitorFormUrl}
               target="_blank"
               rel="noopener noreferrer">
-              Seja Expositor
+              Seja Expositor<span class="sr-only"> (abre em nova aba)</span>
             </a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main id="conteudo" tabindex="-1">
       <slot />
     </main>
 
@@ -165,7 +166,7 @@ const year = new Date().getFullYear();
       <div class="container">
         <div class="footer__grid">
           <div>
-            <img src="/img/logo-dark.png" alt="AnimeIngá" style="height: 44px; margin-bottom: 1rem;" />
+            <img src="/img/logo-dark.png" alt="" style="height: 44px; margin-bottom: 1rem;" />
             <p style="color: var(--color-text-muted); max-width: 32rem; margin: 0;">
               {site.tagline}. {site.edition}: {site.dates.label}, em {site.location.city}.
             </p>
@@ -182,9 +183,9 @@ const year = new Date().getFullYear();
           <div>
             <h3>Redes & Contato</h3>
             <ul>
-              <li><a href={site.social.instagram} target="_blank" rel="noopener noreferrer">Instagram</a></li>
-              <li><a href={site.social.youtube} target="_blank" rel="noopener noreferrer">YouTube</a></li>
-              <li><a href={site.social.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href={site.social.instagram} target="_blank" rel="noopener noreferrer">Instagram<span class="sr-only"> (abre em nova aba)</span></a></li>
+              <li><a href={site.social.youtube} target="_blank" rel="noopener noreferrer">YouTube<span class="sr-only"> (abre em nova aba)</span></a></li>
+              <li><a href={site.social.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (abre em nova aba)</span></a></li>
               <li><a href={`mailto:${site.contact.email}`}>{site.contact.email}</a></li>
             </ul>
           </div>
@@ -199,9 +200,35 @@ const year = new Date().getFullYear();
     <script>
       const toggle = document.querySelector('[data-nav-toggle]');
       const menu = document.querySelector('[data-nav-menu]');
+      const setOpen = (open: boolean) => {
+        menu?.classList.toggle('is-open', open);
+        toggle?.setAttribute('aria-expanded', String(open));
+        toggle?.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+      };
       toggle?.addEventListener('click', () => {
-        const open = menu?.classList.toggle('is-open') ?? false;
-        toggle.setAttribute('aria-expanded', String(open));
+        setOpen(!menu?.classList.contains('is-open'));
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && menu?.classList.contains('is-open')) {
+          setOpen(false);
+          (toggle as HTMLElement | null)?.focus();
+        }
+      });
+      const nav = toggle?.closest('nav');
+      nav?.addEventListener('focusout', (e) => {
+        const next = (e as FocusEvent).relatedTarget as Node | null;
+        if (!next || !nav.contains(next)) setOpen(false);
+      });
+    </script>
+
+    <!-- Aviso de nova aba para links externos que ainda não o possuem -->
+    <script>
+      document.querySelectorAll<HTMLAnchorElement>('a[target="_blank"]').forEach((a) => {
+        if (a.querySelector('.sr-only')) return;
+        const hint = document.createElement('span');
+        hint.className = 'sr-only';
+        hint.textContent = ' (abre em nova aba)';
+        a.append(hint);
       });
     </script>
 

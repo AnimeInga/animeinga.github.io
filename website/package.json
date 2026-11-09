@@ -9,7 +9,8 @@
     "start": "astro dev",
     "build": "astro build && node scripts/relative-paths.mjs",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test": "npm run build && node --test"
   },
   "dependencies": {
     "astro": "^5.13.2"
